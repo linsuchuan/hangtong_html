@@ -128,7 +128,7 @@
 }
 .type_open_right img {
 	display: block;
-	width: 100%;
+	/*width: 100%;*/
 	border: 1px solid #e0dfdf;
 	margin-bottom: 2px;
 }
