@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>炉料金融</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <script src="js/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- 分类导航 轮播 -->
+    <!-- 引入base.css -->
+    <link rel="stylesheet" type="text/css" href="css/type/base.css">
+    <link rel="stylesheet" type="text/css" href="css/type/navjd.css">
+    
+</head>
+<body>
+
+<!-- 悬浮咨询电话 -->
+<div class="suspension_box">
+    <li class="suspension_bg1">
+        <a href="javascript:void(0)">
+            <img class="suspension_icon" src="img/icon12.png">
+            <div class="suspension_text">资讯</div>
+        </a>
+    </li>
+    <li class="suspension_bg2">
+        <a href="javascript:void(0)">
+            <img class="suspension_icon" src="img/icon13.png">
+            <div class="suspension_text">电话</div>
+        </a>
+    </li>
+</div>
+
+
+
+<!-- 页面最顶部 -->
+<div class="page_top">
+    <div class="wrap">
+        <ul class="page_top_left">
+            <li>
+                <a href="index.html">
+                    <img class="float_l back_index_icon" src="img/icon_index.png">
+                    <div class="float_l page_top_text">淘炉料首页</div>
+                </a>
+            </li>
+            <li>
+                <div class="page_top_text">欢迎来淘炉料！</div>
+            </li>
+            <li>
+                <a href="#"><div class="page_top_text">请登陆</div></a>
+            </li>
+            <li>
+                <a href="#"><div class="page_top_text">免费注册</div></a>
+            </li>
+            <li class="page_top_text">交易时间：9:00-17:00</li>
+        </ul>
+        <ul class="page_top_right">
+            <li>
+                <div class="float_l page_top_text">我的淘炉料</div>
+                <img class="float_l page_top_icon" src="img/icon01.png">
+            </li>
+            <li>
+                <img class="float_l page_top_phone" src="img/icon_phone.png">
+                <div class="float_l page_top_text">手机淘炉料</div>
+                <img class="float_l page_top_icon" src="img/icon01.png">
+            </li>
+            <li>
+                <div class="float_l page_top_text">在线客服</div>
+                <img class="float_l page_top_icon" src="img/icon01.png">
+            </li>
+        </ul>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+<div class="bg_gray2">
+    <!-- 顶部logo 搜索 -->
+    <div class="index_top wrap">
+        <div class="float_l logo"><img src="img/logo.png"></div>
+
+        <div class="float_l index_top_search">
+            <!-- <form method="get" name="" action="http://www.17sucai.com/" target="_blank"> -->
+                <div id="searchTxt" class="searchTxt " onMouseOver="this.className='searchTxt searchTxtHover';" onMouseOut="this.className='searchTxt';">
+                    <div class="float_l searchMenu">
+                        <div class="its_type">
+                            <div class="float_l searchSelected" id="searchSelected">品名</div>
+                            <img class="float_l its_type_icon" src="img/icon02.png">
+                            <div class="clearfix"></div>
+                        </div>
+                        <div style="display:none;" class="searchTab " id="searchTab">
+                            <ul>
+                                <li>一号</li>
+                                <li>二号</li>
+                                <li>三号</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <input class="float_l index_top_input" name="w" type="text" placeholder="请输入关键词查询" />
+                    <div class="float_l searchBtn ">
+                        <button id="searchBtn" class="index_top_btn" type="submit">
+                            <img class="float_l itb_icon" src="img/icon_search.png">
+                            <div class="float_l itb_text">搜索</div>
+                            <div class="clearfix"></div>
+                        </button>
+                    </div>
+                </div>
+            <!-- </form> -->
+        </div>
+
+        <div class="float_l index_top_contact">
+            <div>
+                <img class="float_l itc_icon" src="img/icon_telephone.png">
+                <div class="float_l itc_text">服务热线</div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="itc_phone">0519 8362 1929</div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="wrap">
+        <!-- 分类导航 -->
+        <div class="top_type_box">
+            <div class="float_l top_type_all">
+                <img class="float_l top_type_all_icon" src="img/icon_all.png">
+                <div class="float_l top_type_all_text">全部商品分类</div>
+            </div>
+            <ul class="float_l top_nav">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="#">炉料商城</a></li>
+                <li><a href="share.html">共享资源</a></li>
+                <li><a href="ll-finance.html">炉料金融</a></li>
+                <li><a href="network.html">营销网络</a></li>
+                <li><a href="#">关于我们</a></li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
+<div class="finance_banner">
+    <img src="img/banner_full.png">
+    <div class="finance_banner_content">
+        <div class="finance_banner_text1">专属融资模式</div>
+        <div class="finance_banner_text2"> 覆盖供应链上下游</div>
+    </div>
+</div>
+
+<!-- 为什么选择 -->
+<div class="why_choose">
+    <div class="why_choose_content">
+        <div class="why_choose_title">为什么选择炉料金融</div>
+        <div class="why_choose_text">淘炉料网作为专的冶金大宗交易流通平台，基于真实交易，为您提供最贴近需求的供应链金融解决方案。覆盖供应链上下游，提供丰富融资模式，让金融服务更高效、更便捷、更可靠、更安全。
+        <br>基于真实交易，满足迫切资金融通需求。
+        <br>解决客户库存的资金占用问题，盘活备库资金。
+        <br>满足因采购货物需要垫付预付款、在途资金的客户。</div>
+        <div class="why_choose_button margin_t36">
+            <a href="javascript:void(0)">
+                <div class="float_l wcb_text">立即申请</div>
+                <img class="float_r wcb_icon" src="img/icon14.png">
+                <div class="clearfix"></div>
+            </a>
+        </div>
+    </div>
+    <img class="float_r why_choose_img" src="img/finance/jr_img01.png">
+    <div class="clearfix"></div>
+</div>
+
+<!-- 三块内容 -->
+<ul class="finance_trait margin_b100">
+    <li>
+        <img src="img/finance/td1.png">
+        <div class="finance_trait_content">
+            <img class="finance_trait_icon" src="img/finance/icon_td1.png">
+            <div class="finance_trait_text">代订融</div>
+        </div>
+
+        <div class="finance_hover">
+            <div class="finance_hover_bg_box">
+                <img class="finance_hover_bg" src="img/finance/td-hover.png">
+                <div class="finance_hover_content">
+                    <div class="fhc_title">
+                        <img class="float_l fhc_title_icon" src="img/finance/icon_td1.png">
+                        <div class="float_l fhc_title_text">代订融</div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="fhc_text">客户委托淘炉料网进行个性化备货（如有代理采购需支付保证金），货物由中拓控货。客户在协议约定期限内按需分批付款提货，客户支付一定资金服务费。</div>
+                </div>
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <img src="img/finance/td2.png">
+        <div class="finance_trait_content">
+            <img class="finance_trait_icon" src="img/finance/icon_td2.png">
+            <div class="finance_trait_text">分批融</div>
+        </div>
+
+        <div class="finance_hover">
+            <div class="finance_hover_bg_box">
+                <img class="finance_hover_bg" src="img/finance/td-hover.png">
+                <div class="finance_hover_content">
+                    <div class="fhc_title">
+                        <img class="float_l fhc_title_icon" src="img/finance/icon_td2.png">
+                        <div class="float_l fhc_title_text">分批融</div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="fhc_text">客户委托淘炉料网进行个性化备货（如有代理采购需支付保证金），货物由中拓控货。客户在协议约定期限内按需分批付款提货，客户支付一定资金服务费。</div>
+                </div>
+            </div>
+        </div>
+    </li>
+
+    <li>
+        <img src="img/finance/td3.png">
+        <div class="finance_trait_content">
+            <img class="finance_trait_icon" src="img/finance/icon_td3.png">
+            <div class="finance_trait_text">库存融</div>
+        </div>
+
+        <div class="finance_hover">
+            <div class="finance_hover_bg_box">
+                <img class="finance_hover_bg" src="img/finance/td-hover.png">
+                <div class="finance_hover_content">
+                    <div class="fhc_title">
+                        <img class="float_l fhc_title_icon" src="img/finance/icon_td3.png">
+                        <div class="float_l fhc_title_text">库存融</div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="fhc_text">客户委托淘炉料网进行个性化备货（如有代理采购需支付保证金），货物由中拓控货。客户在协议约定期限内按需分批付款提货，客户支付一定资金服务费。</div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <div class="clearfix"></div>
+</ul>
+
+
+<!-- 申请流程 tab切换 -->
+<div class="wrap apply_process">
+    <div class="apply_process_title">申请流程</div>
+
+    <div>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs process_tab" role="tablist">
+            <div class="process_tab_border"></div>
+            <li role="presentation " class="active">
+                <a href="#process1" aria-controls="process1" role="tab" data-toggle="tab">
+                    <img class="float_l process_tab_icon" src="img/finance/icon_td4.png">
+                    <div class="float_l process_tab_text">代订融</div>
+                    <div class="clearfix"></div>
+                </a>
+            </li>
+            <div class="process_tab_border"></div>
+            <li role="presentation ">
+                <a href="#process2" aria-controls="process2" role="tab" data-toggle="tab">
+                    <img class="float_l process_tab_icon" src="img/finance/icon_td5.png">
+                    <div class="float_l process_tab_text">分批融</div>
+                    <div class="clearfix"></div>
+                </a>
+            </li>
+            <div class="process_tab_border"></div>
+            <li role="presentation ">
+                <a href="#process3" aria-controls="process3" role="tab" data-toggle="tab">
+                    <img class="float_l process_tab_icon" src="img/finance/icon_td6.png">
+                    <div class="float_l process_tab_text">库存融</div>
+                    <div class="clearfix"></div>
+                </a>
+            </li>
+            <div class="process_tab_border"></div>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content process_tab_content">
+            <div role="tabpanel" class="tab-pane active" id="process1">
+                <ul class="process_tab_list">
+                    <li>
+                        <img class="float_l ptl_icon" src="img/finance/number1.png">
+                        <div class="float_l ptl_text">客户向淘炉料网提出融资申请，并与淘炉料网签订代理采购合作协议；</div>
+                        <div class="clearfix"></div>
+                    </li>
+                    <li>
+                        <img class="float_l ptl_icon" src="img/finance/number2.png">
+                        <div class="float_l ptl_text">客户向淘炉料网支付规定比例的保证金；</div>
+                        <div class="clearfix"></div>
+                    </li>
+                </ul>
+                <ul class="process_tab_contact">
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img class="float_l ptc_icon" src="img/finance/icon_contact1.png">
+                            <div class="float_l ptc_text font_number_style">0519 8362 1929</div>
+                            <div class="clearfix"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img class="float_l ptc_icon" src="img/finance/icon_contact2.png">
+                            <div class="float_l ptc_text">在线咨询</div>
+                            <div class="clearfix"></div>
+                        </a>
+                    </li>
+                    <div class="why_choose_button float_r">
+                        <a href="javascript:void(0)">
+                            <div class="float_l wcb_text">立即申请</div>
+                            <img class="float_r wcb_icon" src="img/icon14.png">
+                            <div class="clearfix"></div>
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="process2">
+                <ul class="process_tab_list">
+                    <li>
+                        <img class="float_l ptl_icon" src="img/finance/number1.png">
+                        <div class="float_l ptl_text">客户向淘炉料网提出融资申请，并与淘炉料网签订代理采购合作协议；</div>
+                        <div class="clearfix"></div>
+                    </li>
+                    <li>
+                        <img class="float_l ptl_icon" src="img/finance/number2.png">
+                        <div class="float_l ptl_text">客户向淘炉料网支付规定比例的保证金；</div>
+                        <div class="clearfix"></div>
+                    </li>
+                    <li>
+                        <img class="float_l ptl_icon" src="img/finance/number3.png">
+                        <div class="float_l ptl_text">淘炉料向供应商支付货款；</div>
+                        <div class="clearfix"></div>
+                    </li>
+                    <li>
+                        <img class="float_l ptl_icon" src="img/finance/number4.png">
+                        <div class="float_l ptl_text">客户向淘炉料付款提货并支付服务费。</div>
+                        <div class="clearfix"></div>
+                    </li>
+                </ul>
+                <ul class="process_tab_contact">
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img class="float_l ptc_icon" src="img/finance/icon_contact1.png">
+                            <div class="float_l ptc_text font_number_style">0519 8362 1929</div>
+                            <div class="clearfix"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img class="float_l ptc_icon" src="img/finance/icon_contact2.png">
+                            <div class="float_l ptc_text">在线咨询</div>
+                            <div class="clearfix"></div>
+                        </a>
+                    </li>
+                    <div class="why_choose_button float_r">
+                        <a href="javascript:void(0)">
+                            <div class="float_l wcb_text">立即申请</div>
+                            <img class="float_r wcb_icon" src="img/icon14.png">
+                            <div class="clearfix"></div>
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="process3">
+                <ul class="process_tab_list">
+                    <li>
+                        <img class="float_l ptl_icon" src="img/finance/number1.png">
+                        <div class="float_l ptl_text">客户向淘炉料网提出融资申请，并与淘炉料网签订代理采购合作协议；</div>
+                        <div class="clearfix"></div>
+                    </li>
+                </ul>
+                <ul class="process_tab_contact">
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img class="float_l ptc_icon" src="img/finance/icon_contact1.png">
+                            <div class="float_l ptc_text font_number_style">0519 8362 1929</div>
+                            <div class="clearfix"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img class="float_l ptc_icon" src="img/finance/icon_contact2.png">
+                            <div class="float_l ptc_text">在线咨询</div>
+                            <div class="clearfix"></div>
+                        </a>
+                    </li>
+                    <div class="why_choose_button float_r">
+                        <a href="javascript:void(0)">
+                            <div class="float_l wcb_text">立即申请</div>
+                            <img class="float_r wcb_icon" src="img/icon14.png">
+                            <div class="clearfix"></div>
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 如何申请融资服务 -->
+<div class="how_apply margin_b100">
+    <img class="how_apply_bg" src="img/finance/apply_banner.png">
+    <div class="how_apply_content">
+        <div class="how_apply_title">如何申请融资服务</div>
+        <div class="how_apply_cue">我们将根据您的需求为您量身打造供应链金融解决方案</div>
+        <ul class="how_apply_step">
+            <li>
+                <img class="has_img" src="img/finance/icon_how1.png">
+                <div class="has_text">提交申请</div>
+            </li>
+
+              <li><img class="has_icon" src="img/finance/icon_how5.png"></li>
+
+            <li>
+                <img class="has_img" src="img/finance/icon_how2.png">
+                <div class="has_text">受理审核</div>
+            </li>
+
+              <li><img class="has_icon" src="img/finance/icon_how5.png"></li>
+
+            <li>
+                <img class="has_img" src="img/finance/icon_how3.png">
+                <div class="has_text">签订协议</div>
+            </li>
+
+              <li><img class="has_icon" src="img/finance/icon_how5.png"></li>
+
+            <li>
+                <img class="has_img" src="img/finance/icon_how4.png">
+                <div class="has_text">获取融资</div>
+            </li>
+            <div class="clearfix"></div>
+        </ul>
+    </div>
+</div>
+
+<!-- 申请融资服务 -->
+<div class="wrap apply_service">
+    <div class="apply_service_title">申请融资服务</div>
+    <ul class="apply_service_step">
+        <li class="ass_w25 ass_now">
+            <div class="ass_position1">
+                <div class="ass_text">填写资料</div>
+                <div class="ass_number">1</div>
+            </div>
+        </li>
+        <li class="ass_w50 ">
+            <div class="ass_position2">
+                <div class="ass_text">等待审核</div>
+                <div class="ass_number">2</div>
+            </div>
+        </li>
+        <li class="ass_w25 ">
+            <div class="ass_position3">
+                <div class="ass_text">完成</div>
+                <div class="ass_number">3</div>
+            </div>
+        </li>
+        <div class="clearfix"></div>
+    </ul>
+    <ul class="apply_service_input">
+        <li class="asi_w1" style="position: relative;">
+            <div class="asi_title">融资意向<span>*</span></div>
+            <input class="asi_input" type="text" placeholder="代订融">
+            <img class="asi_down" src="img/icon16.png">
+        </li>
+        <li class="asi_w2" >
+            <div class="asi_title">公司名称<span>*</span></div>
+            <input class="asi_input" type="text" placeholder="必填，请输入公司名称">
+        </li>
+        <li class="asi_w1" >
+            <div class="asi_title">联系人<span>*</span></div>
+            <input class="asi_input" type="text" placeholder="必填，请输入联系人">
+        </li>
+        <li class="asi_w2" >
+            <div class="asi_title">采购意向<span>*</span></div>
+            <input class="asi_input" type="text" >
+        </li>
+        <li class="asi_w1" >
+            <div class="asi_title">联系电话<span>*</span></div>
+            <input class="asi_input" type="text" placeholder="必填，请输入联系电话">
+        </li>
+        <li class="asi_w3" >
+            <div class="asi_title">备注<span>*</span></div>
+            <textarea class="asi_input2"></textarea>
+        </li>
+        <div class="clearfix"></div>
+    </ul>
+    <button class="apply_service_btn">立即申请</button>
+</div>
+
+
+
+
+<div class="empty_space"></div>
+
+
+<div class="bg_white" style="border-bottom: 2px solid #fdfdfd;">
+    <div class="wrap">
+        <ul class="bottom_service">
+            <li>
+                <img class="float_l bottom_service_icon" src="img/bottom_icon1.png">
+                <div class="float_l bottom_service_text">厂商直供<br>货源真实</div>
+                <div class="clearfix"></div>
+            </li>
+            <li>
+                <img class="float_l bottom_service_icon" src="img/bottom_icon2.png">
+                <div class="float_l bottom_service_text">多仓直发<br>配送无忧</div>
+                <div class="clearfix"></div>
+            </li>
+            <li>
+                <img class="float_l bottom_service_icon" src="img/bottom_icon3.png">
+                <div class="float_l bottom_service_text">品种多样<br>规格齐全</div>
+                <div class="clearfix"></div>
+            </li>
+            <li>
+                <img class="float_l bottom_service_icon" src="img/bottom_icon4.png">
+                <div class="float_l bottom_service_text">服务至上<br>售后保障</div>
+                <div class="clearfix"></div>
+            </li>
+
+            <li>
+                <img class="float_l bottom_service_icon" src="img/bottom_icon5.png">
+                <div class="float_l bottom_service_text">真实交易<br>购货无忧</div>
+                <div class="clearfix"></div>
+            </li>
+            <div class="clearfix"></div>
+        </ul>
+
+        <div class="bottom_contact_box">
+            <ul class="bottom_contact bc_help">
+                <li>
+                    <div class="bc_help_a">帮助中心</div>
+                    <div class="bc_help_b">
+                        <div class="bc_help_content"><a href="">关于我们</a></div>
+                        <div class="bc_help_content"><a href="">购买指南</a></div>
+                        <div class="bc_help_content"><a href="">申请发票</a></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="bc_help_a">帮助中心</div>
+                    <div class="bc_help_b">
+                        <div class="bc_help_content"><a href="">关于我们</a></div>
+                        <div class="bc_help_content"><a href="">购买指南</a></div>
+                        <div class="bc_help_content"><a href="">申请发票</a></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="bc_help_a">帮助中心</div>
+                    <div class="bc_help_b">
+                        <div class="bc_help_content"><a href="">关于我们</a></div>
+                        <div class="bc_help_content"><a href="">购买指南</a></div>
+                        <div class="bc_help_content"><a href="">申请发票</a></div>
+                    </div>
+                </li>
+                <div class="clearfix"></div>
+            </ul>
+
+            <div class="bottom_contact bc_phone">
+                <div class="bc_phone_title">全国服务热线</div>
+                <div class="bc_phone_number">0519 8362 1929</div>
+                <ul class="bc_phone_button">
+                    <li class="margin_r30">
+                        <a href="javascript:void(0)">
+                            <img class="bc_phone_icon" src="img/icon06.png">
+                            <div class="bc_phone_cue">在线客服</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img class="bc_phone_icon" src="img/icon07.png">
+                            <div class="bc_phone_cue">用户反馈</div>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                </ul>
+            </div>
+
+            <ul class="bottom_contact bc_scan">
+                <li>
+                    <div class="bc_scan_title">淘炉料官方微信</div>
+                    <img class="bc_scan_img" src="img/scan/scan_img1.png">
+                    <div class="bc_scan_cue">扫描上方二维码</div>
+                </li>
+                <li>
+                    <div class="bc_scan_title">淘炉料手机APP</div>
+                    <img class="bc_scan_img" src="img/scan/scan_img2.png">
+                    <div class="bc_scan_cue">扫描上方二维码</div>
+                </li>
+                <div class="clearfix"></div>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
+<div class="bg_gray index_bottom_padding">
+    <div class="wrap">
+        <ul class="bottom_nav">
+            <li><a href="">关于我们</a></li>
+            <li><a href="">帮助中心</a></li>
+            <li><a href="">售后服务</a></li>
+            <li><a href="">配送与验收</a></li>
+            <li><a href="">商务合作</a></li>
+            <li><a href="">企业采购</a></li>
+            <li><a href="">开放平台</a></li>
+            <li><a href="">搜索推荐</a></li>
+            <li><a href="">友情链接</a></li>
+            <div class="clearfix"></div>
+        </ul>
+        <div class="bottom_text">淘炉料网 www.taoluwang.com COPYRIGHT © 2017-2027&nbsp;&nbsp;&nbsp;&nbsp;苏ICP备 13013915号-3 ICP证：沪B2-20140148</div>
+        <div class="bottom_img">
+            <img src="img/bottom/b1.png">
+            <img src="img/bottom/b2.png">
+            <img src="img/bottom/b3.png">
+            <img src="img/bottom/b4.png">
+            <img src="img/bottom/b5.png">
+            <img src="img/bottom/b6.png">
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- *** -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+<script src="js/holder.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+
+
+<!-- 顶部输入框 -->
+<!-- <script type="text/javascript" src="js/jquery-1.7.min.js"></script> -->
+<script type="text/javascript">
+    $(function(){
+        $("#searchSelected").click(function(){ 
+            $("#searchTab").show();
+            $(this).addClass("searchOpen");
+        });
+
+        $("#searchTab li").click(function(){
+            $("#searchSelected").html($(this).html());
+            $("#searchTab").hide();
+            $("#searchSelected").removeClass("searchOpen");
+        });
+    });
+</script>
+
+
+<!-- 默认排序 -->
+<script>
+// 点击更换背景色
+$(".share_sequence_button li").click(
+    function(){
+        $(".share_sequence_button li").removeClass("share_sequence_bg")
+        $(this).addClass("share_sequence_bg")
+    }
+)
+</script>
+<script>
+// 点击更换字体颜色
+$(".share_sequence_button .share_sequence_title").click(
+    function(){
+        $(".share_sequence_button .share_sequence_title").removeClass("share_sequence_color")
+        $(this).addClass("share_sequence_color")
+    }
+)
+</script>
+
+
+<!-- 底部三块经过显示内容 -->
+<script>
+    $(".finance_trait li") .mouseenter(function(){
+        $(this).find(".finance_trait_content").css('display','none')
+    });
+    $(".finance_trait li") .mouseleave(function(){
+        $(this).find(".finance_trait_content").css('display','block')
+    });
+
+    $(".finance_trait li") .mouseenter(function(){
+        $(this).find(".finance_hover").css('display','block')
+    });
+    $(".finance_trait li") .mouseleave(function(){
+        $(this).find(".finance_hover").css('display','none')
+    });
+</script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

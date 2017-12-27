@@ -1,0 +1,1800 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>行通网</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <script src="js/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- 分类导航 轮播 -->
+    <!-- 引入base.css -->
+    <link rel="stylesheet" type="text/css" href="css/type/base.css">
+    <link rel="stylesheet" type="text/css" href="css/type/navjd.css">
+    <!-- 活动图片轮播样式 -->
+    <link rel="stylesheet" href="css/slide.css">
+    
+</head>
+<body style="background: #f7f7f7;">
+
+<!-- 页面最顶部 -->
+<div class="page_top">
+    <div class="wrap">
+        <ul class="page_top_left">
+            <li>
+                <a href="index.html">
+                    <img class="float_l back_index_icon" src="img/icon_index.png">
+                    <div class="float_l page_top_text">淘炉料首页</div>
+                </a>
+            </li>
+            <li>
+                <div class="page_top_text">欢迎来淘炉料！</div>
+            </li>
+            <li>
+                <a href="#"><div class="page_top_text">请登陆</div></a>
+            </li>
+            <li>
+                <a href="#"><div class="page_top_text">免费注册</div></a>
+            </li>
+            <li class="page_top_text">交易时间：9:00-17:00</li>
+        </ul>
+        <ul class="page_top_right">
+            <li>
+                <div class="float_l page_top_text">我的淘炉料</div>
+                <img class="float_l page_top_icon" src="img/icon01.png">
+            </li>
+            <li>
+                <img class="float_l page_top_phone" src="img/icon_phone.png">
+                <div class="float_l page_top_text">手机淘炉料</div>
+                <img class="float_l page_top_icon" src="img/icon01.png">
+            </li>
+            <li>
+                <div class="float_l page_top_text">在线客服</div>
+                <img class="float_l page_top_icon" src="img/icon01.png">
+            </li>
+        </ul>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+<!-- 顶部logo 搜索 -->
+<div class="index_top wrap">
+    <div class="float_l logo"><img src="img/logo.png"></div>
+
+    <div class="float_l index_top_search">
+        <!-- <form method="get" name="" action="http://www.17sucai.com/" target="_blank"> -->
+            <div id="searchTxt" class="searchTxt " onMouseOver="this.className='searchTxt searchTxtHover';" onMouseOut="this.className='searchTxt';">
+                <div class="float_l searchMenu">
+                    <div class="its_type">
+                        <div class="float_l searchSelected" id="searchSelected">品名</div>
+                        <img class="float_l its_type_icon" src="img/icon02.png">
+                        <div class="clearfix"></div>
+                    </div>
+                    <div style="display:none;" class="searchTab " id="searchTab">
+                        <ul>
+                            <li>一号</li>
+                            <li>二号</li>
+                            <li>三号</li>
+                        </ul>
+                    </div>
+                </div>
+                <input class="float_l index_top_input" name="w" type="text" placeholder="请输入关键词查询" />
+                <div class="float_l searchBtn ">
+                    <button id="searchBtn" class="index_top_btn" type="submit">
+                        <img class="float_l itb_icon" src="img/icon_search.png">
+                        <div class="float_l itb_text">搜索</div>
+                        <div class="clearfix"></div>
+                    </button>
+                </div>
+            </div>
+        <!-- </form> -->
+    </div>
+
+    <div class="float_l index_top_contact">
+        <div>
+            <img class="float_l itc_icon" src="img/icon_telephone.png">
+            <div class="float_l itc_text">服务热线</div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="itc_phone">0519 8362 1929</div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+
+
+<div class="wrap">
+    <!-- 分类导航 -->
+    <div class="top_type_box">
+        <div class="float_l top_type_all">
+            <img class="float_l top_type_all_icon" src="img/icon_all.png">
+            <div class="float_l top_type_all_text">全部商品分类</div>
+        </div>
+        <ul class="float_l top_nav">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="#">炉料商城</a></li>
+            <li><a href="share.html">共享资源</a></li>
+            <li><a href="ll-finance.html">炉料金融</a></li>
+            <li><a href="network.html">营销网络</a></li>
+            <li><a href="#">关于我们</a></li>
+        </ul>
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="top_type_bg">
+        <div class="fs_col1">
+            <div class="cate">
+                <ul class="cate_menu">
+                    <li class="cate_menu_item">
+                        <img class="float_l type_left_icon" src="img/classification_1.png">
+                        <div class="float_l type_left_name">生铁</div>
+                        <img class="float_r type_left_arrow" src="img/icon03.png">
+                    </li>
+                    <li class="cate_menu_item">
+                        <img class="float_l type_left_icon" src="img/classification_2.png">
+                        <div class="float_l type_left_name">废钢</div>
+                        <img class="float_r type_left_arrow" src="img/icon03.png">
+                    </li>
+                    <li class="cate_menu_item">
+                        <img class="float_l type_left_icon" src="img/classification_3.png">
+                        <div class="float_l type_left_name">增碳剂</div>
+                        <img class="float_r type_left_arrow" src="img/icon03.png">
+                    </li>
+                    <li class="cate_menu_item">
+                        <img class="float_l type_left_icon" src="img/classification_4.png">
+                        <div class="float_l type_left_name">铁合金</div>
+                        <img class="float_r type_left_arrow" src="img/icon03.png">
+                    </li>
+                    <li class="cate_menu_item">
+                        <img class="float_l type_left_icon" src="img/classification_5.png">
+                        <div class="float_l type_left_name">孕育剂</div>
+                        <img class="float_r type_left_arrow" src="img/icon03.png">
+                    </li>
+                    <li class="cate_menu_item">
+                        <img class="float_l type_left_icon" src="img/classification_6.png">
+                        <div class="float_l type_left_name">其它辅料</div>
+                        <img class="float_r type_left_arrow" src="img/icon03.png">
+                    </li>
+                </ul>  
+                <div class="navfloat">
+                    <ul>
+                        <li class="type_open first">
+                            <div class="type_open_left">
+                                <div class="tol_info">
+                                    <div class="float_l tol_title">球铁</div>
+                                    <div class="float_l tol_content_box">
+                                        <div class="tol_content"><a href="">Q8</a></div>
+                                        <div class="tol_content"><a href="">Q10</a></div>
+                                        <div class="tol_content"><a href="">Q12</a></div>
+                                        <div class="tol_content"><a href="">Q16</a></div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+
+                                <div class="tol_info">
+                                    <div class="float_l tol_title">铸铁</div>
+                                    <div class="float_l tol_content_box">
+                                        <div class="tol_content"><a href="">低锰八角</a></div>
+                                        <div class="tol_content"><a href="">中锰八角</a></div>
+                                        <div class="tol_content"><a href="">低锰方块</a></div>
+                                        <div class="tol_content"><a href="">中锰方块</a></div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+
+                                <div class="tol_info">
+                                    <div class="float_l tol_title">炼钢铁</div>
+                                    <div class="float_l tol_content_box">
+                                        <div class="tol_content"><a href="">L7</a></div>
+                                        <div class="tol_content"><a href="">L8</a></div>
+                                        <div class="tol_content"><a href="">L10</a></div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="type_open_right">
+                                <img src="img/company1.jpg">
+                                <img src="img/company2.jpg">
+                                <img src="img/company3.jpg">
+                                <img src="img/company4.jpg">
+                                <img src="img/company5.jpg">
+                                <img src="img/company6.jpg">
+                                <img src="img/company7.jpg">
+                                <img src="img/company8.jpg">
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+                        <li class="type_open">
+                            <div class="type_open_left">
+                                <div class="tol_info">
+                                    <div class="float_l tol_title">二二二</div>
+                                    <div class="float_l tol_content_box">
+                                        <div class="tol_content"><a href="">Q8</a></div>
+                                        <div class="tol_content"><a href="">Q10</a></div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+
+                            <div class="type_open_right">
+                                <img src="img/company1.jpg">
+                                <img src="img/company2.jpg">
+                                <img src="img/company3.jpg">
+                                <img src="img/company4.jpg">
+                                <img src="img/company5.jpg">
+                                <img src="img/company6.jpg">
+                                <img src="img/company7.jpg">
+                                <img src="img/company8.jpg">
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+
+                        <li class="type_open">
+                            <div class="type_open_left">
+                                <div class="tol_info">
+                                    <div class="float_l tol_title">三三三三</div>
+                                    <div class="float_l tol_content_box">
+                                        <div class="tol_content"><a href="">Q8</a></div>
+                                        <div class="tol_content"><a href="">Q10</a></div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="type_open_right">
+                                <img src="img/company1.jpg">
+                                <img src="img/company2.jpg">
+                                <img src="img/company3.jpg">
+                                <img src="img/company4.jpg">
+                                <img src="img/company5.jpg">
+                                <img src="img/company6.jpg">
+                                <img src="img/company7.jpg">
+                                <img src="img/company8.jpg">
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+
+                        <li class="type_open">
+                            <div class="type_open_left">
+                                <div class="tol_info">
+                                    <div class="float_l tol_title">第四个</div>
+                                    <div class="float_l tol_content_box">
+                                        <div class="tol_content"><a href="">Q8</a></div>
+                                        <div class="tol_content"><a href="">Q10</a></div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="type_open_right">
+                                <img src="img/company1.jpg">
+                                <img src="img/company2.jpg">
+                                <img src="img/company3.jpg">
+                                <img src="img/company4.jpg">
+                                <img src="img/company5.jpg">
+                                <img src="img/company6.jpg">
+                                <img src="img/company7.jpg">
+                                <img src="img/company8.jpg">
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+
+                        <li class="type_open">
+                            <div class="type_open_left">
+                                <div class="tol_info">
+                                    <div class="float_l tol_title">五五</div>
+                                    <div class="float_l tol_content_box">
+                                        <div class="tol_content"><a href="">Q8</a></div>
+                                        <div class="tol_content"><a href="">Q10</a></div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="type_open_right">
+                                <img src="img/company1.jpg">
+                                <img src="img/company2.jpg">
+                                <img src="img/company3.jpg">
+                                <img src="img/company4.jpg">
+                                <img src="img/company5.jpg">
+                                <img src="img/company6.jpg">
+                                <img src="img/company7.jpg">
+                                <img src="img/company8.jpg">
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+
+                        <li class="type_open">
+                            <div class="type_open_left">
+                                <div class="tol_info">
+                                    <div class="float_l tol_title">六六</div>
+                                    <div class="float_l tol_content_box">
+                                        <div class="tol_content"><a href="">Q8</a></div>
+                                        <div class="tol_content"><a href="">Q10</a></div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="type_open_right">
+                                <img src="img/company1.jpg">
+                                <img src="img/company2.jpg">
+                                <img src="img/company3.jpg">
+                                <img src="img/company4.jpg">
+                                <img src="img/company5.jpg">
+                                <img src="img/company6.jpg">
+                                <img src="img/company7.jpg">
+                                <img src="img/company8.jpg">
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+                    </ul>
+                </div>
+            <!-- navfloat结束 -->
+            </div>
+        </div>
+        <!-- col1结束 -->
+        <div class="fs_col2 ">
+            <div class="slider">
+            <!-- 轮播图开始 -->
+                <div class="slider_main">
+                    <ul class="picban">
+                        <li><img src="img/banner1.jpg" alt=""></li>
+                        <li><img src="img/banner2.jpg" alt=""></li>
+                    </ul>
+                    <ul class="num_btn">
+                    </ul><!--banner图片对应小点-->   
+                    <!-- <div class="btnslide left"></div> -->
+                    <!-- <div class="btnslide right"></div> -->
+                </div>
+            </div>
+            <!-- slide结束 -->
+        </div>
+        <!-- col2结束 -->             
+        <div class="fs_col3">
+            <div class="banner_info">
+                <div class="banner_info_personal">
+                    <div class="bip_data">
+                        <div class="float_l bip_portrait"><img src="img/img_portrait.jpg"></div>
+                        <div class="float_l bip_text">
+                            Hi， <span>******</span>
+                                <br>欢迎来淘炉料！
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <ul class="bip_login">
+                        <li><a href="">登陆</a></li>
+                        <li class="bip_login_line">/</li>
+                        <li><a href="">注册</a></li>
+                    </ul>
+                </div>
+
+                <div class="banner_buy_box">
+                    <div class="banner_buy_title">
+                        <div class="banner_buy_title_text">买家入口</div>
+                    </div>
+                    <ul class="banner_buy_enter">
+                        <li>
+                            <a href="">
+                                <img class="bbe_icon" src="img/icon_buger01.png">
+                                <div class="bbe_text">下单流程</div>
+                            </a>
+                        </li>
+                        <div class="bbe_line"></div>
+                        <li>
+                            <a href="">
+                                <img class="bbe_icon" src="img/icon_buger02.png">
+                                <div class="bbe_text">找现货</div>
+                            </a>
+                        </li>
+                        <div class="bbe_line"></div>
+                        <li>
+                            <a href="">
+                                <img class="bbe_icon" src="img/icon_buger03.png">
+                                <div class="bbe_text">在线客服</div>
+                            </a>
+                        </li>
+                        <div class="clearfix"></div>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="banner_info2">
+                <div class="banner_info2_cue">写下您的真实需求！包括厂家，型号，规格等。收到后客服会立即给你回电确认，剩下的就交给我们</div>
+                <div class="banner_info2_phone">
+                    <div class="float_l bi2_contact">联系电话</div>
+                    <input class="float_l bi2_input" type="" name="">
+                    <div class="clearfix"></div>
+                </div>
+                <div class="banner_right_button">
+                    <a href=""><button class="margin_r12">我要找货</button></a>
+                    <a href=""><button>我要供货</button></a>
+                </div>
+            </div>
+        </div>
+        <!-- col3结束 -->
+        <div class="clearfix"></div>
+    </div>
+
+
+    <!-- 合作厂商 -->
+    <div class="cooperation_box">
+        <div class="cooperation_title_box">
+            <div class="float_l cooperation_title">合作厂家</div>
+            <div class="float_r ">
+                <a href="">
+                    <div class="float_l cooperation_more">更多厂家</div>
+                    <img class="float_l cooperation_more_icon" src="img/icon04.png">
+                </a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        
+        <div class="cooperation_content_box">
+            <img class="prev" src="img/arrow_left.png">
+            <div>
+                <dl id="roll" class="cooperation_content_img">
+                    <dd><img src="img/cooperation/img1.jpg"/></dd>
+                    <dd><img src="img/cooperation/img2.jpg"/></dd>
+                    <dd><img src="img/cooperation/img3.jpg"/></dd>
+                    <dd><img src="img/cooperation/img4.jpg"/></dd>
+                    <dd><img src="img/cooperation/img1.jpg"/></dd>
+                    <dd><img src="img/cooperation/img2.jpg"/></dd>
+                    <dd><img src="img/cooperation/img3.jpg"/></dd>
+                    <dd><img src="img/cooperation/img4.jpg"/></dd>
+                </dl>
+            </div>
+            <img class="next" src="img/arrow_right.png">
+        </div>
+    </div>
+
+    <!-- 淘炉指数 -->
+    <div class="data_box">
+        <div class="cooperation_title_box">
+            <div class="float_l cooperation_title">淘炉指数</div>
+            <ul class="float_l nav nav-tabs data_nav noborder" role="tablist">
+                <li role="tabpanel" class="active"><a href="#first" aria-controls="first" role="tab" data-toggle="tab">生铁</a></li>
+                <li role="tabpanel"><a href="#second" aria-controls="second" role="tab" data-toggle="tab">废钢</a></li>
+                <li role="tabpanel"><a href="#third" aria-controls="third" role="tab" data-toggle="tab">增碳剂</a></li>
+                <li role="tabpanel"><a href="#fourth" aria-controls="fourth" role="tab" data-toggle="tab">铁合金</a></li>
+                <li role="tabpanel"><a href="#fifth" aria-controls="fifth" role="tab" data-toggle="tab">孕育剂</a></li>
+                <li role="tabpanel"><a href="#sixth" aria-controls="sixth" role="tab" data-toggle="tab">其它辅料</a></li>
+            </ul>
+            <div class="float_r ">
+                <a href="">
+                    <div class="float_l cooperation_more">更多数据</div>
+                    <img class="float_l cooperation_more_icon" src="img/icon04.png">
+                </a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active data_content" id="first">
+                <div class="float_l data_content_left">
+                    <div class="tab" id="tab">
+                        <div class="data_content_title_box">
+                            <div class="float_l data_content_title">价格指导</div>
+                            <div class="tab-nav j-tab-nav">
+                                <a href="javascript:void(0);" class="current">球铁</a>
+                                <a href="javascript:void(0);">铸铁</a>
+                                <a href="javascript:void(0);">炼钢铁</a>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <!-- <div class="tab-con"> -->
+                            <div class="j-tab-con">
+                                <ul class="tab-con-item" style="display:block;">
+                                    <!-- 1 -->
+                                    <li class="float_l price_tab_content noborder_left">
+                                        <div>
+                                            <div class="float_l font_size_a">博丰生铁</div>
+                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div>
+                                            <div class="float_l font_size_a">球铁</div>
+                                            <div class="float_r">
+                                                <div class="float_l font_size_c font_color_a">3300</div>
+                                                <img class="state_icon" src="img/state_up.png">
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div>
+                                            <div class="float_l font_size_a">Z18</div>
+                                            <div class="float_r font_size_d font_color_a">+0   +0.00%</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+                                    <!-- 2 -->
+                                    <li class="float_l price_tab_content">
+                                        <div>
+                                            <div class="float_l font_size_a">博丰生铁</div>
+                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div>
+                                            <div class="float_l font_size_a">球铁</div>
+                                            <div class="float_r">
+                                                <div class="float_l font_size_c">3300</div>
+                                                <img class="state_icon" src="img/state_no.png">
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div>
+                                            <div class="float_l font_size_a">Z18</div>
+                                            <div class="float_r font_size_d">+0   +0.00%</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+                                    <!-- 3 -->
+                                    <li class="float_l price_tab_content">
+                                        <div>
+                                            <div class="float_l font_size_a">博丰生铁</div>
+                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div>
+                                            <div class="float_l font_size_a">球铁</div>
+                                            <div class="float_r">
+                                                <div class="float_l font_size_c font_color_b">3300</div>
+                                                <img class="state_icon" src="img/state_down.png">
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div>
+                                            <div class="float_l font_size_a">Z18</div>
+                                            <div class="float_r font_size_d font_color_b">+0   +0.00%</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+                                    <!-- 4 -->
+                                    <li class="float_l price_tab_content">
+                                        <div>
+                                            <div class="float_l font_size_a">博丰生铁</div>
+                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div>
+                                            <div class="float_l font_size_a">球铁</div>
+                                            <div class="float_r">
+                                                <div class="float_l font_size_c">3300</div>
+                                                <img class="state_icon" src="img/state_no.png">
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div>
+                                            <div class="float_l font_size_a">Z18</div>
+                                            <div class="float_r font_size_d">+0   +0.00%</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+                                    <!-- 5 -->
+                                    <li class="float_l price_tab_content">
+                                        <div>
+                                            <div class="float_l font_size_a">博丰生铁</div>
+                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div>
+                                            <div class="float_l font_size_a">球铁</div>
+                                            <div class="float_r">
+                                                <div class="float_l font_size_c">3300</div>
+                                                <img class="state_icon" src="img/state_no.png">
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div>
+                                            <div class="float_l font_size_a">Z18</div>
+                                            <div class="float_r font_size_d">+0   +0.00%</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+                                    <!-- 6 -->
+                                    <li class="float_l price_tab_content">
+                                        <div>
+                                            <div class="float_l font_size_a">博丰生铁</div>
+                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div>
+                                            <div class="float_l font_size_a">球铁</div>
+                                            <div class="float_r">
+                                                <div class="float_l font_size_c">3300</div>
+                                                <img class="state_icon" src="img/state_no.png">
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div>
+                                            <div class="float_l font_size_a">Z18</div>
+                                            <div class="float_r font_size_d">+0   +0.00%</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+                                    <div class="clearfix"></div>
+                                </ul>
+                                <ul class="tab-con-item">
+                                    <!-- 1 -->
+                                    <li class="float_l price_tab_content noborder_left">
+                                        <div>
+                                            <div class="float_l font_size_a">二二二</div>
+                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div>
+                                            <div class="float_l font_size_a">二二二</div>
+                                            <div class="float_r">
+                                                <div class="float_l font_size_c font_color_a">3300</div>
+                                                <img class="state_icon" src="img/state_up.png">
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div>
+                                            <div class="float_l font_size_a">Z18</div>
+                                            <div class="float_r font_size_d font_color_a">+0   +0.00%</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+                                    <!-- 2 -->
+                                    <li class="float_l price_tab_content">
+                                        <div>
+                                            <div class="float_l font_size_a">博丰生铁</div>
+                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div>
+                                            <div class="float_l font_size_a">球铁</div>
+                                            <div class="float_r">
+                                                <div class="float_l font_size_c">3300</div>
+                                                <img class="state_icon" src="img/state_no.png">
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div>
+                                            <div class="float_l font_size_a">Z18</div>
+                                            <div class="float_r font_size_d">+0   +0.00%</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+                                    <!-- 3 -->
+                                    <li class="float_l price_tab_content">
+                                        <div>
+                                            <div class="float_l font_size_a">博丰生铁</div>
+                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div>
+                                            <div class="float_l font_size_a">球铁</div>
+                                            <div class="float_r">
+                                                <div class="float_l font_size_c font_color_b">3300</div>
+                                                <img class="state_icon" src="img/state_down.png">
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div>
+                                            <div class="float_l font_size_a">Z18</div>
+                                            <div class="float_r font_size_d font_color_b">+0   +0.00%</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+                                    <!-- 4 -->
+                                    <li class="float_l price_tab_content">
+                                        <div>
+                                            <div class="float_l font_size_a">博丰生铁</div>
+                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div>
+                                            <div class="float_l font_size_a">球铁</div>
+                                            <div class="float_r">
+                                                <div class="float_l font_size_c">3300</div>
+                                                <img class="state_icon" src="img/state_no.png">
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div>
+                                            <div class="float_l font_size_a">Z18</div>
+                                            <div class="float_r font_size_d">+0   +0.00%</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+                                    <!-- 5 -->
+                                    <li class="float_l price_tab_content">
+                                        <div>
+                                            <div class="float_l font_size_a">博丰生铁</div>
+                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div>
+                                            <div class="float_l font_size_a">球铁</div>
+                                            <div class="float_r">
+                                                <div class="float_l font_size_c">3300</div>
+                                                <img class="state_icon" src="img/state_no.png">
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div>
+                                            <div class="float_l font_size_a">Z18</div>
+                                            <div class="float_r font_size_d">+0   +0.00%</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+                                    <!-- 6 -->
+                                    <li class="float_l price_tab_content">
+                                        <div>
+                                            <div class="float_l font_size_a">博丰生铁</div>
+                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div>
+                                            <div class="float_l font_size_a">球铁</div>
+                                            <div class="float_r">
+                                                <div class="float_l font_size_c">3300</div>
+                                                <img class="state_icon" src="img/state_no.png">
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div>
+                                            <div class="float_l font_size_a">Z18</div>
+                                            <div class="float_r font_size_d">+0   +0.00%</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+                                    <div class="clearfix"></div>
+                                </ul>
+                                <ul class="tab-con-item">
+                                    <!-- 1 -->
+                                    <li class="float_l price_tab_content noborder_left">
+                                        <div>
+                                            <div class="float_l font_size_a">三三</div>
+                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div>
+                                            <div class="float_l font_size_a">球铁</div>
+                                            <div class="float_r">
+                                                <div class="float_l font_size_c font_color_a">3300</div>
+                                                <img class="state_icon" src="img/state_up.png">
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div>
+                                            <div class="float_l font_size_a">Z18</div>
+                                            <div class="float_r font_size_d font_color_a">+0   +0.00%</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+                                    <!-- 2 -->
+                                    <li class="float_l price_tab_content">
+                                        <div>
+                                            <div class="float_l font_size_a">博丰生铁</div>
+                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div>
+                                            <div class="float_l font_size_a">球铁</div>
+                                            <div class="float_r">
+                                                <div class="float_l font_size_c">3300</div>
+                                                <img class="state_icon" src="img/state_no.png">
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div>
+                                            <div class="float_l font_size_a">Z18</div>
+                                            <div class="float_r font_size_d">+0   +0.00%</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+                                    <!-- 3 -->
+                                    <li class="float_l price_tab_content">
+                                        <div>
+                                            <div class="float_l font_size_a">博丰生铁</div>
+                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div>
+                                            <div class="float_l font_size_a">球铁</div>
+                                            <div class="float_r">
+                                                <div class="float_l font_size_c font_color_b">3300</div>
+                                                <img class="state_icon" src="img/state_down.png">
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div>
+                                            <div class="float_l font_size_a">Z18</div>
+                                            <div class="float_r font_size_d font_color_b">+0   +0.00%</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+                                    <!-- 4 -->
+                                    <li class="float_l price_tab_content">
+                                        <div>
+                                            <div class="float_l font_size_a">博丰生铁</div>
+                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div>
+                                            <div class="float_l font_size_a">球铁</div>
+                                            <div class="float_r">
+                                                <div class="float_l font_size_c">3300</div>
+                                                <img class="state_icon" src="img/state_no.png">
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div>
+                                            <div class="float_l font_size_a">Z18</div>
+                                            <div class="float_r font_size_d">+0   +0.00%</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+                                    <!-- 5 -->
+                                    <li class="float_l price_tab_content">
+                                        <div>
+                                            <div class="float_l font_size_a">博丰生铁</div>
+                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div>
+                                            <div class="float_l font_size_a">球铁</div>
+                                            <div class="float_r">
+                                                <div class="float_l font_size_c">3300</div>
+                                                <img class="state_icon" src="img/state_no.png">
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div>
+                                            <div class="float_l font_size_a">Z18</div>
+                                            <div class="float_r font_size_d">+0   +0.00%</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+                                    <!-- 6 -->
+                                    <li class="float_l price_tab_content">
+                                        <div>
+                                            <div class="float_l font_size_a">博丰生铁</div>
+                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div>
+                                            <div class="float_l font_size_a">球铁</div>
+                                            <div class="float_r">
+                                                <div class="float_l font_size_c">3300</div>
+                                                <img class="state_icon" src="img/state_no.png">
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div>
+                                            <div class="float_l font_size_a">Z18</div>
+                                            <div class="float_r font_size_d">+0   +0.00%</div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+                                    <div class="clearfix"></div>
+                                </ul>
+                            </div>
+                        <!-- </div> -->
+                    </div>
+                </div>
+                <div class="float_l data_content_right">
+                    <div class="data_content_title_box noborder">
+                        <div class="float_l data_content_title">价格指数</div>
+                        <!-- Nav tabs -->
+                        <ul class="float_r nav nav-tabs price_index_tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">球铁</a></li>
+                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">铸铁</a></li>
+                            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">炼铁钢</a></li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <!-- Tab panes -->
+                    <div class="tab-content price_index_content">
+                        <div role="tabpanel" class="tab-pane active" id="home">
+
+                            <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+                            <div id="main" style="width: 100%;height:234px;"></div>
+    
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="profile">铸铁</div>
+                        <div role="tabpanel" class="tab-pane" id="messages">炼铁钢</div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div role="tabpanel" class="tab-pane data_content" id="second">第二块</div>
+            <div role="tabpanel" class="tab-pane data_content" id="third">三</div>
+            <div role="tabpanel" class="tab-pane data_content" id="fourth">四</div>
+            <div role="tabpanel" class="tab-pane data_content" id="fifth">五</div>
+            <div role="tabpanel" class="tab-pane data_content" id="sixth">六</div>
+        </div>
+    </div>
+
+    <!-- 淘炉商城 -->
+    <div class="data_box">
+        <div class="float_l tl_shop_left">
+            <div class="cooperation_title_box">
+                <div class="float_l cooperation_title">淘炉商城</div>
+                <ul class="float_l nav nav-tabs data_nav noborder" role="tablist">
+                    <li role="tabpanel" class="active"><a href="#shop_first" aria-controls="shop_first" role="tab" data-toggle="tab">生铁</a></li>
+                    <li role="tabpanel"><a href="#shop_second" aria-controls="shop_second" role="tab" data-toggle="tab">废钢</a></li>
+                    <li role="tabpanel"><a href="#shop_third" aria-controls="shop_third" role="tab" data-toggle="tab">增碳剂</a></li>
+                    <li role="tabpanel"><a href="#shop_fourth" aria-controls="shop_fourth" role="tab" data-toggle="tab">铁合金</a></li>
+                    <li role="tabpanel"><a href="#shop_fifth" aria-controls="shop_fifth" role="tab" data-toggle="tab">孕育剂</a></li>
+                    <li role="tabpanel"><a href="#shop_sixth" aria-controls="shop_sixth" role="tab" data-toggle="tab">其它辅料</a></li>
+                </ul>
+                <div class="float_r ">
+                    <a href="">
+                        <div class="float_l cooperation_more">进入商城</div>
+                        <img class="float_l cooperation_more_icon" src="img/icon04.png">
+                    </a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active data_content tl_shop_content" id="shop_first">
+                    <ul class="tl_shop_type">
+                        <li class="tl_shop_Twidth_a">厂家/产地</li>
+                        <li class="tl_shop_Twidth_a">品名</li>
+                        <li class="tl_shop_Twidth_b">规格</li>
+                        <li class="tl_shop_Twidth_c">交割库</li>
+                        <li class="tl_shop_Twidth_d ">库存/吨</li>
+                        <li class="tl_shop_Twidth_e ">现金价/元</li>
+                        <li class="tl_shop_Twidth_e ">承兑价/元</li>
+                        <li class="tl_shop_Twidth_e">购买</li>
+                        <li class="tl_shop_Twidth_f">详情</li>
+                        <div class="clearfix"></div>
+                    </ul>
+                    <div class="tl_shop_parameter">
+                        <ul class="tl_shop_Pbg_a">
+                            <li class="tl_shop_Twidth_a">新兴生铁</li>
+                            <li class="tl_shop_Twidth_a">球铁</li>
+                            <li class="tl_shop_Twidth_b">Q10</li>
+                            <li class="tl_shop_Twidth_c">中途库</li>
+                            <li class="tl_shop_Twidth_d font_number_style">1000</li>
+                            <li class="tl_shop_Twidth_e font_number_style">3200</li>
+                            <li class="tl_shop_Twidth_e font_number_style tl_shop_Pcolor">3230</li>
+                            <li class="tl_shop_Twidth_e"><button class="tl_shop_Pbutton">下单</button></li>
+                            <li class="tl_shop_Twidth_f"><a href="javascript:void(0)">查看</a></li>
+                            <div class="clearfix"></div>
+                        </ul>
+                        <ul class="tl_shop_Pbg_b">
+                            <li class="tl_shop_Twidth_a">浙江</li>
+                            <li class="tl_shop_Twidth_a">废钢</li>
+                            <li class="tl_shop_Twidth_b">八角低锰压块</li>
+                            <li class="tl_shop_Twidth_c">海宁库</li>
+                            <li class="tl_shop_Twidth_d font_number_style">300</li>
+                            <li class="tl_shop_Twidth_e font_number_style">2580</li>
+                            <li class="tl_shop_Twidth_e font_number_style tl_shop_Pcolor">2610</li>
+                            <li class="tl_shop_Twidth_e"><button class="tl_shop_Pbutton">下单</button></li>
+                            <li class="tl_shop_Twidth_f"><a href="javascript:void(0)">查看</a></li>
+                            <div class="clearfix"></div>
+                        </ul>
+                        <ul class="tl_shop_Pbg_a">
+                            <li class="tl_shop_Twidth_a">新兴生铁</li>
+                            <li class="tl_shop_Twidth_a">球铁</li>
+                            <li class="tl_shop_Twidth_b">Q10</li>
+                            <li class="tl_shop_Twidth_c">中途库</li>
+                            <li class="tl_shop_Twidth_d font_number_style">1000</li>
+                            <li class="tl_shop_Twidth_e font_number_style">3200</li>
+                            <li class="tl_shop_Twidth_e font_number_style tl_shop_Pcolor">3230</li>
+                            <li class="tl_shop_Twidth_e"><button class="tl_shop_Pbutton">下单</button></li>
+                            <li class="tl_shop_Twidth_f"><a href="javascript:void(0)">查看</a></li>
+                            <div class="clearfix"></div>
+                        </ul>
+                        <ul class="tl_shop_Pbg_b">
+                            <li class="tl_shop_Twidth_a">浙江</li>
+                            <li class="tl_shop_Twidth_a">废钢</li>
+                            <li class="tl_shop_Twidth_b">八角低锰压块</li>
+                            <li class="tl_shop_Twidth_c">海宁库</li>
+                            <li class="tl_shop_Twidth_d font_number_style">300</li>
+                            <li class="tl_shop_Twidth_e font_number_style">2580</li>
+                            <li class="tl_shop_Twidth_e font_number_style tl_shop_Pcolor">2610</li>
+                            <li class="tl_shop_Twidth_e"><button class="tl_shop_Pbutton">下单</button></li>
+                            <li class="tl_shop_Twidth_f"><a href="javascript:void(0)">查看</a></li>
+                            <div class="clearfix"></div>
+                        </ul>
+                        <ul class="tl_shop_Pbg_a">
+                            <li class="tl_shop_Twidth_a">新兴生铁</li>
+                            <li class="tl_shop_Twidth_a">球铁</li>
+                            <li class="tl_shop_Twidth_b">Q10</li>
+                            <li class="tl_shop_Twidth_c">中途库</li>
+                            <li class="tl_shop_Twidth_d font_number_style">1000</li>
+                            <li class="tl_shop_Twidth_e font_number_style">3200</li>
+                            <li class="tl_shop_Twidth_e font_number_style tl_shop_Pcolor">3230</li>
+                            <li class="tl_shop_Twidth_e"><button class="tl_shop_Pbutton">下单</button></li>
+                            <li class="tl_shop_Twidth_f"><a href="javascript:void(0)">查看</a></li>
+                            <div class="clearfix"></div>
+                        </ul>
+                        <ul class="tl_shop_Pbg_b">
+                            <li class="tl_shop_Twidth_a">浙江</li>
+                            <li class="tl_shop_Twidth_a">废钢</li>
+                            <li class="tl_shop_Twidth_b">八角低锰压块</li>
+                            <li class="tl_shop_Twidth_c">海宁库</li>
+                            <li class="tl_shop_Twidth_d font_number_style">300</li>
+                            <li class="tl_shop_Twidth_e font_number_style">2580</li>
+                            <li class="tl_shop_Twidth_e font_number_style tl_shop_Pcolor">2610</li>
+                            <li class="tl_shop_Twidth_e"><button class="tl_shop_Pbutton">下单</button></li>
+                            <li class="tl_shop_Twidth_f"><a href="javascript:void(0)">查看</a></li>
+                            <div class="clearfix"></div>
+                        </ul>
+                        <ul class="tl_shop_Pbg_a">
+                            <li class="tl_shop_Twidth_a">新兴生铁</li>
+                            <li class="tl_shop_Twidth_a">球铁</li>
+                            <li class="tl_shop_Twidth_b">Q10</li>
+                            <li class="tl_shop_Twidth_c">中途库</li>
+                            <li class="tl_shop_Twidth_d font_number_style">1000</li>
+                            <li class="tl_shop_Twidth_e font_number_style">3200</li>
+                            <li class="tl_shop_Twidth_e font_number_style tl_shop_Pcolor">3230</li>
+                            <li class="tl_shop_Twidth_e"><button class="tl_shop_Pbutton">下单</button></li>
+                            <li class="tl_shop_Twidth_f"><a href="javascript:void(0)">查看</a></li>
+                            <div class="clearfix"></div>
+                        </ul>
+                        <ul class="tl_shop_Pbg_b">
+                            <li class="tl_shop_Twidth_a">浙江</li>
+                            <li class="tl_shop_Twidth_a">废钢</li>
+                            <li class="tl_shop_Twidth_b">八角低锰压块</li>
+                            <li class="tl_shop_Twidth_c">海宁库</li>
+                            <li class="tl_shop_Twidth_d font_number_style">300</li>
+                            <li class="tl_shop_Twidth_e font_number_style">2580</li>
+                            <li class="tl_shop_Twidth_e font_number_style tl_shop_Pcolor">2610</li>
+                            <li class="tl_shop_Twidth_e"><button class="tl_shop_Pbutton">下单</button></li>
+                            <li class="tl_shop_Twidth_f"><a href="javascript:void(0)">查看</a></li>
+                            <div class="clearfix"></div>
+                        </ul>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane data_content" id="shop_second">第二块</div>
+                <div role="tabpanel" class="tab-pane data_content" id="shop_third">三</div>
+                <div role="tabpanel" class="tab-pane data_content" id="shop_fourth">四</div>
+                <div role="tabpanel" class="tab-pane data_content" id="shop_fifth">五</div>
+                <div role="tabpanel" class="tab-pane data_content" id="shop_sixth">六</div>
+            </div>
+        </div>
+        <div class="float_r tl_shop_right">
+            <div>
+                <div class="index_activity_title">活动专区</div>
+                <div class="ck-slide">
+                    <ul class="ck-slide-wrapper">
+                        <li>
+                            <a href="javascript:"><img src="img/activity_img1.png" ></a>
+                        </li>
+                        <li style="display:none">
+                            <a href="javascript:"><img src="img/activity_img1.png" ></a>
+                        </li>
+                        <li style="display:none">
+                            <a href="javascript:"><img src="img/activity_img1.png" ></a>
+                        </li>
+                    </ul>
+                    <!-- <a href="javascript:;" class="ctrl-slide ck-prev">上一张</a> <a href="javascript:;" class="ctrl-slide ck-next">下一张</a> -->
+                    <div class="ck-slidebox">
+                        <div class="slideWrap">
+                            <ul class="dot-wrap">
+                                <li class="current"><em>1</em></li>
+                                <li><em>2</em></li>
+                                <li><em>3</em></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="index_activity_title">
+                    <div class="float_l index_activity_text">成交动态</div>
+                    <div class="float_r">
+                        <a href="javascript:void(0)">
+                            <div class="float_l index_activity_more">更多</div>
+                            <img class="float_l index_activity_icon" src="img/icon04.png">
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="roll_deal">
+                    <ul class="deal_box">
+                        <li>
+                            <div class="float_l deal_font_style deal_font_a">四切低合金板</div>
+                            <div class="float_l deal_font_style deal_font_b">20*2000*L</div>
+                            <div class="float_l deal_font_style deal_font_c">4650</div>
+                            <div class="float_r deal_font_style deal_font_d">已成交</div>
+                            <div class="clearfix"></div>
+                        </li>
+                        <li>
+                            <div class="float_l deal_font_style deal_font_a">四切低合金板</div>
+                            <div class="float_l deal_font_style deal_font_b">20*2000*L</div>
+                            <div class="float_l deal_font_style deal_font_c">4650</div>
+                            <div class="float_r deal_font_style deal_font_d">待审核</div>
+                            <div class="clearfix"></div>
+                        </li>
+                        <li>
+                            <div class="float_l deal_font_style deal_font_a">四切低合金板</div>
+                            <div class="float_l deal_font_style deal_font_b">20*2000*L</div>
+                            <div class="float_l deal_font_style deal_font_c">4650</div>
+                            <div class="float_r deal_font_style deal_font_d">已成交</div>
+                            <div class="clearfix"></div>
+                        </li>
+                        <li>
+                            <div class="float_l deal_font_style deal_font_a">四切低合金板</div>
+                            <div class="float_l deal_font_style deal_font_b">20*2000*L</div>
+                            <div class="float_l deal_font_style deal_font_c">4650</div>
+                            <div class="float_r deal_font_style deal_font_d">已成交</div>
+                            <div class="clearfix"></div>
+                        </li>
+                        <li>
+                            <div class="float_l deal_font_style deal_font_a">四切低合金板</div>
+                            <div class="float_l deal_font_style deal_font_b">20*2000*L</div>
+                            <div class="float_l deal_font_style deal_font_c">4650</div>
+                            <div class="float_r deal_font_style deal_font_d">已成交</div>
+                            <div class="clearfix"></div>
+                        </li>
+                        <li>
+                            <div class="float_l deal_font_style deal_font_a">四切低合金板</div>
+                            <div class="float_l deal_font_style deal_font_b">20*2000*L</div>
+                            <div class="float_l deal_font_style deal_font_c">4650</div>
+                            <div class="float_r deal_font_style deal_font_d">已成交</div>
+                            <div class="clearfix"></div>
+                        </li>
+                        <li>
+                            <div class="float_l deal_font_style deal_font_a">四切低合金板</div>
+                            <div class="float_l deal_font_style deal_font_b">20*2000*L</div>
+                            <div class="float_l deal_font_style deal_font_c">4650</div>
+                            <div class="float_r deal_font_style deal_font_d">已成交</div>
+                            <div class="clearfix"></div>
+                        </li>
+                        <li>
+                            <div class="float_l deal_font_style deal_font_a">四切低合金板</div>
+                            <div class="float_l deal_font_style deal_font_b">20*2000*L</div>
+                            <div class="float_l deal_font_style deal_font_c">4650</div>
+                            <div class="float_r deal_font_style deal_font_d">已成交</div>
+                            <div class="clearfix"></div>
+                        </li>
+                        <li>
+                            <div class="float_l deal_font_style deal_font_a">四切低合金板</div>
+                            <div class="float_l deal_font_style deal_font_b">20*2000*L</div>
+                            <div class="float_l deal_font_style deal_font_c">4650</div>
+                            <div class="float_r deal_font_style deal_font_d">已成交</div>
+                            <div class="clearfix"></div>
+                        </li>
+                        <li>
+                            <div class="float_l deal_font_style deal_font_a">四切低合金板</div>
+                            <div class="float_l deal_font_style deal_font_b">20*2000*L</div>
+                            <div class="float_l deal_font_style deal_font_c">4650</div>
+                            <div class="float_r deal_font_style deal_font_d">已成交</div>
+                            <div class="clearfix"></div>
+                        </li>
+                        <li>
+                            <div class="float_l deal_font_style deal_font_a">四切低合金板</div>
+                            <div class="float_l deal_font_style deal_font_b">20*2000*L</div>
+                            <div class="float_l deal_font_style deal_font_c">4650</div>
+                            <div class="float_r deal_font_style deal_font_d">已成交</div>
+                            <div class="clearfix"></div>
+                        </li>
+                        <li>
+                            <div class="float_l deal_font_style deal_font_a">四切低合金板</div>
+                            <div class="float_l deal_font_style deal_font_b">20*2000*L</div>
+                            <div class="float_l deal_font_style deal_font_c">4650</div>
+                            <div class="float_r deal_font_style deal_font_d">已成交</div>
+                            <div class="clearfix"></div>
+                        </li>
+                        <li>
+                            <div class="float_l deal_font_style deal_font_a">四切低合金板</div>
+                            <div class="float_l deal_font_style deal_font_b">20*2000*L</div>
+                            <div class="float_l deal_font_style deal_font_c">4650</div>
+                            <div class="float_r deal_font_style deal_font_d">已成交</div>
+                            <div class="clearfix"></div>
+                        </li>
+                        <li>
+                            <div class="float_l deal_font_style deal_font_a">四切低合金板</div>
+                            <div class="float_l deal_font_style deal_font_b">20*2000*L</div>
+                            <div class="float_l deal_font_style deal_font_c">4650</div>
+                            <div class="float_r deal_font_style deal_font_d">已成交</div>
+                            <div class="clearfix"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+</div>
+
+
+<div class="wrap">
+    <!-- 行业资讯 -->
+    <div class="index_info_box margin_t18">
+        <div class="float_l index_info_a">
+            <div class="index_info_title">
+                <div class="float_l index_info_text">行业资讯</div>
+                <div class="float_r">
+                    <a href="javascript:void(0)">
+                        <div class="float_l index_info_more">更多</div>
+                        <img class="float_l index_info_icon" src="img/icon04.png">
+                    </a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="index_info_content">
+                <div class="iic_first">
+                    <a href="#">
+                        <img class="float_l iic_first_img" src="img/industry_info1.png">
+                        <div class="float_l iic_first_content">
+                            <div class="iic_first_title">越南：崛起的全球钢铁发展新高地</div>
+                            <div class="iic_first_text">11月6日~11日，亚太经合组织(APEC)第25次领导人非正式会议在越南岘港举行。此次会议的召开，吸引了全球的目光，也让更多国家更加深入...</div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </a>
+                </div>
+                <ul class="iic_list">
+                    <li>
+                        <a href="#">
+                            <div class="float_l iic_list_disc"></div>
+                            <div class="float_l iic_list_text">废钢好戏不断！又有一批大型回收、加工项目开建！</div>
+                            <div class="clearfix"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="float_l iic_list_disc"></div>
+                            <div class="float_l iic_list_text">钢厂限产VS工地停工，大战到来！</div>
+                            <div class="clearfix"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="float_l iic_list_disc"></div>
+                            <div class="float_l iic_list_text">商品期货黑色系大涨 铁矿石主力涨超5%</div>
+                            <div class="clearfix"></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="float_l index_info_b">
+            <div class="index_info_title">
+                <div class="float_l index_info_text">网站公告</div>
+                <div class="float_r">
+                    <a href="javascript:void(0)">
+                        <div class="float_l index_info_more">更多</div>
+                        <img class="float_l index_info_icon" src="img/icon04.png">
+                    </a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="index_info_content">
+                <ul class="iic_list">
+                    <li>
+                        <a href="#">
+                            <div class="float_l iic_list_disc"></div>
+                            <div class="float_l iic_list_text">关于2017年国庆、中秋节休市通知</div>
+                            <div class="float_r iic_list_time">11-22</div>
+                            <div class="clearfix"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="float_l iic_list_disc"></div>
+                            <div class="float_l iic_list_text">关于“钢银客服QQ”账号变更通知</div>
+                            <div class="float_r iic_list_time">11-22</div>
+                            <div class="clearfix"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="float_l iic_list_disc"></div>
+                            <div class="float_l iic_list_text">关于2017年端午节休市通知</div>
+                            <div class="float_r iic_list_time">11-22</div>
+                            <div class="clearfix"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="float_l iic_list_disc"></div>
+                            <div class="float_l iic_list_text">关于“现货超市”退款账号变更通知</div>
+                            <div class="float_r iic_list_time">11-22</div>
+                            <div class="clearfix"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="float_l iic_list_disc"></div>
+                            <div class="float_l iic_list_text">关于2017年劳动节休市通知</div>
+                            <div class="float_r iic_list_time">11-22</div>
+                            <div class="clearfix"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="float_l iic_list_disc"></div>
+                            <div class="float_l iic_list_text">关于注销交行、农行银行账号公告</div>
+                            <div class="float_r iic_list_time">11-22</div>
+                            <div class="clearfix"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="float_l iic_list_disc"></div>
+                            <div class="float_l iic_list_text">关于“现货超市”退款账号变更通知</div>
+                            <div class="float_r iic_list_time">11-22</div>
+                            <div class="clearfix"></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="float_l index_info_c">
+            <div class="index_info_title2">
+                <div class="float_l index_info_text">交易流程</div>
+                <div class="float_r">
+                    <a href="javascript:void(0)">
+                        <div class="float_l index_info_more">更多</div>
+                        <img class="float_l index_info_icon" src="img/icon04.png">
+                    </a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <ul class="sequence_box">
+                <li><img src="img/sequence1.png"></li>
+                <li><img src="img/sequence2.png"></li>
+                <li><img src="img/sequence3.png"></li>
+                <li><img src="img/sequence4.png"></li>
+                <li><img src="img/sequence5.png"></li>
+                <li><img src="img/sequence6.png"></li>
+                <li><img src="img/sequence7.png"></li>
+                <li><img src="img/sequence8.png"></li>
+                <div class="clearfix"></div>
+                <div class="sequence_go">
+                    <a href="javascript:void(0)">
+                        <img class="sequence_go_icon" src="img/icon05.png">
+                        <div class="sequence_go_text">进入炉料商城</div>
+                    </a>
+                </div>
+            </ul>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+    <!-- 特色 -->
+    <ul class="feature_box">
+        <li>
+            <img class="feature_img" src="img/feature_img1.png">
+            <div class="feature_content">
+                <div class="feature_font_style_a">手机淘炉料</div>
+                <div class="feature_font_style_b">专业 便捷 买卖炉料<br>用<b>手机淘炉料</b>就够了</div>
+                <div class="feature_font_style_c">打造炉料电商行业典范</div>
+            </div>
+        </li>
+        <li>
+            <img class="feature_img" src="img/feature_img2.png">
+            <div class="feature_content">
+                <div class="feature_font_style_a">炉料金融</div>
+                <div class="feature_font_style_b">专属<b>融资模式</b><br>覆盖供应链上下游</div>
+                <div class="feature_font_style_c">为您量身打造<br>供应链金融解决方案</div>
+            </div>
+        </li>
+        <li>
+            <img class="feature_img" src="img/feature_img3.png">
+            <div class="feature_content">
+                <div class="feature_font_style_a">营销网络</div>
+                <div class="feature_font_style_b"><b>实体经营</b> 星级服务<br>资源真实 <b>价格可信</b></div>
+                <div class="feature_font_style_c">顶级配套服务</div>
+            </div>
+        </li>
+        <li>
+            <img class="feature_img" src="img/feature_img4.png">
+            <div class="feature_content">
+                <div class="feature_font_style_a">共享资源</div>
+                <div class="feature_font_style_b">实现业务需求的<br><b>快速匹配</b></div>
+                <div class="feature_font_style_c">无线商机等待您的加入</div>
+            </div>
+        </li>
+        <div class="clearfix"></div>
+    </ul>
+</div>
+
+<div class="bg_white" style="border-bottom: 2px solid #fdfdfd;">
+    <div class="wrap">
+        <ul class="bottom_service">
+            <li>
+                <img class="float_l bottom_service_icon" src="img/bottom_icon1.png">
+                <div class="float_l bottom_service_text">厂商直供<br>货源真实</div>
+                <div class="clearfix"></div>
+            </li>
+            <li>
+                <img class="float_l bottom_service_icon" src="img/bottom_icon2.png">
+                <div class="float_l bottom_service_text">多仓直发<br>配送无忧</div>
+                <div class="clearfix"></div>
+            </li>
+            <li>
+                <img class="float_l bottom_service_icon" src="img/bottom_icon3.png">
+                <div class="float_l bottom_service_text">品种多样<br>规格齐全</div>
+                <div class="clearfix"></div>
+            </li>
+            <li>
+                <img class="float_l bottom_service_icon" src="img/bottom_icon4.png">
+                <div class="float_l bottom_service_text">服务至上<br>售后保障</div>
+                <div class="clearfix"></div>
+            </li>
+
+            <li>
+                <img class="float_l bottom_service_icon" src="img/bottom_icon5.png">
+                <div class="float_l bottom_service_text">真实交易<br>购货无忧</div>
+                <div class="clearfix"></div>
+            </li>
+
+            <div class="clearfix"></div>
+        </ul>
+
+        <div class="bottom_contact_box">
+            <ul class="bottom_contact bc_help">
+                <li>
+                    <div class="bc_help_a">帮助中心</div>
+                    <div class="bc_help_b">
+                        <div class="bc_help_content"><a href="">关于我们</a></div>
+                        <div class="bc_help_content"><a href="">购买指南</a></div>
+                        <div class="bc_help_content"><a href="">申请发票</a></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="bc_help_a">帮助中心</div>
+                    <div class="bc_help_b">
+                        <div class="bc_help_content"><a href="">关于我们</a></div>
+                        <div class="bc_help_content"><a href="">购买指南</a></div>
+                        <div class="bc_help_content"><a href="">申请发票</a></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="bc_help_a">帮助中心</div>
+                    <div class="bc_help_b">
+                        <div class="bc_help_content"><a href="">关于我们</a></div>
+                        <div class="bc_help_content"><a href="">购买指南</a></div>
+                        <div class="bc_help_content"><a href="">申请发票</a></div>
+                    </div>
+                </li>
+                <div class="clearfix"></div>
+            </ul>
+
+            <div class="bottom_contact bc_phone">
+                <div class="bc_phone_title">全国服务热线</div>
+                <div class="bc_phone_number">0519 8362 1929</div>
+                <ul class="bc_phone_button">
+                    <li class="margin_r30">
+                        <a href="javascript:void(0)">
+                            <img class="bc_phone_icon" src="img/icon06.png">
+                            <div class="bc_phone_cue">在线客服</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img class="bc_phone_icon" src="img/icon07.png">
+                            <div class="bc_phone_cue">用户反馈</div>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                </ul>
+            </div>
+
+            <ul class="bottom_contact bc_scan">
+                <li>
+                    <div class="bc_scan_title">淘炉料官方微信</div>
+                    <img class="bc_scan_img" src="img/scan/scan_img1.png">
+                    <div class="bc_scan_cue">扫描上方二维码</div>
+                </li>
+                <li>
+                    <div class="bc_scan_title">淘炉料手机APP</div>
+                    <img class="bc_scan_img" src="img/scan/scan_img2.png">
+                    <div class="bc_scan_cue">扫描上方二维码</div>
+                </li>
+                <div class="clearfix"></div>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
+<div class="bg_gray index_bottom_padding">
+    <div class="wrap">
+        <ul class="bottom_nav">
+            <li><a href="">关于我们</a></li>
+            <li><a href="">帮助中心</a></li>
+            <li><a href="">售后服务</a></li>
+            <li><a href="">配送与验收</a></li>
+            <li><a href="">商务合作</a></li>
+            <li><a href="">企业采购</a></li>
+            <li><a href="">开放平台</a></li>
+            <li><a href="">搜索推荐</a></li>
+            <li><a href="">友情链接</a></li>
+            <div class="clearfix"></div>
+        </ul>
+        <div class="bottom_text">淘炉料网 www.taoluwang.com COPYRIGHT © 2017-2027&nbsp;&nbsp;&nbsp;&nbsp;苏ICP备 13013915号-3 ICP证：沪B2-20140148</div>
+        <div class="bottom_img">
+            <img src="img/bottom/b1.png">
+            <img src="img/bottom/b2.png">
+            <img src="img/bottom/b3.png">
+            <img src="img/bottom/b4.png">
+            <img src="img/bottom/b5.png">
+            <img src="img/bottom/b6.png">
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- *** -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+<script src="js/holder.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+
+
+<!-- 顶部输入框 -->
+<!-- <script type="text/javascript" src="js/jquery-1.7.min.js"></script> -->
+<script type="text/javascript">
+    $(function(){
+        $("#searchSelected").click(function(){ 
+            $("#searchTab").show();
+            $(this).addClass("searchOpen");
+        });
+
+        $("#searchTab li").click(function(){
+            $("#searchSelected").html($(this).html());
+            $("#searchTab").hide();
+            $("#searchSelected").removeClass("searchOpen");
+        });
+    });
+</script>
+
+
+<!-- 分类导航 -->
+<!-- <script src="js/type/jquery-3.1.1.js"></script> -->
+<script src="js/type/banner.js"></script>
+<script type="text/javascript">
+    //*****************左侧导航***************//
+    var cate = $(".cate");
+    var num = $(".cate .cate_menu li").length;
+    var oleftli = $(".cate .cate_menu li");//显示区块
+    var ofloatli = $(".navfloat ul li");//隐藏区块
+    bannerplay(cate,ofloatli,oleftli,15,false,1);
+    //***************中间轮播图************//
+    var slider_main = $(".slider_main");
+    var picli = $(".slider_main .picban li");
+    var lilen = picli.length;
+    var leftbtn = $(".slider_main .left");
+    var rightbtn = $(".slider_main .right");
+    for(var i=1;i<=lilen;i++){  //创建图片个数相对应的底部数字个数
+        // var li="<li>"+i+"</li>"; //创建li标签，并插入到页面中
+        var li="<li></li>"; //去掉底部的数字
+        $(".slider_main .num_btn").append(li);
+    }   
+    var numli = $(".slider_main .num_btn li")
+    bannerplay(slider_main,picli,numli,lilen,true,0,leftbtn,rightbtn);
+</script>
+
+
+<!-- 合作厂家 -->
+<!-- <script src="http://www.jq22.com/jquery/jquery-1.10.2.js" charset="utf-8"></script> -->
+<script src="js/index_slide.js"></script>
+<script>
+    $(".cooperation_content_box").superSlider({
+        prevBtn:     ".prev",//左按钮
+        nextBtn:     ".next",//右按钮
+        listCont:    "#roll",//滚动列表外层
+        scrollWhere: "next",//自动滚动方向next
+        delayTime:   1000,//自动轮播时间间隔
+        speed:       300,//滚动速度
+        amount:      1,//单次滚动数量
+        showNum:     4,//显示数量
+        autoPlay:    true//自动播放
+    });
+</script>
+
+
+<!-- 价格指导tab切换 -->
+<script type="text/javascript" src="js/jQuery.rTabs.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $("#tab").rTabs({
+            bind : 'click',
+            // animation : 'left'
+        });
+    })
+</script>
+
+<!-- 活动专区轮播图 -->
+<!-- <script src="js/jquery-1.8.3.min.js"></script> -->
+<script src="js/slide.js"></script>
+<script>
+    $('.ck-slide').ckSlide({
+        autoPlay: true,//默认为自动播放，需要时请以此设置
+        dir: 'x',//默认效果淡隐淡出，x为水平移动，y 为垂直滚动
+        interval: 3000//默认间隔3000毫秒
+        
+    });
+</script>
+
+
+
+
+
+<script type="text/javascript" src="js/echarts.js"></script>
+<script type="text/javascript">
+// 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('main'));
+
+    // 指定图表的配置项和数据
+    var option = {
+    // title: {
+    //     text: '今日&昨日',
+    //     left: '50%',
+    //     textAlign: 'center'
+    // },
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            lineStyle: {
+                color: '#ccd6eb'
+            }
+        },
+        backgroundColor: 'rgba(255,255,255,1)',
+        padding: [5, 10],
+        textStyle: {
+            color: '#414141',
+        },
+        extraCssText: 'box-shadow: 0 0 5px rgba(0,0,0,0.3)'
+    },
+    // legend: {
+    //     right: 20,
+    //     orient: 'vertical',
+    //     data: ['今日', '昨日']
+    // },
+    xAxis: {
+        type: 'category',
+        data: ['', '07/01', '07/01', '07/01', '07/01', '07/01', '07/01', '07/01', '07/01', '07/01'],
+        boundaryGap: false,
+        splitLine: {
+            show: true,
+            interval: 'auto',
+            lineStyle: {
+                color: ['none']
+            }
+        },
+        axisTick: {
+            show: false
+        },
+        axisLine: {
+            lineStyle: {
+                color: '#666666'
+            }
+        },
+        axisLabel: {
+            margin: 10,
+            textStyle: {
+                fontSize: 14
+            }
+        }
+    },
+    yAxis: {
+        type: 'value',
+        splitLine: {
+            lineStyle: {
+                color: ['#D4DFF5']
+            }
+        },
+        axisTick: {
+            show: false
+        },
+        axisLine: {
+            lineStyle: {
+                color: '#666666'
+            }
+        },
+        axisLabel: {
+            margin: 10,
+            textStyle: {
+                fontSize: 14
+            }
+        }
+    },
+    series: [
+    // // 今日
+    // {
+    //     name: '今日',
+    //     type: 'line',
+    //     smooth: true,
+    //     showSymbol: false,
+    //     symbol: 'circle',
+    //     symbolSize: 6,
+    //     data: ['1200', '1400', '1008', '1411', '1026', '1288', '1300', '800', '1100', '1000', '1118', '1322'],
+    //     areaStyle: {
+    //         normal: {
+    //             color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+    //                 offset: 0,
+    //                 color: 'rgba(199, 237, 250,0.5)'
+    //             }, {
+    //                 offset: 1,
+    //                 color: 'rgba(199, 237, 250,0.2)'
+    //             }], false)
+    //         }
+    //     },
+    //     itemStyle: {
+    //         normal: {
+    //             color: '#f7b851'
+    //         }
+    //     },
+    //     lineStyle: {
+    //         normal: {
+    //             width: 3
+    //         }
+    //     }
+    // }, 
+    {
+        name: '球铁',
+        type: 'line',
+        smooth: true,
+        showSymbol: false,
+        symbol: 'circle',
+        symbolSize: 6,
+        data: ['4000', '3500', '8000', '3500', '12000', '3500', '4000', '3500', '4000', '3500'],
+        areaStyle: {
+            normal: {
+                color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                    offset: 0,
+                    color: 'rgba(232, 240, 245,1)'
+                }, {
+                    offset: 1,
+                    color: 'rgba(232, 240, 245,1)'
+                }], false)
+            }
+        },
+        itemStyle: {
+            normal: {
+                color: '#46759f'
+            }
+        },
+        lineStyle: {
+            normal: {
+                width: 3
+            }
+        }
+    }]
+};
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+</script>
+
+
+<script type="text/javascript" src="js/scroll.js"></script>
+<script type="text/javascript">
+$(function(){
+    $("div.roll_deal").myScroll({
+        speed:40, //数值越大，速度越慢
+        rowHeight:195 //li的高度
+    });
+});
+</script>
+
+
+</body>
+
+</html>

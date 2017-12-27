@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>确认订单</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <script src="js/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- 分类导航 轮播 -->
+    <!-- 引入base.css -->
+    <link rel="stylesheet" type="text/css" href="css/type/base.css">
+    <link rel="stylesheet" type="text/css" href="css/type/navjd.css">
+    
+</head>
+<body class="bg_gray2">
+
+<!-- 悬浮咨询电话 -->
+<div class="suspension_box">
+    <li class="suspension_bg1">
+        <a href="javascript:void(0)">
+            <img class="suspension_icon" src="img/icon12.png">
+            <div class="suspension_text">资讯</div>
+        </a>
+    </li>
+    <li class="suspension_bg2">
+        <a href="javascript:void(0)">
+            <img class="suspension_icon" src="img/icon13.png">
+            <div class="suspension_text">电话</div>
+        </a>
+    </li>
+</div>
+
+
+
+<!-- 页面最顶部 -->
+<div class="page_top">
+    <div class="wrap">
+        <ul class="page_top_left">
+            <li>
+                <a href="index.html">
+                    <img class="float_l back_index_icon" src="img/icon_index.png">
+                    <div class="float_l page_top_text">淘炉料首页</div>
+                </a>
+            </li>
+            <li>
+                <div class="page_top_text">欢迎来淘炉料！</div>
+            </li>
+            <li>
+                <a href="#"><div class="page_top_text">请登陆</div></a>
+            </li>
+            <li>
+                <a href="#"><div class="page_top_text">免费注册</div></a>
+            </li>
+            <li class="page_top_text">交易时间：9:00-17:00</li>
+        </ul>
+        <ul class="page_top_right">
+            <li>
+                <div class="float_l page_top_text">我的淘炉料</div>
+                <img class="float_l page_top_icon" src="img/icon01.png">
+            </li>
+            <li>
+                <img class="float_l page_top_phone" src="img/icon_phone.png">
+                <div class="float_l page_top_text">手机淘炉料</div>
+                <img class="float_l page_top_icon" src="img/icon01.png">
+            </li>
+            <li>
+                <div class="float_l page_top_text">在线客服</div>
+                <img class="float_l page_top_icon" src="img/icon01.png">
+            </li>
+        </ul>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+<div class="bg_gray2">
+    <!-- 顶部logo 搜索 -->
+    <div class="index_top wrap">
+        <div class="float_l logo"><img src="img/logo.png"></div>
+
+        <div class="float_l index_top_search">
+            <!-- <form method="get" name="" action="http://www.17sucai.com/" target="_blank"> -->
+                <div id="searchTxt" class="searchTxt " onMouseOver="this.className='searchTxt searchTxtHover';" onMouseOut="this.className='searchTxt';">
+                    <div class="float_l searchMenu">
+                        <div class="its_type">
+                            <div class="float_l searchSelected" id="searchSelected">品名</div>
+                            <img class="float_l its_type_icon" src="img/icon02.png">
+                            <div class="clearfix"></div>
+                        </div>
+                        <div style="display:none;" class="searchTab " id="searchTab">
+                            <ul>
+                                <li>一号</li>
+                                <li>二号</li>
+                                <li>三号</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <input class="float_l index_top_input" name="w" type="text" placeholder="请输入关键词查询" />
+                    <div class="float_l searchBtn ">
+                        <button id="searchBtn" class="index_top_btn" type="submit">
+                            <img class="float_l itb_icon" src="img/icon_search.png">
+                            <div class="float_l itb_text">搜索</div>
+                            <div class="clearfix"></div>
+                        </button>
+                    </div>
+                </div>
+            <!-- </form> -->
+        </div>
+
+        <div class="float_l index_top_contact">
+            <div>
+                <img class="float_l itc_icon" src="img/icon_telephone.png">
+                <div class="float_l itc_text">服务热线</div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="itc_phone">0519 8362 1929</div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+    <div class="wrap">
+        <!-- 分类导航 -->
+        <div class="top_type_box">
+            <div class="float_l top_type_all">
+                <img class="float_l top_type_all_icon" src="img/icon_all.png">
+                <div class="float_l top_type_all_text">全部商品分类</div>
+            </div>
+            <ul class="float_l top_nav">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="#">炉料商城</a></li>
+                <li><a href="share.html">共享资源</a></li>
+                <li><a href="ll-finance.html">炉料金融</a></li>
+                <li><a href="network.html">营销网络</a></li>
+                <li><a href="#">关于我们</a></li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="wrap margin_b100">
+    <div class="position_box">
+        <div class="float_l">
+            <div class="float_l position_now">您当前位置 ></div>
+            <div class="float_l position_now">确认订单</div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="order_confirm_title">填写并确认订单信息</div>
+
+    <!-- 收货人信息 -->
+    <div class="consignee_box">
+        <div class="type_title">
+            <div class="float_l type_title_text">收货人信息</div>
+            <div class="float_r"><a class="type_title_btn" href="#">管理收货地址</a></div>
+            <div class="clearfix"></div>
+        </div>
+        <ul class="consignee_content">
+            <li class="click_select">
+                <input class="float_l consignee_choice" type="radio" name="radio" id="address" checked="checked">
+                <div class="float_l consignee_info">
+                    <span>上海市</span> - <span>徐汇区</span> <span>上海路123号</span> （<span>吉祥</span> 收）<span class="font_number_style">13813813813</span>
+                </div>
+                <div class="float_r consignee_edit">
+                    <button class="float_l consignee_edit_xg">修改本地址</button>
+                    <button class="float_l consignee_edit_sc">删除</button>
+                    <button class="float_l consignee_edit_mr">设为默认地址</button>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+            <li>
+                <input class="float_l consignee_choice" type="radio" name="radio" id="address">
+                <div class="float_l consignee_info">
+                    <span>上海市</span> - <span>徐汇区</span> <span>上海路123号</span> （<span>吉祥</span> 收）<span class="font_number_style">13813813813</span>
+                </div>
+                <div class="float_r consignee_edit">
+                    <button class="float_l consignee_edit_xg">修改本地址</button>
+                    <button class="float_l consignee_edit_sc">删除</button>
+                    <button class="float_l consignee_edit_mr">设为默认地址</button>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+        </ul>
+        <a href="#"><button class="consignee_add">新增收货地址 +</button></a>
+    </div>
+
+    <!-- 开票信息 -->
+    <div class="billing_box margin_b20">
+        <div class="type_title">
+            <div class="float_l type_title_text">开票信息</div>
+            <div class="float_r"><a class="type_title_btn" href="#">修改开票信息</a></div>
+            <div class="clearfix"></div>
+        </div>
+        <ul class="billing_content">
+            <li class="click_select">
+                <div class="billing_info_left">增值税发票（单位）</div>
+                <div class="billing_info_right">
+                    <div class="billing_info_text">发票抬头：<span>常州市建邦金属材料有限公司</span></div>
+                    <div class="billing_info_text">税号：<span class="font_number_style">91320404765102148W</span></div>
+                    <div class="billing_info_text">电话：<span class="font_number_style">0519-88888888</span></div>
+                    <div class="billing_info_text">开户银行：<span>工商银行</span></div>
+                    <div class="billing_info_text">银行账户：<span class="font_number_style">9558801105102495971</span></div>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+            <li>
+                <div class="billing_info_left">增值税发票（单位）</div>
+                <div class="billing_info_right">
+                    <div class="billing_info_text">发票抬头：<span>常州市建邦金属材料有限公司</span></div>
+                    <div class="billing_info_text">税号：<span class="font_number_style">91320404765102148W</span></div>
+                    <div class="billing_info_text">电话：<span class="font_number_style">0519-88888888</span></div>
+                    <div class="billing_info_text">开户银行：<span>工商银行</span></div>
+                    <div class="billing_info_text">银行账户：<span class="font_number_style">9558801105102495971</span></div>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+            <div class="clearfix"></div>
+        </ul>
+        <a href="#"><button class="consignee_add">新增开票信息 +</button></a>
+    </div>
+
+    <!-- 支付方式 -->
+    <div class="billing_box margin_b20">
+        <div class="type_title">
+            <div class="float_l type_title_text">支付方式</div>
+            <div class="clearfix"></div>
+        </div>
+        <ul class="payment">
+            <li class="click_select">现金预存款</li>
+            <li>承兑预存款</li>
+            <div class="clearfix"></div>
+        </ul>
+    </div>
+
+    <!-- 确认商品信息 -->
+    <div class="billing_box margin_b20">
+        <div class="type_title">
+            <div class="float_l type_title_text">确认商品信息</div>
+            <div class="float_r"><a class="type_title_btn" href="#">返回购物车</a></div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="goods_info">
+            <ul class="goods_info_menu">
+                <li class="gim_w1 gim_text">商品信息</li>
+                <li class="gim_w2">交割库</li>
+                <li class="gim_w3">数量</li>
+                <li class="gim_w4">重量（吨）</li>
+                <li class="gim_w4">承兑总金额</li>
+                <li class="gim_w5">现金总金额</li>
+                <div class="clearfix"></div>
+            </ul>
+            <ul class="goods_info_content">
+                <li class="gim_w1 gim_text2">新兴生铁 - 球铁 低硅球10#</li>
+                <li class="gim_w2">海宁</li>
+                <li class="gim_w3 font_number_style">×1.20</li>
+                <li class="gim_w4 font_number_style">2.3690</li>
+                <li class="gim_w4 font_number_style">4980.0</li>
+                <li class="gim_w5 font_number_style gim_color">11797.62</li>
+                <div class="clearfix"></div>
+            </ul>
+            <input class="goods_info_cue" type="text" value="选填：本次交易的补充说明（所填内容建议已经和商家达成一致意见，85字以内）">
+        </div>
+    </div>
+
+    <!-- 分隔线 -->
+    <div class="order_confirm_line"></div>
+
+    <!-- 详情数据 -->
+    <ul class="float_r order_details">
+        <li>
+            <div class="float_l order_details_menu">商品数量小计：</div>
+            <div class="float_r order_details_data">共计 <span>2.3690</span> 吨</div>
+            <div class="clearfix"></div>
+        </li>
+        <li>
+            <div class="float_l order_details_menu">运费：</div>
+            <div class="float_r order_details_data odd_color">¥ <span>0.00</span></div>
+            <div class="clearfix"></div>
+        </li>
+        <li>
+            <div class="float_l order_details_menu">商品现金总金额：</div>
+            <div class="float_r order_details_data odd_color">¥ <span>11797.62</span></div>
+            <div class="clearfix"></div>
+        </li>
+        <li>
+            <div class="float_l order_details_menu">商品承兑总金额：</div>
+            <div class="float_r order_details_data odd_color">¥ <span>11797.62</span></div>
+            <div class="clearfix"></div>
+        </li>
+    </ul>
+    <div class="clearfix"></div>
+
+    <!-- 提交 -->
+    <div class="button_sublime">
+        <button class="float_r bs_btn1">提交订单</button>
+        <button class="float_r bs_btn2">继续购物</button>
+        <div class="float_r bs_cue">共 <span>1</span> 件商品</div>
+    </div>
+</div>
+
+
+
+
+
+<div class="bg_white" style="border-bottom: 2px solid #fdfdfd;">
+    <div class="wrap">
+        <ul class="bottom_service">
+            <li>
+                <img class="float_l bottom_service_icon" src="img/bottom_icon1.png">
+                <div class="float_l bottom_service_text">厂商直供<br>货源真实</div>
+                <div class="clearfix"></div>
+            </li>
+            <li>
+                <img class="float_l bottom_service_icon" src="img/bottom_icon2.png">
+                <div class="float_l bottom_service_text">多仓直发<br>配送无忧</div>
+                <div class="clearfix"></div>
+            </li>
+            <li>
+                <img class="float_l bottom_service_icon" src="img/bottom_icon3.png">
+                <div class="float_l bottom_service_text">品种多样<br>规格齐全</div>
+                <div class="clearfix"></div>
+            </li>
+            <li>
+                <img class="float_l bottom_service_icon" src="img/bottom_icon4.png">
+                <div class="float_l bottom_service_text">服务至上<br>售后保障</div>
+                <div class="clearfix"></div>
+            </li>
+
+            <li>
+                <img class="float_l bottom_service_icon" src="img/bottom_icon5.png">
+                <div class="float_l bottom_service_text">真实交易<br>购货无忧</div>
+                <div class="clearfix"></div>
+            </li>
+            <div class="clearfix"></div>
+        </ul>
+
+        <div class="bottom_contact_box">
+            <ul class="bottom_contact bc_help">
+                <li>
+                    <div class="bc_help_a">帮助中心</div>
+                    <div class="bc_help_b">
+                        <div class="bc_help_content"><a href="">关于我们</a></div>
+                        <div class="bc_help_content"><a href="">购买指南</a></div>
+                        <div class="bc_help_content"><a href="">申请发票</a></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="bc_help_a">帮助中心</div>
+                    <div class="bc_help_b">
+                        <div class="bc_help_content"><a href="">关于我们</a></div>
+                        <div class="bc_help_content"><a href="">购买指南</a></div>
+                        <div class="bc_help_content"><a href="">申请发票</a></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="bc_help_a">帮助中心</div>
+                    <div class="bc_help_b">
+                        <div class="bc_help_content"><a href="">关于我们</a></div>
+                        <div class="bc_help_content"><a href="">购买指南</a></div>
+                        <div class="bc_help_content"><a href="">申请发票</a></div>
+                    </div>
+                </li>
+                <div class="clearfix"></div>
+            </ul>
+
+            <div class="bottom_contact bc_phone">
+                <div class="bc_phone_title">全国服务热线</div>
+                <div class="bc_phone_number">0519 8362 1929</div>
+                <ul class="bc_phone_button">
+                    <li class="margin_r30">
+                        <a href="javascript:void(0)">
+                            <img class="bc_phone_icon" src="img/icon06.png">
+                            <div class="bc_phone_cue">在线客服</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img class="bc_phone_icon" src="img/icon07.png">
+                            <div class="bc_phone_cue">用户反馈</div>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                </ul>
+            </div>
+
+            <ul class="bottom_contact bc_scan">
+                <li>
+                    <div class="bc_scan_title">淘炉料官方微信</div>
+                    <img class="bc_scan_img" src="img/scan/scan_img1.png">
+                    <div class="bc_scan_cue">扫描上方二维码</div>
+                </li>
+                <li>
+                    <div class="bc_scan_title">淘炉料手机APP</div>
+                    <img class="bc_scan_img" src="img/scan/scan_img2.png">
+                    <div class="bc_scan_cue">扫描上方二维码</div>
+                </li>
+                <div class="clearfix"></div>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
+<div class="bg_gray index_bottom_padding">
+    <div class="wrap">
+        <ul class="bottom_nav">
+            <li><a href="">关于我们</a></li>
+            <li><a href="">帮助中心</a></li>
+            <li><a href="">售后服务</a></li>
+            <li><a href="">配送与验收</a></li>
+            <li><a href="">商务合作</a></li>
+            <li><a href="">企业采购</a></li>
+            <li><a href="">开放平台</a></li>
+            <li><a href="">搜索推荐</a></li>
+            <li><a href="">友情链接</a></li>
+            <div class="clearfix"></div>
+        </ul>
+        <div class="bottom_text">淘炉料网 www.taoluwang.com COPYRIGHT © 2017-2027&nbsp;&nbsp;&nbsp;&nbsp;苏ICP备 13013915号-3 ICP证：沪B2-20140148</div>
+        <div class="bottom_img">
+            <img src="img/bottom/b1.png">
+            <img src="img/bottom/b2.png">
+            <img src="img/bottom/b3.png">
+            <img src="img/bottom/b4.png">
+            <img src="img/bottom/b5.png">
+            <img src="img/bottom/b6.png">
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- *** -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+<script src="js/holder.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+
+
+<!-- 顶部输入框 -->
+<!-- <script type="text/javascript" src="js/jquery-1.7.min.js"></script> -->
+<script type="text/javascript">
+    $(function(){
+        $("#searchSelected").click(function(){ 
+            $("#searchTab").show();
+            $(this).addClass("searchOpen");
+        });
+
+        $("#searchTab li").click(function(){
+            $("#searchSelected").html($(this).html());
+            $("#searchTab").hide();
+            $("#searchSelected").removeClass("searchOpen");
+        });
+    });
+</script>
+
+
+<!-- 选中效果 -->
+<!-- 开票信息 -->
+<script type="text/javascript">
+$(".billing_content li").click(
+    function(){
+        $(".billing_content li").removeClass("click_select")
+        $(this).addClass("click_select")
+    }
+)
+</script>
+<!-- 支付方式 -->
+<script type="text/javascript">
+$(".payment li").click(
+    function(){
+        $(".payment li").removeClass("click_select")
+        $(this).addClass("click_select")
+    }
+)
+</script>
+<!-- 收货人信息 -->
+<script type="text/javascript">
+$(".consignee_content li").on('click',
+    function(){
+        $(this).siblings().removeClass("click_select")
+        // $(".consignee_content li").removeClass("click_select")
+        $(this).addClass("click_select")
+        $(this).siblings().find("input[type=radio]").removeAttr("checked");
+        $(this).find("input[type=radio]").prop("checked", 'checked');
+    }
+)
+
+
+$(".consignee_content li") .mouseenter(function(){
+    $(this).find(".consignee_edit").css('display','block')
+})
+$(".consignee_content li") .mouseleave(function(){
+    $(this).find(".consignee_edit").css('display','none')
+})
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

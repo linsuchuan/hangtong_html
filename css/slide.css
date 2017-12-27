@@ -1,0 +1,58 @@
+img {
+	border: 0;
+}
+.ck-slide ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.ck-slide {
+	position: relative;
+	overflow: hidden;
+	width: 320px;
+	height: 128px;
+	margin: 0 auto;
+}
+.ck-slide ul.ck-slide-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	margin: 0;
+	padding: 0;
+	height: 128px;
+}
+.ck-slide ul.ck-slide-wrapper li {
+	position: absolute; margin-top:0px;
+}
+.ck-slide ul.ck-slide-wrapper li a{
+	/*a标签是行内元素，宽高对a标签不起作用，这里必须添加line-height:0px;display:black，否则垂直滚动<li>之间会出现间隔*/
+	line-height:0px;
+	display:block;
+}
+.ck-slidebox {
+	position: absolute;
+	right: 12px;
+	bottom: 10px;
+	z-index: 30;
+}
+.ck-slidebox ul li {
+	float: left;
+	height: 12px;
+	margin: 4px 4px;
+}
+.ck-slidebox ul li em {
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: rgba(255,255,255,0.6);
+	text-indent: -9999px;
+	cursor: pointer;
+}
+.ck-slidebox ul li.current em {
+	background-color: #fff;
+}
+.ck-slidebox ul li em:hover {
+	background-color: #fff;
+}
