@@ -165,13 +165,14 @@ input[type=checkbox], input[type=radio] {
     height: 30px;
     background: #e3e4e5;
     border-bottom: 1px solid #dddddd;
-    padding: 9px 0;
+    /*padding: 9px 0;*/
 }
 .page_top_left {
     float: left;
 }
 .page_top_left li {
     float: left;
+    padding-top: 9px;
     margin-right: 14px;
 }
 .back_index_icon {
@@ -189,10 +190,23 @@ input[type=checkbox], input[type=radio] {
     float: right;
 }
 .page_top_right li {
+    height: 30px;
     float: left;
     cursor: pointer;
-    padding: 0 15px;
-    border-left: 1px solid #ccc;
+    padding: 0 10px;
+    padding-top: 9px;
+    /*border-left: 1px solid #ccc;*/
+    position: relative;
+}
+.page_top_right li:hover {
+    background: #fff;
+}
+.page_top_right li:hover .page_top_icon {
+    transform: rotate(180deg); /*旋转180度*/
+    margin-top: 3px;
+}
+.page_top_right li:hover .page_top_text {
+    color: #d0111b;
 }
 .page_top_icon {
     display: block;
@@ -205,8 +219,37 @@ input[type=checkbox], input[type=radio] {
     width: 8px;
     margin-right: 8px;
 }
-.page_top_right > li:first-child{
+.page_top_line {
+    float: left;
+    width: 1px;
+    height: 12px;
+    background: #ccc;
+    margin: 0 5px;
+    margin-top: 9px;
+}
+/*.page_top_right > li:first-child{
     border: none;
+}*/
+.page_top_mine {
+    width: 184px;
+    padding: 12px;
+    background: #fff;
+    position: absolute;
+    display: none;
+    top: 30px;
+    left: 0;
+}
+.page_top_mine a {
+    display: block;
+    width: 80px;
+    float: left;
+    font-size: 12px;
+    line-height: 24px;
+    color: #999;
+    padding: 0 10px;
+}
+.page_top_mine a:hover {
+    color: #d0111b;
 }
 
 .index_top {
@@ -229,16 +272,20 @@ input[type=checkbox], input[type=radio] {
     padding-top: 11px;
     padding-left: 10px;
     cursor: pointer;
+    position: relative;
 }
 .searchSelected {
     font-size: 13px;
     color: #666;
 }
 .its_type_icon {
+    position: absolute;
     display: block;
     width: 9px;
-    margin-left: 10px;
-    padding-top: 6px;
+    /*margin-left: 10px;*/
+    /*padding-top: 6px;*/
+    right: 8px;
+    top: 18px;
 }
 .index_top_input {
     width: 423px;
@@ -255,7 +302,6 @@ input[type=checkbox], input[type=radio] {
 .searchTab ul {
     width: 70px;
     background: #fff;
-    padding-left: 10px;
     cursor: pointer;
     border: 1px solid #dfdfdf;
     border-top: none;
@@ -268,6 +314,10 @@ input[type=checkbox], input[type=radio] {
     color: #666;
     padding: 0;
     margin: 0;
+    padding-left: 10px;
+}
+.searchTab ul li:hover {
+    background: #eeeeee;
 }
 .index_top_btn {
     width: 98px;
@@ -291,23 +341,27 @@ input[type=checkbox], input[type=radio] {
     margin-left: 80px;
     margin-top: 12px;
 }
-.itc_icon {
+.index_top_hotline {
+    display: block;
+    width: 100%;
+}
+/*.itc_icon {
     display: block;
     width: 20px;
     margin-right: 7px;
-}
-.itc_text {
+}*/
+/*.itc_text {
     font-size: 16px;
     line-height: 18px;
     color: #d0111b;
     font-weight: bold;
-}
-.itc_phone {
+}*/
+/*.itc_phone {
     font-size: 16px;
     line-height: 100%;
     color: #6e6568;
     margin-top: 4px;
-}
+}*/
 
 /*分类导航*/
 .top_type_box {
@@ -342,6 +396,9 @@ input[type=checkbox], input[type=radio] {
     font-size: 16px;
     line-height: 40px;
     color: #333333;
+}
+.top_nav li a:hover {
+    color: #d0111b;
 }
 
 /*合作厂商*/
@@ -715,6 +772,9 @@ input[type=checkbox], input[type=radio] {
     padding: 0px 14px 0 18px;
     border-bottom: 1px solid #dddcdb;
 }
+.deal_box li:hover {
+    background: #fafafa;
+}
 .deal_box .deal_font_style {
     font-size: 14px;
     line-height: 38px;
@@ -787,6 +847,9 @@ input[type=checkbox], input[type=radio] {
 .iic_first {
     padding: 8px 0 12px;
 }
+.iic_first:hover .iic_first_title {
+    color: #d0111b;
+}
 .iic_first_img {
     display: block;
     width: 126px;
@@ -807,6 +870,9 @@ input[type=checkbox], input[type=radio] {
 }
 .iic_list li {
     
+}
+.iic_list li:hover .iic_list_text, .iic_list li:hover .iic_list_time {
+    color: #d0111b;
 }
 .iic_list_disc {
     width: 5px;
@@ -887,22 +953,60 @@ input[type=checkbox], input[type=radio] {
     margin-left: 16px;
     position: relative;
 }
+.feature_box .feature_img1 {
+    width: 288px;
+    height: 212px;
+    background: url('../img/feature_img1.png') no-repeat;
+    background-size: 100% 100%;
+}
+.feature_box .feature_img2 {
+    width: 288px;
+    height: 212px;
+    background: url('../img/feature_img2.png') no-repeat;
+    background-size: 100% 100%;
+}
+.feature_box .feature_img3 {
+    width: 288px;
+    height: 212px;
+    background: url('../img/feature_img3.png') no-repeat;
+    background-size: 100% 100%;
+}
+.feature_box .feature_img4 {
+    width: 288px;
+    height: 212px;
+    background: url('../img/feature_img4.png') no-repeat;
+    background-size: 100% 100%;
+}
+/*经过切换图片*/
+.feature_box .feature_img1:hover {
+    background: url('../img/feature_img1a.png') no-repeat;
+}
+.feature_box .feature_img2:hover {
+    background: url('../img/feature_img2a.png') no-repeat;
+}
+.feature_box .feature_img3:hover {
+    background: url('../img/feature_img3a.png') no-repeat;
+}
+.feature_box .feature_img4:hover {
+    background: url('../img/feature_img4a.png') no-repeat;
+}
+
 .feature_img {
     display: block;
     width: 100%;
 }
-.feature_content {
+/*.feature_content {
     position: absolute;
     top: 30px;
     left: 20px;
-}
-.feature_font_style_a {
+}*/
+/*.feature_font_style_a {
     font-size: 18px;
     line-height: 100%;
     color: #fff;
     opacity: 0.7;
-}
-.feature_font_style_b {
+}*/
+/*.feature_font_style_b {
     font-size: 18px;
     line-height: 24px;
     color: #fff;
@@ -910,14 +1014,14 @@ input[type=checkbox], input[type=radio] {
     padding-bottom: 10px;
     border-bottom: 1px solid #fff;
     margin-top: 20px;
-}
-.feature_font_style_c {
+}*/
+/*.feature_font_style_c {
     font-size: 20px;
     line-height: 24px;
     color: #fff;
     font-weight: bold;
     margin-top: 10px;
-}
+}*/
 .bottom_service {
     padding: 28px 0 24px;
     border-bottom: 1px solid #cccccc;
