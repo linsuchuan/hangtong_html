@@ -37,17 +37,17 @@
             <li>
                 <a href="index.html">
                     <img class="float_l back_index_icon" src="img/icon_index.png">
-                    <div class="float_l page_top_text">淘炉料首页</div>
+                    <div class="float_l page_top_text page_top_link">淘炉料首页</div>
                 </a>
             </li>
             <li>
                 <div class="page_top_text">欢迎来淘炉料！</div>
             </li>
             <li>
-                <a href="#"><div class="page_top_text">请登陆</div></a>
+                <a href="#"><div class="page_top_text page_top_link">请登陆</div></a>
             </li>
             <li>
-                <a href="#"><div class="page_top_text">免费注册</div></a>
+                <a href="#"><div class="page_top_text page_top_link">免费注册</div></a>
             </li>
             <li class="page_top_text">交易时间：9:00-17:00</li>
         </ul>
@@ -87,7 +87,7 @@
     <div class="float_l index_top_search">
         <!-- <form method="get" name="" action="http://www.17sucai.com/" target="_blank"> -->
             <div id="searchTxt" class="searchTxt " onMouseOver="this.className='searchTxt searchTxtHover';" onMouseOut="this.className='searchTxt';">
-                <div class="float_l searchMenu">
+                <!-- <div class="float_l searchMenu">
                     <div class="its_type">
                         <div class="float_l searchSelected" id="searchSelected">品名</div>
                         <img class="float_l its_type_icon" src="img/icon02.png">
@@ -101,7 +101,14 @@
                             <li>产地</li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
+                <select class="float_l select_style">
+                    <option value="">品名</option>
+                    <option value="">规格</option>
+                    <option value="">交割库</option>
+                    <option value="">厂家</option>
+                    <option value="">产地</option>
+                </select>
                 <input class="float_l index_top_input" name="w" type="text" placeholder="请输入关键词查询" />
                 <div class="float_l searchBtn ">
                     <button id="searchBtn" class="index_top_btn" type="submit">
@@ -1379,38 +1386,46 @@
 
     <!-- 特色 -->
     <ul class="feature_box">
-        <li class="feature_img1">
-            <!-- <img class="feature_img" src="img/feature_img1.png"> -->
-            <!-- <div class="feature_content">
-                <div class="feature_font_style_a">手机淘炉料</div>
-                <div class="feature_font_style_b">专业 便捷 买卖炉料<br>用<b>手机淘炉料</b>就够了</div>
-                <div class="feature_font_style_c">打造炉料电商行业典范</div>
-            </div> -->
-        </li>
-        <li class="feature_img2">
-            <!-- <img class="feature_img" src="img/feature_img2.png"> -->
-            <!-- <div class="feature_content">
-                <div class="feature_font_style_a">炉料金融</div>
-                <div class="feature_font_style_b">专属<b>融资模式</b><br>覆盖供应链上下游</div>
-                <div class="feature_font_style_c">为您量身打造<br>供应链金融解决方案</div>
-            </div> -->
-        </li>
-        <li class="feature_img3">
-            <!-- <img class="feature_img" src="img/feature_img3.png"> -->
-            <!-- <div class="feature_content">
-                <div class="feature_font_style_a">营销网络</div>
-                <div class="feature_font_style_b"><b>实体经营</b> 星级服务<br>资源真实 <b>价格可信</b></div>
-                <div class="feature_font_style_c">顶级配套服务</div>
-            </div> -->
-        </li>
-        <li class="feature_img4">
-            <!-- <img class="feature_img" src="img/feature_img4.png"> -->
-            <!-- <div class="feature_content">
-                <div class="feature_font_style_a">共享资源</div>
-                <div class="feature_font_style_b">实现业务需求的<br><b>快速匹配</b></div>
-                <div class="feature_font_style_c">无线商机等待您的加入</div>
-            </div> -->
-        </li>
+        <a href="ll_mall.html">
+            <li class="feature_img1">
+                <!-- <img class="feature_img" src="img/feature_img1.png"> -->
+                <!-- <div class="feature_content">
+                    <div class="feature_font_style_a">手机淘炉料</div>
+                    <div class="feature_font_style_b">专业 便捷 买卖炉料<br>用<b>手机淘炉料</b>就够了</div>
+                    <div class="feature_font_style_c">打造炉料电商行业典范</div>
+                </div> -->
+            </li>
+        </a>
+        <a href="ll-finance.html">
+            <li class="feature_img2">
+                <!-- <img class="feature_img" src="img/feature_img2.png"> -->
+                <!-- <div class="feature_content">
+                    <div class="feature_font_style_a">炉料金融</div>
+                    <div class="feature_font_style_b">专属<b>融资模式</b><br>覆盖供应链上下游</div>
+                    <div class="feature_font_style_c">为您量身打造<br>供应链金融解决方案</div>
+                </div> -->
+            </li>
+        </a>
+        <a href="network.html">
+            <li class="feature_img3">
+                <!-- <img class="feature_img" src="img/feature_img3.png"> -->
+                <!-- <div class="feature_content">
+                    <div class="feature_font_style_a">营销网络</div>
+                    <div class="feature_font_style_b"><b>实体经营</b> 星级服务<br>资源真实 <b>价格可信</b></div>
+                    <div class="feature_font_style_c">顶级配套服务</div>
+                </div> -->
+            </li>
+        </a>
+        <a href="share.html">
+            <li class="feature_img4">
+                <!-- <img class="feature_img" src="img/feature_img4.png"> -->
+                <!-- <div class="feature_content">
+                    <div class="feature_font_style_a">共享资源</div>
+                    <div class="feature_font_style_b">实现业务需求的<br><b>快速匹配</b></div>
+                    <div class="feature_font_style_c">无线商机等待您的加入</div>
+                </div> -->
+            </li>
+        </a>
         <div class="clearfix"></div>
     </ul>
 </div>

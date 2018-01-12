@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>登陆</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <script src="js/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- 分类导航 轮播 -->
+    <!-- 引入base.css -->
+    <link rel="stylesheet" type="text/css" href="css/type/base.css">
+    <link rel="stylesheet" type="text/css" href="css/type/navjd.css">
+    
+</head>
+<body class="bg_gray2">
+
+<div class="wrap index_top">
+    <div class="float_l logo"><img src="img/logo.png"></div>
+    <div class="float_l user_login">用户登录</div>
+    <div class="clearfix"></div>
+</div>
+
+<div class="login_page_box">
+    <img class="login_bg" src="img/login_bg.png">
+    <div class="login_box_position">
+        <div class="login_box">
+            <div class="login_top">
+                <div class="float_l login_top_title">会员登陆</div>
+                <a class="float_r login_top_link" href="#">免费注册></a>
+                <div class="clearfix"></div>
+            </div>
+            <div class="login_input_box">
+                <li>
+                    <input class="float_l" type="text" placeholder="用户名/邮箱地址/已验证手机号">
+                    <img class="float_r" src="img/icon_login1.png">
+                    <div class="clearfix"></div>
+                </li>
+                <li>
+                    <input class="float_l" type="text" placeholder="填写密码">
+                    <img class="float_r" src="img/icon_login2.png">
+                    <div class="clearfix"></div>
+                </li>
+            </div>
+            <div>
+                <input class="float_l login_checkbox" type="checkbox" name="checkbox">
+                <div class="float_l login_auto">下次自动登陆</div>
+                <a class="float_r login_password" href="#">忘记密码？</a>
+                <div class="clearfix"></div>
+            </div>
+            <button class="login_btn">登陆</button>
+            <a class="login_cue" href="#">其它方式登陆</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="index_bottom_padding position_bottom">
+    <div class="wrap">
+        <ul class="bottom_nav">
+            <li><a href="">关于我们</a></li>
+            <li><a href="">帮助中心</a></li>
+            <li><a href="">售后服务</a></li>
+            <li><a href="">配送与验收</a></li>
+            <li><a href="">商务合作</a></li>
+            <li><a href="">企业采购</a></li>
+            <li><a href="">开放平台</a></li>
+            <li><a href="">搜索推荐</a></li>
+            <li><a href="">友情链接</a></li>
+            <div class="clearfix"></div>
+        </ul>
+        <div class="bottom_text">淘炉料网 www.taoluwang.com COPYRIGHT © 2017-2027&nbsp;&nbsp;&nbsp;&nbsp;苏ICP备 13013915号-3 ICP证：沪B2-20140148</div>
+        <div class="bottom_img">
+            <img src="img/bottom/b1.png">
+            <img src="img/bottom/b2.png">
+            <img src="img/bottom/b3.png">
+            <img src="img/bottom/b4.png">
+            <img src="img/bottom/b5.png">
+            <img src="img/bottom/b6.png">
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- *** -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+<script src="js/holder.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+
+
+<!-- 默认排序 -->
+<script>
+// 点击更换背景色
+$(".share_sequence_button li").click(
+    function(){
+        $(".share_sequence_button li").removeClass("share_sequence_bg")
+        $(this).addClass("share_sequence_bg")
+    }
+)
+</script>
+<script>
+// 点击更换字体颜色
+$(".share_sequence_button .share_sequence_title").click(
+    function(){
+        $(".share_sequence_button .share_sequence_title").removeClass("share_sequence_color")
+        $(this).addClass("share_sequence_color")
+    }
+)
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

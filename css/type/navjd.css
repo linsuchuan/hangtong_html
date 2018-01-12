@@ -101,9 +101,7 @@
 	font-size: 14px;
 	line-height: 48px;
 	color: #3b3b3b;
-}
-.tol_title:hover {
-	color: #d0111b;
+	font-weight: bold;
 }
 .tol_content_box {
 	width: 650px;

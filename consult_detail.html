@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>行业咨询-详情</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <script src="js/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- 分类导航 轮播 -->
+    <!-- 引入base.css -->
+    <link rel="stylesheet" type="text/css" href="css/type/base.css">
+    <link rel="stylesheet" type="text/css" href="css/type/navjd.css">
+    <!-- 活动图片轮播样式 -->
+    <link rel="stylesheet" href="css/slide.css">
+    
+</head>
+<body style="background: #f7f7f7;">
+
+<!-- 页面最顶部 -->
+<div class="page_top">
+    <div class="wrap">
+        <ul class="page_top_left">
+            <li>
+                <a href="index.html">
+                    <img class="float_l back_index_icon" src="img/icon_index.png">
+                    <div class="float_l page_top_text page_top_link">淘炉料首页</div>
+                </a>
+            </li>
+            <li>
+                <div class="page_top_text">欢迎来淘炉料！</div>
+            </li>
+            <li>
+                <a href="#"><div class="page_top_text page_top_link">请登陆</div></a>
+            </li>
+            <li>
+                <a href="#"><div class="page_top_text page_top_link">免费注册</div></a>
+            </li>
+            <li class="page_top_text">交易时间：9:00-17:00</li>
+        </ul>
+        <ul class="page_top_right">
+            <li class="page_top_first">
+                <div class="float_l page_top_text">我的淘炉料</div>
+                <img class="float_l page_top_icon" src="img/icon01.png">
+                <div class="page_top_mine">
+                    <a href="#">我的订单</a>
+                    <a href="#">购物车</a>
+                    <a href="#">企业认证</a>
+                    <a href="#">账号设置</a>
+                    <a href="#">我的预存款</a>
+                    <div class="clearfix"></div>
+                </div>
+            </li>
+            <div class="page_top_line"></div>
+            <li>
+                <img class="float_l page_top_phone" src="img/icon_phone.png">
+                <div class="float_l page_top_text">手机淘炉料</div>
+                <img class="float_l page_top_icon" src="img/icon01.png">
+            </li>
+            <div class="page_top_line"></div>
+            <li>
+                <div class="float_l page_top_text">在线客服</div>
+                <img class="float_l page_top_icon" src="img/icon01.png">
+            </li>
+        </ul>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+<!-- 顶部logo 搜索 -->
+<div class="index_top wrap">
+    <div class="float_l logo"><img src="img/logo.png"></div>
+
+    <div class="float_l index_top_search">
+        <!-- <form method="get" name="" action="http://www.17sucai.com/" target="_blank"> -->
+            <div id="searchTxt" class="searchTxt " onMouseOver="this.className='searchTxt searchTxtHover';" onMouseOut="this.className='searchTxt';">
+                <div class="float_l searchMenu">
+                    <div class="its_type">
+                        <div class="float_l searchSelected" id="searchSelected">品名</div>
+                        <img class="float_l its_type_icon" src="img/icon02.png">
+                        <div class="clearfix"></div>
+                    </div>
+                    <div style="display:none;" class="searchTab " id="searchTab">
+                        <ul>
+                            <li>规格</li>
+                            <li>交割库</li>
+                            <li>厂家</li>
+                            <li>产地</li>
+                        </ul>
+                    </div>
+                </div>
+                <input class="float_l index_top_input" name="w" type="text" placeholder="请输入关键词查询" />
+                <div class="float_l searchBtn ">
+                    <button id="searchBtn" class="index_top_btn" type="submit">
+                        <img class="float_l itb_icon" src="img/icon_search.png">
+                        <div class="float_l itb_text">搜索</div>
+                        <div class="clearfix"></div>
+                    </button>
+                </div>
+            </div>
+        <!-- </form> -->
+    </div>
+
+    <div class="float_l index_top_contact">
+        <img class="index_top_hotline" src="img/hotline.png">
+        <!-- <div>
+            <img class="float_l itc_icon" src="img/icon_telephone.png">
+            <div class="float_l itc_text">服务热线</div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="itc_phone">0519 8362 1929</div> -->
+    </div>
+    <div class="clearfix"></div>
+</div>
+
+
+<div class="wrap">
+    <!-- 分类导航 -->
+    <div class="top_type_box">
+        <div class="float_l top_type_all">
+            <img class="float_l top_type_all_icon" src="img/icon_all.png">
+            <div class="float_l top_type_all_text">全部商品分类</div>
+        </div>
+        <ul class="float_l top_nav">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="ll_mall.html">炉料商城</a></li>
+            <li><a href="share.html">共享资源</a></li>
+            <li><a href="ll-finance.html">炉料金融</a></li>
+            <li><a href="network.html">营销网络</a></li>
+            <li><a href="#">关于我们</a></li>
+        </ul>
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="position_box">
+        <div class="float_l">
+            <div class="float_l position_now">您当前位置 ></div>
+            <div class="float_l position_now">行业资讯</div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="consult_box">
+        <div class="consult_left">
+            <div class="consult_left_title">常见问题分类</div>
+            <ul class="consult_left_menu">
+                <li class="consult_menu_bg">公司简介</li>
+                <li>行业咨询</li>
+                <li>网站公告</li>
+                <li>交易流程</li>
+                <li>友情链接</li>
+                <li>人才招聘</li>
+                <li>联系我们</li>
+            </ul>
+        </div>
+        <div class="consult_right">
+            <div class="consult_detail_top">
+                <div class="cdt_title">重点钢企主业亏损超百亿，钢铁电商“野蛮”生长</div>
+                <div class="cdt_time">2017-12-06 09:08 <span>来源：<a href="http://www.sohu.com/">搜狐</a></span></div>
+            </div>
+            <div class="consult_detail_content">这是一个最坏的时代，也是最好的时代。
+　　“目前钢材综合价格指数已经到了60多点，自2011年达到最高点后，钢材的价格一路下调，也就是说现在钢材的价格是1994年的60%。”在上周末由中国冶金规划院主办、找钢网承办的“2015年度钢铁电商峰会”上，中钢协副秘书长王颖生就抛出了一组数据，揭示了钢铁行业目前所处的困境。
+　　如何在钢铁行业的寒冬活下去，是目前摆在每一家钢铁企业面前的共同问题，而在越来越多的钢贸商逐渐消失后，逐渐被接受的钢铁电商，已成为钢铁产业转型升级的重要途径。
+　　钢厂亏损两头受压
+　　王颖生透露，2015年1到5月，重点钢企主营业务亏损了165亿，1到5月协会统计的钢铁企业实现销售收入1.3万亿元，同比下降16.9%。
+　　两头受压是钢厂日子难过的重要原因。“2015年以来，虽然铁矿石价格从2014年130多美元降到目前的50美元左右，但4月之后，矿价回升了，钢价还在降。”一家国有钢厂的管理层告诉记者，下游需求的不畅和产能过剩，让钢价根本提不起来。
+　　据记者了解，房地产和建筑业是钢铁消费的主要领域，2015年以来，房地产新开发面积大幅下降，意味着在钢铁上的消费也不会有大幅度增加。而除了上下游的挤压，目前钢厂，尤其是民营钢厂，还面临环保和融资各方面的压力。
+　　“对民营企业来说，受制于资金、环保、研发、市场、品牌等一系列的要求，导致抗风险能力明显弱于国有企业，任何一环出现问题就可能会被淘汰。”全联中小冶金企业商会常务副会长、民营钢企中天钢铁集团董事局主席董才平对《第一财经日报》记者坦陈，当前整个钢铁行业都面临转型升级的要求，如何发挥优势突出重围，是摆在所有民营企业面前的严峻课题。
+　　对中天钢铁来说，如何降低销售环节的成本，直接面向终端客户，是转型的目标之一。早在2011年，中天钢铁就开始寻找钢铁电商平台进行对接，当年开始启动的找钢网就是合作的对象之一。通过撮合交易、联营、自营等方式，目前中天钢材在找钢平台上交易超100万吨，且全部是零售给了小微采购商，涵盖几千家客户，这是钢厂传统的批发制渠道很难做到的事情。
+　　董才平指出，传统的线下交易模式是从钢厂到代理商、中间商、服务商，最后才到用钢企业，流通链条过于繁杂，库存周转天数高达30天~45天，资金占用时间达40天~60天，效率非常低，而利用钢铁电商平台后，传统的在“农贸市场”谈钢材生意的模式，就升级为在明码标价的“超市”选购钢材，不仅减少人力、物力投入，降低营销成本，未来还可以通过下游消费驱动组织生产，根据不同需求以销定产。
+　　钢铁电商的“野蛮”生长
+　　事实上，认识到流通环节问题的不仅仅是中天钢铁。王颖生就指出，自2011年以来，通过钢铁电商销售的比重在逐步增加，目前已达到近10%，钢厂同时也在加大直销比例，不过，到2014年为止，65%的钢材还是通过非直销的方式销售，也就是说6亿多吨的钢材还是通过流通环节销售。
+　　与此同时，钢贸商的数量也在大幅减少。据记者了解，在钢贸危机爆发后，原来超过20万的钢贸商数量如今已经跌破10万，而钢铁电商平台则从三年前的寥寥无几发展到现在的两三百家。
+            </div>
+            <div class="consult_detail_other"><a href="#">查看其它公告及动态</a></div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+</div>
+
+
+
+<div class="bg_white" style="border-bottom: 2px solid #fdfdfd;">
+    <div class="wrap">
+        <ul class="bottom_service">
+            <li>
+                <img class="float_l bottom_service_icon" src="img/bottom_icon1.png">
+                <div class="float_l bottom_service_text">厂商直供<br>货源真实</div>
+                <div class="clearfix"></div>
+            </li>
+            <li>
+                <img class="float_l bottom_service_icon" src="img/bottom_icon2.png">
+                <div class="float_l bottom_service_text">多仓直发<br>配送无忧</div>
+                <div class="clearfix"></div>
+            </li>
+            <li>
+                <img class="float_l bottom_service_icon" src="img/bottom_icon3.png">
+                <div class="float_l bottom_service_text">品种多样<br>规格齐全</div>
+                <div class="clearfix"></div>
+            </li>
+            <li>
+                <img class="float_l bottom_service_icon" src="img/bottom_icon4.png">
+                <div class="float_l bottom_service_text">服务至上<br>售后保障</div>
+                <div class="clearfix"></div>
+            </li>
+
+            <li>
+                <img class="float_l bottom_service_icon" src="img/bottom_icon5.png">
+                <div class="float_l bottom_service_text">真实交易<br>购货无忧</div>
+                <div class="clearfix"></div>
+            </li>
+
+            <div class="clearfix"></div>
+        </ul>
+
+        <div class="bottom_contact_box">
+            <ul class="bottom_contact bc_help">
+                <li>
+                    <div class="bc_help_a">帮助中心</div>
+                    <div class="bc_help_b">
+                        <div class="bc_help_content"><a href="">关于我们</a></div>
+                        <div class="bc_help_content"><a href="">购买指南</a></div>
+                        <div class="bc_help_content"><a href="">申请发票</a></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="bc_help_a">帮助中心</div>
+                    <div class="bc_help_b">
+                        <div class="bc_help_content"><a href="">关于我们</a></div>
+                        <div class="bc_help_content"><a href="">购买指南</a></div>
+                        <div class="bc_help_content"><a href="">申请发票</a></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="bc_help_a">帮助中心</div>
+                    <div class="bc_help_b">
+                        <div class="bc_help_content"><a href="">关于我们</a></div>
+                        <div class="bc_help_content"><a href="">购买指南</a></div>
+                        <div class="bc_help_content"><a href="">申请发票</a></div>
+                    </div>
+                </li>
+                <div class="clearfix"></div>
+            </ul>
+
+            <div class="bottom_contact bc_phone">
+                <div class="bc_phone_title">全国服务热线</div>
+                <div class="bc_phone_number">0519 8362 1929</div>
+                <ul class="bc_phone_button">
+                    <li class="margin_r30">
+                        <a href="javascript:void(0)">
+                            <img class="bc_phone_icon" src="img/icon06.png">
+                            <div class="bc_phone_cue">在线客服</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <img class="bc_phone_icon" src="img/icon07.png">
+                            <div class="bc_phone_cue">用户反馈</div>
+                        </a>
+                    </li>
+                    <div class="clearfix"></div>
+                </ul>
+            </div>
+
+            <ul class="bottom_contact bc_scan">
+                <li>
+                    <div class="bc_scan_title">淘炉料官方微信</div>
+                    <img class="bc_scan_img" src="img/scan/scan_img1.png">
+                    <div class="bc_scan_cue">扫描上方二维码</div>
+                </li>
+                <li>
+                    <div class="bc_scan_title">淘炉料手机APP</div>
+                    <img class="bc_scan_img" src="img/scan/scan_img2.png">
+                    <div class="bc_scan_cue">扫描上方二维码</div>
+                </li>
+                <div class="clearfix"></div>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
+<div class="bg_gray index_bottom_padding">
+    <div class="wrap">
+        <ul class="bottom_nav">
+            <li><a href="">关于我们</a></li>
+            <li><a href="">帮助中心</a></li>
+            <li><a href="">售后服务</a></li>
+            <li><a href="">配送与验收</a></li>
+            <li><a href="">商务合作</a></li>
+            <li><a href="">企业采购</a></li>
+            <li><a href="">开放平台</a></li>
+            <li><a href="">搜索推荐</a></li>
+            <li><a href="">友情链接</a></li>
+            <div class="clearfix"></div>
+        </ul>
+        <div class="bottom_text">淘炉料网 www.taoluwang.com COPYRIGHT © 2017-2027&nbsp;&nbsp;&nbsp;&nbsp;苏ICP备 13013915号-3 ICP证：沪B2-20140148</div>
+        <div class="bottom_img">
+            <img src="img/bottom/b1.png">
+            <img src="img/bottom/b2.png">
+            <img src="img/bottom/b3.png">
+            <img src="img/bottom/b4.png">
+            <img src="img/bottom/b5.png">
+            <img src="img/bottom/b6.png">
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- *** -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+<script src="js/holder.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+
+
+<!-- 顶部输入框 -->
+<!-- <script type="text/javascript" src="js/jquery-1.7.min.js"></script> -->
+<script type="text/javascript">
+    $(function(){
+        $("#searchSelected").click(function(){ 
+            $("#searchTab").show();
+            $(this).addClass("searchOpen");
+        });
+
+        $("#searchTab li").click(function(){
+            $("#searchSelected").html($(this).html());
+            $("#searchTab").hide();
+            $("#searchSelected").removeClass("searchOpen");
+        });
+    });
+</script>
+
+
+<!-- 分类导航 -->
+<!-- <script src="js/type/jquery-3.1.1.js"></script> -->
+<script src="js/type/banner.js"></script>
+<script type="text/javascript">
+    //*****************左侧导航***************//
+    var cate = $(".cate");
+    var num = $(".cate .cate_menu li").length;
+    var oleftli = $(".cate .cate_menu li");//显示区块
+    var ofloatli = $(".navfloat ul li");//隐藏区块
+    bannerplay(cate,ofloatli,oleftli,15,false,1);
+    //***************中间轮播图************//
+    var slider_main = $(".slider_main");
+    var picli = $(".slider_main .picban li");
+    var lilen = picli.length;
+    var leftbtn = $(".slider_main .left");
+    var rightbtn = $(".slider_main .right");
+    for(var i=1;i<=lilen;i++){  //创建图片个数相对应的底部数字个数
+        // var li="<li>"+i+"</li>"; //创建li标签，并插入到页面中
+        var li="<li></li>"; //去掉底部的数字
+        $(".slider_main .num_btn").append(li);
+    }   
+    var numli = $(".slider_main .num_btn li")
+    bannerplay(slider_main,picli,numli,lilen,true,0,leftbtn,rightbtn);
+</script>
+
+
+<!-- 合作厂家 -->
+<!-- <script src="http://www.jq22.com/jquery/jquery-1.10.2.js" charset="utf-8"></script> -->
+<script src="js/index_slide.js"></script>
+<script>
+    $(".cooperation_content_box").superSlider({
+        prevBtn:     ".prev",//左按钮
+        nextBtn:     ".next",//右按钮
+        listCont:    "#roll",//滚动列表外层
+        scrollWhere: "next",//自动滚动方向next
+        delayTime:   1000,//自动轮播时间间隔
+        speed:       300,//滚动速度
+        amount:      1,//单次滚动数量
+        showNum:     4,//显示数量
+        autoPlay:    true//自动播放
+    });
+</script>
+
+
+<!-- 价格指导tab切换 -->
+<script type="text/javascript" src="js/jQuery.rTabs.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $("#tab").rTabs({
+            bind : 'click',
+            // animation : 'left'
+        });
+    })
+</script>
+
+<!-- 活动专区轮播图 -->
+<!-- <script src="js/jquery-1.8.3.min.js"></script> -->
+<script src="js/slide.js"></script>
+<script>
+    $('.ck-slide').ckSlide({
+        autoPlay: true,//默认为自动播放，需要时请以此设置
+        dir: 'x',//默认效果淡隐淡出，x为水平移动，y 为垂直滚动
+        interval: 3000//默认间隔3000毫秒
+        
+    });
+</script>
+
+
+
+
+
+<script type="text/javascript" src="js/echarts.js"></script>
+<script type="text/javascript">
+// 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('main'));
+
+    // 指定图表的配置项和数据
+    var option = {
+    // title: {
+    //     text: '今日&昨日',
+    //     left: '50%',
+    //     textAlign: 'center'
+    // },
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            lineStyle: {
+                color: '#ccd6eb'
+            }
+        },
+        backgroundColor: 'rgba(255,255,255,1)',
+        padding: [5, 10],
+        textStyle: {
+            color: '#414141',
+        },
+        extraCssText: 'box-shadow: 0 0 5px rgba(0,0,0,0.3)'
+    },
+    // legend: {
+    //     right: 20,
+    //     orient: 'vertical',
+    //     data: ['今日', '昨日']
+    // },
+    xAxis: {
+        type: 'category',
+        data: ['', '07/01', '07/01', '07/01', '07/01', '07/01', '07/01', '07/01', '07/01', '07/01'],
+        boundaryGap: false,
+        splitLine: {
+            show: true,
+            interval: 'auto',
+            lineStyle: {
+                color: ['none']
+            }
+        },
+        axisTick: {
+            show: false
+        },
+        axisLine: {
+            lineStyle: {
+                color: '#666666'
+            }
+        },
+        axisLabel: {
+            margin: 10,
+            textStyle: {
+                fontSize: 14
+            }
+        }
+    },
+    yAxis: {
+        type: 'value',
+        splitLine: {
+            lineStyle: {
+                color: ['#D4DFF5']
+            }
+        },
+        axisTick: {
+            show: false
+        },
+        axisLine: {
+            lineStyle: {
+                color: '#666666'
+            }
+        },
+        axisLabel: {
+            margin: 10,
+            textStyle: {
+                fontSize: 14
+            }
+        }
+    },
+    series: [
+    // // 今日
+    // {
+    //     name: '今日',
+    //     type: 'line',
+    //     smooth: true,
+    //     showSymbol: false,
+    //     symbol: 'circle',
+    //     symbolSize: 6,
+    //     data: ['1200', '1400', '1008', '1411', '1026', '1288', '1300', '800', '1100', '1000', '1118', '1322'],
+    //     areaStyle: {
+    //         normal: {
+    //             color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+    //                 offset: 0,
+    //                 color: 'rgba(199, 237, 250,0.5)'
+    //             }, {
+    //                 offset: 1,
+    //                 color: 'rgba(199, 237, 250,0.2)'
+    //             }], false)
+    //         }
+    //     },
+    //     itemStyle: {
+    //         normal: {
+    //             color: '#f7b851'
+    //         }
+    //     },
+    //     lineStyle: {
+    //         normal: {
+    //             width: 3
+    //         }
+    //     }
+    // }, 
+    {
+        name: '球铁',
+        type: 'line',
+        smooth: true,
+        showSymbol: false,
+        symbol: 'circle',
+        symbolSize: 6,
+        data: ['4000', '3500', '8000', '3500', '12000', '3500', '4000', '3500', '4000', '3500'],
+        areaStyle: {
+            normal: {
+                color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                    offset: 0,
+                    color: 'rgba(232, 240, 245,1)'
+                }, {
+                    offset: 1,
+                    color: 'rgba(232, 240, 245,1)'
+                }], false)
+            }
+        },
+        itemStyle: {
+            normal: {
+                color: '#46759f'
+            }
+        },
+        lineStyle: {
+            normal: {
+                width: 3
+            }
+        }
+    }]
+};
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+</script>
+
+
+<script type="text/javascript" src="js/scroll.js"></script>
+<script type="text/javascript">
+$(function(){
+    $("div.roll_deal").myScroll({
+        speed:40, //数值越大，速度越慢
+        rowHeight:195 //li的高度
+    });
+});
+</script>
+
+<!-- banner区联系电话点击下边框变色 -->
+<script>
+$(".bi2_input").focus(
+    function(){
+        $(".bi2_input").addClass("bi2_input_click");       
+    }
+).blur(
+    function(){
+        $(".bi2_input").removeClass("bi2_input_click");       
+});
+</script>
+
+<!-- 底部四张图片经过切换为纯色背景 -->
+    <!-- css实现 -->
+<!-- <script>
+    // 1
+    $(".feature_img1") .mouseenter(function(){
+        $(".feature_img1").css('background-image','url(img/feature_img1a.png)')
+    })
+    $(".feature_img1") .mouseleave(function(){
+        $(".feature_img1").css('background-image','url(img/feature_img1.png)')
+    })
+    // 2
+    $(".feature_img2") .mouseenter(function(){
+        $(".feature_img2").css('background-image','url(img/feature_img2a.png)')
+    })
+    $(".feature_img2") .mouseleave(function(){
+        $(".feature_img2").css('background-image','url(img/feature_img2.png)')
+    })
+    // 3
+    $(".feature_img3") .mouseenter(function(){
+        $(".feature_img3").css('background-image','url(img/feature_img3a.png)')
+    })
+    $(".feature_img3") .mouseleave(function(){
+        $(".feature_img3").css('background-image','url(img/feature_img3.png)')
+    })
+    // 4
+    $(".feature_img4") .mouseenter(function(){
+        $(".feature_img4").css('background-image','url(img/feature_img4a.png)')
+    })
+    $(".feature_img4") .mouseleave(function(){
+        $(".feature_img4").css('background-image','url(img/feature_img4.png)')
+    })
+</script> -->
+
+<!-- 我的淘炉料下拉菜单 -->
+<script >
+    $(".page_top_first").mouseenter(function(){
+        $(".page_top_mine").css('display','block')
+    })
+    $(".page_top_first").mouseleave(function(){
+        $(".page_top_mine").css('display','none')
+    })
+</script>
+
+<!-- 竖向菜单 -->
+<script>
+$(".consult_left_menu li").click(
+    function(){
+        $(".consult_left_menu li").removeClass("consult_menu_bg")
+        $(this).addClass("consult_menu_bg")
+    }
+)
+</script>
+
+
+</body>
+
+</html>
