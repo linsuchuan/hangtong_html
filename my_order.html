@@ -175,7 +175,7 @@
                         <div class="float_l vip_menu_title">买家管理</div>
                         <div class="clearfix"></div>
                     </div>
-                    <li><a href="#">我的订单</a></li>
+                    <li><a href="#" class="vip_menu_link_color">我的订单</a></li>
                     <li><a href="#">退货订单</a></li>
                     <li><a href="#">购物车</a></li>
                 </ul>
@@ -242,16 +242,46 @@
                     <ul class="float_r mine_order_right">
                         <li>
                             <div class="float_l mine_order_text margin_r12">成交时间</div>
-                            <div class="float_l mine_choice">
-                                <div class="float_l mine_choice_text">全部</div>
-                                <div class="float_r caret icon_color"></div>
+                            <div class="float_l mine_choice" style="border:none;">
+                                <!-- <div class="float_l mine_choice_text">全部</div> -->
+                                <!-- <div class="float_r caret icon_color"></div> -->
+                                <div class="float_l searchMenu">
+                                    <div class="its_type3">
+                                        <div class="float_l searchSelected3" id="searchSelected3">全部</div>
+                                        <img class="float_l its_type_icon3" src="img/icon02.png">
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div style="display:none;" class="searchTab3 " id="searchTab3">
+                                        <ul>
+                                            <li>全部</li>
+                                            <li>111</li>
+                                            <li>222</li>
+                                            <li>333</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </li>
                         <li>
                             <div class="float_l mine_order_text margin_r12">交易状态</div>
-                            <div class="float_l mine_choice">
-                                <div class="float_l mine_choice_text">全部</div>
-                                <div class="float_r caret icon_color"></div>
+                            <div class="float_l mine_choice" style="border:none;">
+                                <!-- <div class="float_l mine_choice_text">全部</div> -->
+                                <!-- <div class="float_r caret icon_color"></div> -->
+                                <div class="float_l searchMenu">
+                                    <div class="its_type3">
+                                        <div class="float_l searchSelected3" id="searchSelected4">全部</div>
+                                        <img class="float_l its_type_icon3" src="img/icon02.png">
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div style="display:none;" class="searchTab3 " id="searchTab4">
+                                        <ul>
+                                            <li>全部</li>
+                                            <li>111</li>
+                                            <li>222</li>
+                                            <li>333</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </li>
                         <li><input class="mine_search" type="text" placeholder="查询订单号"></li>
@@ -623,11 +653,41 @@ $(".share_sequence_button .share_sequence_title").click(
 <script>
 $("#click_all").click(function(){   
     if(this.checked){   
-        $(".order-list-box :checkbox").prop("checked", true);  
+        $(".order-list-box :checkbox").prop("checked", true);
     }else{   
         $(".order-list-box :checkbox").prop("checked", false);
     }   
 });
+</script>
+
+
+<!-- 下拉菜单 -->
+<script type="text/javascript">
+    $(function(){
+        $("#searchSelected3").click(function(){ 
+            $("#searchTab3").show();
+            $(this).addClass("searchOpen");
+        });
+
+        $("#searchTab3 li").click(function(){
+            $("#searchSelected3").html($(this).html());
+            $("#searchTab3").hide();
+            $("#searchSelected3").removeClass("searchOpen");
+        });
+    });
+
+    $(function(){
+        $("#searchSelected4").click(function(){ 
+            $("#searchTab4").show();
+            $(this).addClass("searchOpen");
+        });
+
+        $("#searchTab4 li").click(function(){
+            $("#searchSelected4").html($(this).html());
+            $("#searchTab4").hide();
+            $("#searchSelected4").removeClass("searchOpen");
+        });
+    });
 </script>
 
 
@@ -636,5 +696,4 @@ $("#click_all").click(function(){
 
 
 </body>
-
 </html>

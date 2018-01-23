@@ -473,8 +473,22 @@
     <ul class="apply_service_input">
         <li class="asi_w1" style="position: relative;">
             <div class="asi_title">融资意向<span>*</span></div>
-            <input class="asi_input" type="text" placeholder="代订融">
-            <img class="asi_down" src="img/icon16.png">
+            <!-- <input class="asi_input" type="text" placeholder="代订融"> -->
+            <!-- <img class="asi_down" src="img/icon16.png"> -->
+            <div class="float_l searchMenu" style="width:100%;">
+                <div class="its_type2">
+                    <div class="float_l searchSelected2" id="searchSelected2">代订融</div>
+                    <img class="float_l its_type_icon2" src="img/icon02.png">
+                    <div class="clearfix"></div>
+                </div>
+                <div style="display:none;" class="searchTab2 " id="searchTab2">
+                    <ul>
+                        <li>代订融</li>
+                        <li>分批融</li>
+                        <li>库存融</li>
+                    </ul>
+                </div>
+            </div>
         </li>
         <li class="asi_w2" >
             <div class="asi_title">公司名称<span>*</span></div>
@@ -659,6 +673,22 @@
             $("#searchSelected").html($(this).html());
             $("#searchTab").hide();
             $("#searchSelected").removeClass("searchOpen");
+        });
+    });
+</script>
+
+<!-- 下拉菜单 -->
+<script type="text/javascript">
+    $(function(){
+        $("#searchSelected2").click(function(){ 
+            $("#searchTab2").show();
+            $(this).addClass("searchOpen");
+        });
+
+        $("#searchTab2 li").click(function(){
+            $("#searchSelected2").html($(this).html());
+            $("#searchTab2").hide();
+            $("#searchSelected2").removeClass("searchOpen");
         });
     });
 </script>

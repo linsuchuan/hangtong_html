@@ -24,6 +24,8 @@
     <!-- 引入base.css -->
     <link rel="stylesheet" type="text/css" href="css/type/base.css">
     <link rel="stylesheet" type="text/css" href="css/type/navjd.css">
+
+    <link href="up/bootstrap-fileinput.css">
     
 </head>
 <body class="bg_gray2">
@@ -294,35 +296,118 @@
                     <div class="annex_info_box">
                         <div class="business_info_title">附件信息</div>
                         <div class="annex_info_cue"><span>注意：</span>营业执照为必填项，所有证件均需盖公章或者合同章。限使用jpg、jpeg、png、gif、bmp格式、且大小为1M内。</div>
-                        <div class="annex_info_data">
-                            <li>
-                                <div class="float_l aid_name">上传证件：</div>
-                                <div class="float_l aid_choice">
-                                    <input class="float_l aid_choice_radio" type="radio" name="up" checked="checked">
-                                    <div class="float_l aid_choice_text">三证合一</div>
-                                </div>
-                                <div class="float_l aid_choice">
-                                    <input class="float_l aid_choice_radio" type="radio" name="up">
-                                    <div class="float_l aid_choice_text">企业五证</div>
-                                </div>
-                                <div class="clearfix"></div>
-                            </li>
+                        <div class="up_img_box">
+                            <div class="float_l aid_name">上传证件：</div>
+                            <div class="float_l aid_choice">
+                                <input class="float_l aid_choice_radio" type="radio" name="up" checked="checked" id="up_choice_a">
+                                <div class="float_l aid_choice_text">三证合一</div>
+                            </div>
+                            <div class="float_l aid_choice">
+                                <input class="float_l aid_choice_radio" type="radio" name="up" id="up_choice_b">
+                                <div class="float_l aid_choice_text">企业五证</div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="annex_info_data up_info_a">
                             <li>
                                 <div class="float_l aid_name"><span>*</span>营业执照：</div>
-                                <button class="float_l aid_btn">选择你要上传的图像</button>
+                                <div class="up_info_btn">
+                                    <button class="float_l aid_btn">选择你要上传的图像</button>
+                                    <!-- up_head -->
+                                    <div class="upload_box">
+                                        <input class="upload_input" type="file" name="file" id="file_input" value="" multiple/>
+                                    </div>
+                                </div>
                                 <div class="float_l aid_cue">您未上传营业执照证件</div>
                                 <div class="clearfix"></div>
+                                <img class="up_output" src="">
                             </li>
                             <li>
                                 <div class="float_l aid_name"><span>*</span>开票信息：</div>
-                                <button class="float_l aid_btn">选择你要上传的图像</button>
+                                <div class="up_info_btn">
+                                    <button class="float_l aid_btn">选择你要上传的图像</button>
+                                    <!-- up_head -->
+                                    <div class="upload_box">
+                                        <input class="upload_input" type="file" name="file" id="file_input2" value="" multiple/>
+                                    </div>
+                                </div>
                                 <div class="float_l aid_cue">您未上传开票信息证件</div>
                                 <div class="clearfix"></div>
+                                <img class="up_output" src="">
+                            </li>
+                        </div>
+
+                        <div class="annex_info_data up_info_b" style="display: none;">
+                            <li>
+                                <div class="float_l aid_name"><span>*</span>营业执照：</div>
+                                <div class="up_info_btn">
+                                    <button class="float_l aid_btn">选择你要上传的图像</button>
+                                    <!-- up_head -->
+                                    <div class="upload_box">
+                                        <input class="upload_input" type="file" name="file" id="file_input3" value="" multiple/>
+                                    </div>
+                                </div>
+                                <div class="float_l aid_cue">您未上传营业执照证件</div>
+                                <div class="clearfix"></div>
+                                <img class="up_output" src="">
+                            </li>
+                            <li>
+                                <div class="float_l aid_name"><span>*</span>组织机构代码：</div>
+                                <div class="up_info_btn">
+                                    <button class="float_l aid_btn">选择你要上传的图像</button>
+                                    <!-- up_head -->
+                                    <div class="upload_box">
+                                        <input class="upload_input" type="file" name="file" id="file_input4" value="" multiple/>
+                                    </div>
+                                </div>
+                                <div class="float_l aid_cue">您未上传组织机构代码证件</div>
+                                <div class="clearfix"></div>
+                                <img class="up_output" src="">
+                            </li>
+                            <li>
+                                <div class="float_l aid_name"><span>*</span>税务登记证：</div>
+                                <div class="up_info_btn">
+                                    <button class="float_l aid_btn">选择你要上传的图像</button>
+                                    <!-- up_head -->
+                                    <div class="upload_box">
+                                        <input class="upload_input" type="file" name="file" id="file_input5" value="" multiple/>
+                                    </div>
+                                </div>
+                                <div class="float_l aid_cue">您未上传税务登记证证件</div>
+                                <div class="clearfix"></div>
+                                <img class="up_output" src="">
+                            </li>
+                            <li>
+                                <div class="float_l aid_name"><span>*</span>开户许可证：</div>
+                                <div class="up_info_btn">
+                                    <button class="float_l aid_btn">选择你要上传的图像</button>
+                                    <!-- up_head -->
+                                    <div class="upload_box">
+                                        <input class="upload_input" type="file" name="file" id="file_input6" value="" multiple/>
+                                    </div>
+                                </div>
+                                <div class="float_l aid_cue">您未上传开户许可证证件</div>
+                                <div class="clearfix"></div>
+                                <img class="up_output" src="">
+                            </li>
+                            <li>
+                                <div class="float_l aid_name"><span>*</span>企业认证授权书：</div>
+                                <div class="up_info_btn">
+                                    <button class="float_l aid_btn">选择你要上传的图像</button>
+                                    <!-- up_head -->
+                                    <div class="upload_box">
+                                        <input class="upload_input" type="file" name="file" id="file_input7" value="" multiple/>
+                                    </div>
+                                </div>
+                                <div class="float_l aid_cue">您未上传企业认证授权书证件</div>
+                                <div class="clearfix"></div>
+                                <img class="up_output" src="">
                             </li>
                         </div>
                         <div class="annex_info_btn_box">
-                            <button class="annex_info_btn">提交认证</button>
-                            <button class="annex_info_btn">变更认证</button>
+                            <button class="annex_info_btn annex_info_btn_submit">提交认证</button>
+                            <button class="annex_info_btn annex_info_btn_change">变更认证</button>
+                            <div class="clearfix"></div>
                         </div>
                     </div>
                 </div>
@@ -525,7 +610,70 @@ $("#click_all").click(function(){
 });
 </script>
 
+<!-- 上传证件选择 -->
+<script src="up/bootstrap-fileinput.js"></script>
+<script>
+    // 选择
+    $("#up_choice_a") .click(function(){
+        $(".up_info_a").css('display','block')
+        $(".up_info_b").css('display','none')
+    });
+    $("#up_choice_b") .click(function(){
+        $(".up_info_a").css('display','none')
+        $(".up_info_b").css('display','block')
+    });
+    // 上传
+    window.onload = function(){
+        //获取上传控件
+        var input = document.getElementById("file_input");
+        var input2 = document.getElementById("file_input2");
+        var input3 = document.getElementById("file_input3");
+        var input4 = document.getElementById("file_input4");
+        var input5 = document.getElementById("file_input5");
+        var input6 = document.getElementById("file_input6");
+        var input7 = document.getElementById("file_input7");
 
+
+
+        var result,div;
+ 
+        if(typeof FileReader==='undefined'){
+            result.innerHTML = "抱歉，你的浏览器不支持 FileReader";
+            input.setAttribute('disabled','disabled');
+        }else{
+            //设置监听
+            input.addEventListener('change',readFile,false);
+            input2.addEventListener('change',readFile,false);
+            input3.addEventListener('change',readFile,false);
+            input4.addEventListener('change',readFile,false);
+            input5.addEventListener('change',readFile,false);
+            input6.addEventListener('change',readFile,false);
+            input7.addEventListener('change',readFile,false);
+        }
+
+        // 上传图片
+        function readFile(){
+            var inputobj = $(this);
+            var form = new FormData();
+            if (this.files.length>1) {
+                // $.toast("最多上传一张图片！");
+                alert("最多上传一张图片！");
+            }else{
+                for(var i=0;i<this.files.length;i++){
+                    var reader = new FileReader();
+                    reader.onload = function(e){
+                         inputobj.parents('li').find('.up_output').attr('src',this.result);
+                         inputobj.parents('li').find('.up_output').css('display','block');
+                         inputobj.parents('li').find('.aid_cue').css('display','none');
+                         // $(this).parent('.annex_info_data li').find(".up_output").attr('src',this.result);
+                    }
+                    reader.readAsDataURL(this.files[i]);
+                    form.append(i,this.files[i]);
+                }
+            };
+        }
+    }
+</script>
 
 
 
