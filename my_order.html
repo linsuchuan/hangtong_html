@@ -102,6 +102,7 @@
                         </div>
                         <div style="display:none;" class="searchTab " id="searchTab">
                             <ul>
+                                <li>品名</li>
                                 <li>一号</li>
                                 <li>二号</li>
                                 <li>三号</li>
@@ -121,12 +122,13 @@
         </div>
 
         <div class="float_l index_top_contact">
-            <div>
+            <img class="index_top_hotline" src="img/hotline.png">
+            <!-- <div>
                 <img class="float_l itc_icon" src="img/icon_telephone.png">
                 <div class="float_l itc_text">服务热线</div>
                 <div class="clearfix"></div>
             </div>
-            <div class="itc_phone">0519 8362 1929</div>
+            <div class="itc_phone">0519 8362 1929</div> -->
         </div>
         <div class="clearfix"></div>
     </div>
@@ -145,7 +147,7 @@
                 <li><a href="share.html">共享资源</a></li>
                 <li><a href="ll-finance.html">炉料金融</a></li>
                 <li><a href="network.html">营销网络</a></li>
-                <li><a href="#">关于我们</a></li>
+                <li><a href="consult.html">关于我们</a></li>
             </ul>
             <div class="clearfix"></div>
         </div>
@@ -164,34 +166,9 @@
     </div>
 
     <div class="vip_box">
-        <div class="vip_top">
-            <div class="float_l mine_tll">我的淘炉料</div>
-            <div class="float_l mine_order">
-                <div class="float_l mine_order_text">我的订单</div>
-                <ul class="float_r mine_order_right">
-                    <li>
-                        <div class="float_l mine_order_text margin_r12">成交时间</div>
-                        <div class="float_l mine_choice">
-                            <div class="float_l mine_choice_text">全部</div>
-                            <div class="float_r caret icon_color"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="float_l mine_order_text margin_r12">交易状态</div>
-                        <div class="float_l mine_choice">
-                            <div class="float_l mine_choice_text">全部</div>
-                            <div class="float_r caret icon_color"></div>
-                        </div>
-                    </li>
-                    <li><input class="mine_search" type="text" placeholder="查询订单号"></li>
-                    <li><button class="mine_btn">搜索</button></li>
-                </ul>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-
         <div class="vip_height">
             <div class="vip_left">
+                <div class=" mine_tll">我的淘炉料</div>
                 <ul class="vip_menu">
                     <div>
                         <img class="float_l vip_menu_icon" src="img/mine_icon1.png">
@@ -259,178 +236,201 @@
                     <li><a href="#">安全中心设置</a></li>
                 </ul>
             </div>
-            <div class="vip_right mine_order_content">
-                <ul class="mine_order_top">
-                    <li class="mot_w1">商品信息</li>
-                    <li class="mot_w2">单元（元）</li>
-                    <li class="mot_w3">数量</li>
-                    <li class="mot_w4">重量（吨）</li>
-                    <li class="mot_w5">订单总额</li>
-                    <li class="mot_w6">调价（元）</li>
-                    <li class="mot_w7">交易订单状态</li>
-                    <li class="mot_w8">操作</li>
-                </ul>
-                <div class="mine_order_top2">
-                    <div class="float_l moc_choose_all">
-                        <input class="float_l moc_choose_all_input" type="checkbox" id="click_all">
-                        <div class="float_l moc_choose_all_text">全选</div>
+            <div class="vip_right">
+                <div class=" mine_order">
+                    <div class="float_l mine_order_text">我的订单</div>
+                    <ul class="float_r mine_order_right">
+                        <li>
+                            <div class="float_l mine_order_text margin_r12">成交时间</div>
+                            <div class="float_l mine_choice">
+                                <div class="float_l mine_choice_text">全部</div>
+                                <div class="float_r caret icon_color"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="float_l mine_order_text margin_r12">交易状态</div>
+                            <div class="float_l mine_choice">
+                                <div class="float_l mine_choice_text">全部</div>
+                                <div class="float_r caret icon_color"></div>
+                            </div>
+                        </li>
+                        <li><input class="mine_search" type="text" placeholder="查询订单号"></li>
+                        <li><button class="mine_btn">搜索</button></li>
+                    </ul>
+                </div>
+                <div class=" mine_order_content">
+                    <ul class="mine_order_top">
+                        <li class="mot_w1">商品信息</li>
+                        <li class="mot_w2">单元（元）</li>
+                        <li class="mot_w3">数量</li>
+                        <li class="mot_w4">重量（吨）</li>
+                        <li class="mot_w5">订单总额</li>
+                        <li class="mot_w6">调价（元）</li>
+                        <li class="mot_w7">交易订单状态</li>
+                        <li class="mot_w8">操作</li>
+                    </ul>
+                    <div class="mine_order_top2">
+                        <div class="float_l moc_choose_all">
+                            <input class="float_l moc_choose_all_input" type="checkbox" id="click_all">
+                            <div class="float_l moc_choose_all_text">全选</div>
+                        </div>
+                        <button class="float_l moc_payment">合并并付款</button>
+                        <div class="clearfix"></div>
                     </div>
-                    <button class="float_l moc_payment">合并并付款</button>
+                    <!-- 订单 -->
+                    <div class="order-list-box">
+                        <div class="mine_order_details">
+                            <div class="mod_top">
+                                <input class="float_l mod_top_input" type="checkbox">
+                                <div class="float_l mod_top_text">下单时间：<span>2017-09-27 14:38:04</span></div>
+                                <div class="float_l mod_top_text">订单编号：<span>20170927003</span></div>
+                                <div class="float_l mod_top_text">付款方式：<span>现金预存款支付</span></div>
+                            </div>
+                            <ul class="mod_content">
+                                <li class="mot_w1 mod_text_style2">新兴生铁 - 球铁 低硅球10#</li>
+                                <li class="mot_w2 mod_text_style font_number_style">3130.00</li>
+                                <li class="mot_w3 mod_text_style font_number_style">1.40</li>
+                                <li class="mot_w4 mod_text_style font_number_style">2.3690</li>
+                                <li class="mot_w5 mod_text_style4 font_number_style">￥3130.00</li>
+                                <li class="mot_w6 mod_text_style font_number_style">-3000</li>
+                                <li class="mot_w7 mod_text_style3">订单已关闭</li>
+                                <li class="mot_w8 padding_t20" >
+                                    <div class="mod_text_style5">取消成功</div>
+                                    <a href="#"><div class="mod_text_style5">查看订单详情</div></a>
+                                </li>
+                                <div class="clearfix"></div>
+                            </ul>
+                        </div>
+
+                        <div class="mine_order_details">
+                            <div class="mod_top">
+                                <input class="float_l mod_top_input" type="checkbox">
+                                <div class="float_l mod_top_text">下单时间：<span>2017-09-27 14:38:04</span></div>
+                                <div class="float_l mod_top_text">订单编号：<span>20170927003</span></div>
+                                <div class="float_l mod_top_text">付款方式：<span>现金预存款支付</span></div>
+                            </div>
+                            <ul class="mod_content">
+                                <li class="mot_w1 mod_text_style2">新兴生铁 - 球铁 低硅球10#</li>
+                                <li class="mot_w2 mod_text_style font_number_style">3130.00</li>
+                                <li class="mot_w3 mod_text_style font_number_style">1.40</li>
+                                <li class="mot_w4 mod_text_style font_number_style">2.3690</li>
+                                <li class="mot_w5 mod_text_style4 font_number_style">￥3130.00</li>
+                                <li class="mot_w6 mod_text_style font_number_style">-3000</li>
+                                <li class="mot_w7 mod_text_style3">等待审核</li>
+                                <li class="mot_w8 padding_t20" >
+                                    <a href="#"><div class="mod_text_style5">取消订单</div></a>
+                                    <a href="#"><div class="mod_text_style5">查看订单详情</div></a>
+                                </li>
+                                <div class="clearfix"></div>
+                            </ul>
+                        </div>
+
+                        <div class="mine_order_details">
+                            <div class="mod_top">
+                                <input class="float_l mod_top_input" type="checkbox">
+                                <div class="float_l mod_top_text">下单时间：<span>2017-09-27 14:38:04</span></div>
+                                <div class="float_l mod_top_text">订单编号：<span>20170927003</span></div>
+                                <div class="float_l mod_top_text">付款方式：<span>现金预存款支付</span></div>
+                            </div>
+                            <ul class="mod_content">
+                                <li class="mot_w1 mod_text_style2">新兴生铁 - 球铁 低硅球10#</li>
+                                <li class="mot_w2 mod_text_style font_number_style">3130.00</li>
+                                <li class="mot_w3 mod_text_style font_number_style">1.40</li>
+                                <li class="mot_w4 mod_text_style font_number_style">2.3690</li>
+                                <li class="mot_w5 mod_text_style4 font_number_style">￥3130.00</li>
+                                <li class="mot_w6 mod_text_style font_number_style">-3000</li>
+                                <li class="mot_w7 mod_text_style3">等待买家付款</li>
+                                <li class="mot_w8 padding_t10" >
+                                    <a href="#"><button class="mod_payment">付款</button></a>
+                                    <a href="#"><div class="mod_text_style5">取消订单</div></a>
+                                    <a href="#"><div class="mod_text_style5">查看订单详情</div></a>
+                                </li>
+                                <div class="clearfix"></div>
+                            </ul>
+                        </div>
+
+                        <div class="mine_order_details">
+                            <div class="mod_top">
+                                <input class="float_l mod_top_input" type="checkbox">
+                                <div class="float_l mod_top_text">下单时间：<span>2017-09-27 14:38:04</span></div>
+                                <div class="float_l mod_top_text">订单编号：<span>20170927003</span></div>
+                                <div class="float_l mod_top_text">付款方式：<span>现金预存款支付</span></div>
+                            </div>
+                            <ul class="mod_content">
+                                <li class="mot_w1 mod_text_style2">新兴生铁 - 球铁 低硅球10#</li>
+                                <li class="mot_w2 mod_text_style font_number_style">3130.00</li>
+                                <li class="mot_w3 mod_text_style font_number_style">1.40</li>
+                                <li class="mot_w4 mod_text_style font_number_style">2.3690</li>
+                                <li class="mot_w5 mod_text_style4 font_number_style">￥3130.00</li>
+                                <li class="mot_w6 mod_text_style font_number_style">-3000</li>
+                                <li class="mot_w7 mod_text_style3">等待买家付款</li>
+                                <li class="mot_w8 padding_t10" >
+                                    <a href="#"><button class="mod_payment">付款</button></a>
+                                    <a href="#"><div class="mod_text_style5">取消订单</div></a>
+                                    <a href="#"><div class="mod_text_style5">查看订单详情</div></a>
+                                </li>
+                                <div class="clearfix"></div>
+                            </ul>
+                        </div>
+
+                        <div class="mine_order_details">
+                            <div class="mod_top">
+                                <input class="float_l mod_top_input" type="checkbox">
+                                <div class="float_l mod_top_text">下单时间：<span>2017-09-27 14:38:04</span></div>
+                                <div class="float_l mod_top_text">订单编号：<span>20170927003</span></div>
+                                <div class="float_l mod_top_text">付款方式：<span>现金预存款支付</span></div>
+                            </div>
+                            <ul class="mod_content">
+                                <li class="mot_w1 mod_text_style2">新兴生铁 - 球铁 低硅球10#</li>
+                                <li class="mot_w2 mod_text_style font_number_style">3130.00</li>
+                                <li class="mot_w3 mod_text_style font_number_style">1.40</li>
+                                <li class="mot_w4 mod_text_style font_number_style">2.3690</li>
+                                <li class="mot_w5 mod_text_style4 font_number_style">￥3130.00</li>
+                                <li class="mot_w6 mod_text_style font_number_style">-3000</li>
+                                <li class="mot_w7 mod_text_style3">等待买家付款</li>
+                                <li class="mot_w8 padding_t10" >
+                                    <a href="#"><button class="mod_payment">付款</button></a>
+                                    <a href="#"><div class="mod_text_style5">取消订单</div></a>
+                                    <a href="#"><div class="mod_text_style5">查看订单详情</div></a>
+                                </li>
+                                <div class="clearfix"></div>
+                            </ul>
+                        </div>
+
+                        <div class="mine_order_details">
+                            <div class="mod_top">
+                                <input class="float_l mod_top_input" type="checkbox">
+                                <div class="float_l mod_top_text">下单时间：<span>2017-09-27 14:38:04</span></div>
+                                <div class="float_l mod_top_text">订单编号：<span>20170927003</span></div>
+                                <div class="float_l mod_top_text">付款方式：<span>现金预存款支付</span></div>
+                            </div>
+                            <ul class="mod_content">
+                                <li class="mot_w1 mod_text_style2">新兴生铁 - 球铁 低硅球10#</li>
+                                <li class="mot_w2 mod_text_style font_number_style">3130.00</li>
+                                <li class="mot_w3 mod_text_style font_number_style">1.40</li>
+                                <li class="mot_w4 mod_text_style font_number_style">2.3690</li>
+                                <li class="mot_w5 mod_text_style4 font_number_style">￥3130.00</li>
+                                <li class="mot_w6 mod_text_style font_number_style">-3000</li>
+                                <li class="mot_w7 mod_text_style3">等待买家付款</li>
+                                <li class="mot_w8 padding_t10" >
+                                    <a href="#"><button class="mod_payment">付款</button></a>
+                                    <a href="#"><div class="mod_text_style5">取消订单</div></a>
+                                    <a href="#"><div class="mod_text_style5">查看订单详情</div></a>
+                                </li>
+                                <div class="clearfix"></div>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 页码 -->
+                    <div class="mine_order_page">
+                        <div class="float_l ssp_flip margin_r4"><img src="img/flip_left.png"></div>
+                        <li class="float_l ssp_choice">1</li>
+                        <li class="float_l">2</li>
+                        <div class="float_l ssp_flip"><img src="img/flip_right.png"></div>
+                        <div class="clearfix"></div>
+                    </div>
                     <div class="clearfix"></div>
                 </div>
-                <!-- 订单 -->
-                <div class="order-list-box">
-                    <div class="mine_order_details">
-                        <div class="mod_top">
-                            <input class="float_l mod_top_input" type="checkbox">
-                            <div class="float_l mod_top_text">下单时间：<span>2017-09-27 14:38:04</span></div>
-                            <div class="float_l mod_top_text">订单编号：<span>20170927003</span></div>
-                            <div class="float_l mod_top_text">付款方式：<span>现金预存款支付</span></div>
-                        </div>
-                        <ul class="mod_content">
-                            <li class="mot_w1 mod_text_style2">新兴生铁 - 球铁 低硅球10#</li>
-                            <li class="mot_w2 mod_text_style font_number_style">3130.00</li>
-                            <li class="mot_w3 mod_text_style font_number_style">1.40</li>
-                            <li class="mot_w4 mod_text_style font_number_style">2.3690</li>
-                            <li class="mot_w5 mod_text_style4 font_number_style">￥3130.00</li>
-                            <li class="mot_w6 mod_text_style font_number_style">-3000</li>
-                            <li class="mot_w7 mod_text_style3">订单已关闭</li>
-                            <li class="mot_w8 padding_t20" >
-                                <div class="mod_text_style5">取消成功</div>
-                                <a href="#"><div class="mod_text_style5">查看订单详情</div></a>
-                            </li>
-                            <div class="clearfix"></div>
-                        </ul>
-                    </div>
-
-                    <div class="mine_order_details">
-                        <div class="mod_top">
-                            <input class="float_l mod_top_input" type="checkbox">
-                            <div class="float_l mod_top_text">下单时间：<span>2017-09-27 14:38:04</span></div>
-                            <div class="float_l mod_top_text">订单编号：<span>20170927003</span></div>
-                            <div class="float_l mod_top_text">付款方式：<span>现金预存款支付</span></div>
-                        </div>
-                        <ul class="mod_content">
-                            <li class="mot_w1 mod_text_style2">新兴生铁 - 球铁 低硅球10#</li>
-                            <li class="mot_w2 mod_text_style font_number_style">3130.00</li>
-                            <li class="mot_w3 mod_text_style font_number_style">1.40</li>
-                            <li class="mot_w4 mod_text_style font_number_style">2.3690</li>
-                            <li class="mot_w5 mod_text_style4 font_number_style">￥3130.00</li>
-                            <li class="mot_w6 mod_text_style font_number_style">-3000</li>
-                            <li class="mot_w7 mod_text_style3">等待审核</li>
-                            <li class="mot_w8 padding_t20" >
-                                <a href="#"><div class="mod_text_style5">取消订单</div></a>
-                                <a href="#"><div class="mod_text_style5">查看订单详情</div></a>
-                            </li>
-                            <div class="clearfix"></div>
-                        </ul>
-                    </div>
-
-                    <div class="mine_order_details">
-                        <div class="mod_top">
-                            <input class="float_l mod_top_input" type="checkbox">
-                            <div class="float_l mod_top_text">下单时间：<span>2017-09-27 14:38:04</span></div>
-                            <div class="float_l mod_top_text">订单编号：<span>20170927003</span></div>
-                            <div class="float_l mod_top_text">付款方式：<span>现金预存款支付</span></div>
-                        </div>
-                        <ul class="mod_content">
-                            <li class="mot_w1 mod_text_style2">新兴生铁 - 球铁 低硅球10#</li>
-                            <li class="mot_w2 mod_text_style font_number_style">3130.00</li>
-                            <li class="mot_w3 mod_text_style font_number_style">1.40</li>
-                            <li class="mot_w4 mod_text_style font_number_style">2.3690</li>
-                            <li class="mot_w5 mod_text_style4 font_number_style">￥3130.00</li>
-                            <li class="mot_w6 mod_text_style font_number_style">-3000</li>
-                            <li class="mot_w7 mod_text_style3">等待买家付款</li>
-                            <li class="mot_w8 padding_t10" >
-                                <a href="#"><button class="mod_payment">付款</button></a>
-                                <a href="#"><div class="mod_text_style5">取消订单</div></a>
-                                <a href="#"><div class="mod_text_style5">查看订单详情</div></a>
-                            </li>
-                            <div class="clearfix"></div>
-                        </ul>
-                    </div>
-
-                    <div class="mine_order_details">
-                        <div class="mod_top">
-                            <input class="float_l mod_top_input" type="checkbox">
-                            <div class="float_l mod_top_text">下单时间：<span>2017-09-27 14:38:04</span></div>
-                            <div class="float_l mod_top_text">订单编号：<span>20170927003</span></div>
-                            <div class="float_l mod_top_text">付款方式：<span>现金预存款支付</span></div>
-                        </div>
-                        <ul class="mod_content">
-                            <li class="mot_w1 mod_text_style2">新兴生铁 - 球铁 低硅球10#</li>
-                            <li class="mot_w2 mod_text_style font_number_style">3130.00</li>
-                            <li class="mot_w3 mod_text_style font_number_style">1.40</li>
-                            <li class="mot_w4 mod_text_style font_number_style">2.3690</li>
-                            <li class="mot_w5 mod_text_style4 font_number_style">￥3130.00</li>
-                            <li class="mot_w6 mod_text_style font_number_style">-3000</li>
-                            <li class="mot_w7 mod_text_style3">等待买家付款</li>
-                            <li class="mot_w8 padding_t10" >
-                                <a href="#"><button class="mod_payment">付款</button></a>
-                                <a href="#"><div class="mod_text_style5">取消订单</div></a>
-                                <a href="#"><div class="mod_text_style5">查看订单详情</div></a>
-                            </li>
-                            <div class="clearfix"></div>
-                        </ul>
-                    </div>
-
-                    <div class="mine_order_details">
-                        <div class="mod_top">
-                            <input class="float_l mod_top_input" type="checkbox">
-                            <div class="float_l mod_top_text">下单时间：<span>2017-09-27 14:38:04</span></div>
-                            <div class="float_l mod_top_text">订单编号：<span>20170927003</span></div>
-                            <div class="float_l mod_top_text">付款方式：<span>现金预存款支付</span></div>
-                        </div>
-                        <ul class="mod_content">
-                            <li class="mot_w1 mod_text_style2">新兴生铁 - 球铁 低硅球10#</li>
-                            <li class="mot_w2 mod_text_style font_number_style">3130.00</li>
-                            <li class="mot_w3 mod_text_style font_number_style">1.40</li>
-                            <li class="mot_w4 mod_text_style font_number_style">2.3690</li>
-                            <li class="mot_w5 mod_text_style4 font_number_style">￥3130.00</li>
-                            <li class="mot_w6 mod_text_style font_number_style">-3000</li>
-                            <li class="mot_w7 mod_text_style3">等待买家付款</li>
-                            <li class="mot_w8 padding_t10" >
-                                <a href="#"><button class="mod_payment">付款</button></a>
-                                <a href="#"><div class="mod_text_style5">取消订单</div></a>
-                                <a href="#"><div class="mod_text_style5">查看订单详情</div></a>
-                            </li>
-                            <div class="clearfix"></div>
-                        </ul>
-                    </div>
-
-                    <div class="mine_order_details">
-                        <div class="mod_top">
-                            <input class="float_l mod_top_input" type="checkbox">
-                            <div class="float_l mod_top_text">下单时间：<span>2017-09-27 14:38:04</span></div>
-                            <div class="float_l mod_top_text">订单编号：<span>20170927003</span></div>
-                            <div class="float_l mod_top_text">付款方式：<span>现金预存款支付</span></div>
-                        </div>
-                        <ul class="mod_content">
-                            <li class="mot_w1 mod_text_style2">新兴生铁 - 球铁 低硅球10#</li>
-                            <li class="mot_w2 mod_text_style font_number_style">3130.00</li>
-                            <li class="mot_w3 mod_text_style font_number_style">1.40</li>
-                            <li class="mot_w4 mod_text_style font_number_style">2.3690</li>
-                            <li class="mot_w5 mod_text_style4 font_number_style">￥3130.00</li>
-                            <li class="mot_w6 mod_text_style font_number_style">-3000</li>
-                            <li class="mot_w7 mod_text_style3">等待买家付款</li>
-                            <li class="mot_w8 padding_t10" >
-                                <a href="#"><button class="mod_payment">付款</button></a>
-                                <a href="#"><div class="mod_text_style5">取消订单</div></a>
-                                <a href="#"><div class="mod_text_style5">查看订单详情</div></a>
-                            </li>
-                            <div class="clearfix"></div>
-                        </ul>
-                    </div>
-                </div>
-                <!-- 页码 -->
-                <div class="mine_order_page">
-                    <div class="float_l ssp_flip margin_r4"><img src="img/flip_left.png"></div>
-                    <li class="float_l ssp_choice">1</li>
-                    <li class="float_l">2</li>
-                    <div class="float_l ssp_flip"><img src="img/flip_right.png"></div>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="clearfix"></div>
             </div>
             <div class="clearfix"></div>
         </div>
