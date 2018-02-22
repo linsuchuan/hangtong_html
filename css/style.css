@@ -1,7 +1,7 @@
 /*通用*/
 
 * {
-    font-family: '微软雅黑' !important;
+    font-family: Arial,'微软雅黑' !important;
 }
 
 ul,li {
@@ -274,7 +274,7 @@ input[type=checkbox], input[type=radio] {
     margin-top: 10px;
 }
 .its_type {
-    width: 70px;
+    width: 90px;
     height: 40px;
     background: #fff;
     border: 1px solid #dfdfdf;
@@ -297,7 +297,7 @@ input[type=checkbox], input[type=radio] {
     top: 18px;
 }
 .index_top_input {
-    width: 423px;
+    width: 400px;
     height: 40px;
     background: #fff;
     outline: none;
@@ -309,7 +309,7 @@ input[type=checkbox], input[type=radio] {
     color: #666;
 }
 .searchTab ul {
-    width: 70px;
+    width: 90px;
     background: #fff;
     cursor: pointer;
     border: 1px solid #dfdfdf;
@@ -382,6 +382,8 @@ input[type=checkbox], input[type=radio] {
     height: 40px;
     background: #d0111b;
     padding-left: 32px;
+    cursor: pointer;
+    position: relative;
 }
 .top_type_all_icon {
     display: block;
@@ -606,6 +608,8 @@ input[type=checkbox], input[type=radio] {
 }
 .tab-con-item {
     display: none;
+    height: 268px;
+    overflow: hidden;
 }
 
 .j-tab-con {
@@ -615,9 +619,10 @@ input[type=checkbox], input[type=radio] {
 
 
 .price_tab_content {
-    width: 33.3%;
-    border-top: 1px solid #efefef;
-    border-left: 1px solid #efefef;
+    width: 100%;
+    /*width: 33.3%;*/
+    /*border-top: 1px solid #efefef;*/
+    /*border-left: 1px solid #efefef;*/
     padding: 15px 12px 10px 18px;
 }
 .state_icon {
@@ -995,7 +1000,7 @@ input[type=checkbox], input[type=radio] {
     background-size: 100% 100%;
 }
 /*经过切换图片*/
-.feature_box .feature_img1:hover {
+/*.feature_box .feature_img1:hover {
     background: url('../img/feature_img1a.png') no-repeat;
 }
 .feature_box .feature_img2:hover {
@@ -1006,7 +1011,7 @@ input[type=checkbox], input[type=radio] {
 }
 .feature_box .feature_img4:hover {
     background: url('../img/feature_img4a.png') no-repeat;
-}
+}*/
 
 .feature_img {
     display: block;
@@ -2575,7 +2580,7 @@ input[type=checkbox], input[type=radio] {
     border-bottom: 1px solid #e6e6e6;
 }
 .mine_tll {
-    width: 220px;
+    width: 221px;
     height: 48px;
     background: #fff;
     font-size: 16px;
@@ -2583,11 +2588,11 @@ input[type=checkbox], input[type=radio] {
     color: #d0111b;
     text-align: center;
     border-top: 3px solid #d0111b;
-    /*border-right: 1px solid #e6e6e6;*/
+    border-right: 1px solid #e6e6e6;
     border-bottom: 1px solid #e6e6e6;
 }
 .mine_order {
-    width: 978px;
+    width: 977px;
     height: 48px;
     background: #fff;
     border-top: 1px solid #e6e6e6;
@@ -3458,7 +3463,8 @@ input[type=checkbox], input[type=radio] {
     position: absolute;
     left: 50%;
     margin-left: -600px;
-    top: 110px;
+    top: 50%;
+    margin-top: -184px;
     z-index: 99;
 }
 .login_box {
@@ -3892,7 +3898,7 @@ input[type=checkbox], input[type=radio] {
     width: 150px;
 }
 .lrt_w7 {
-    width: 126px;
+    width: 122px;
 }
 .loan_record_list {
     width: 100%;
@@ -4785,7 +4791,7 @@ input[type=checkbox], input[type=radio] {
     font-size: 20px;
     line-height: 30px;
     color: #f94100;
-    font-family: Arial;
+    /*font-family: Arial !important;*/
     text-align: right;
 }
 
@@ -5029,7 +5035,14 @@ input[type=checkbox], input[type=radio] {
 }
 
 
-
+.nav_menu {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 220px;
+    height: 398px;
+    z-index: 99999999;
+}
 
 
 

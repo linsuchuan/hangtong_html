@@ -24,24 +24,51 @@
     <!-- 引入base.css -->
     <link rel="stylesheet" type="text/css" href="css/type/base.css">
     <link rel="stylesheet" type="text/css" href="css/type/navjd.css">
-    
+    <link rel="stylesheet" href="fixed/quick.css" type="text/css"/>
+
 </head>
 <body class="bg_gray2">
 
 <!-- 悬浮咨询电话 -->
-<div class="suspension_box">
-    <li class="suspension_bg1">
-        <a href="javascript:void(0)">
-            <img class="suspension_icon" src="img/icon12.png">
-            <div class="suspension_text">资讯</div>
-        </a>
-    </li>
-    <li class="suspension_bg2">
-        <a href="javascript:void(0)">
-            <img class="suspension_icon" src="img/icon13.png">
-            <div class="suspension_text">电话</div>
-        </a>
-    </li>
+<div class="side">
+    <ul>
+        <li>
+            <a href="#">
+                <div class="quick_icon">
+                    <img src="fixed/icon1.png">
+                </div>
+                <div class="sidebox">资讯</div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="quick_icon">
+                    <img src="fixed/icon2.png">
+                </div>
+                <div class="sidebox">电话</div>
+            </a>
+        </li>
+        <li id="quick_scan_open">
+            <a href="javascript:void(0);" >
+                <div class="quick_icon">
+                    <img src="fixed/icon3.png">
+                </div>
+            </a>
+            <img class="quick_scan" style="display: none;" src="fixed/scan.jpg">
+        </li>
+        <li>
+            <a href="#">
+                <div class="quick_icon">
+                    <img src="fixed/icon4.png">
+                </div>
+                <div class="sidebox">购物车</div>
+            </a>
+        </li>
+        <li style="border:none;">
+            <a href="javascript:goTop();" class="sidetop">
+            <img src="fixed/top.png"></a>
+        </li>
+    </ul>
 </div>
 
 
@@ -139,6 +166,216 @@
             <div class="float_l top_type_all">
                 <img class="float_l top_type_all_icon" src="img/icon_all.png">
                 <div class="float_l top_type_all_text">全部商品分类</div>
+                <div class="nav_menu" style="display: none;">
+                <div class="cate">
+                    <ul class="cate_menu">
+                        <li class="cate_menu_item">
+                            <img class="float_l type_left_icon" src="img/classification_1.png">
+                            <div class="float_l type_left_name">生铁</div>
+                            <img class="float_r type_left_arrow" src="img/icon03.png">
+                        </li>
+                        <li class="cate_menu_item">
+                            <img class="float_l type_left_icon" src="img/classification_2.png">
+                            <div class="float_l type_left_name">废钢</div>
+                            <img class="float_r type_left_arrow" src="img/icon03.png">
+                        </li>
+                        <li class="cate_menu_item">
+                            <img class="float_l type_left_icon" src="img/classification_3.png">
+                            <div class="float_l type_left_name">增碳剂</div>
+                            <img class="float_r type_left_arrow" src="img/icon03.png">
+                        </li>
+                        <li class="cate_menu_item">
+                            <img class="float_l type_left_icon" src="img/classification_4.png">
+                            <div class="float_l type_left_name">铁合金</div>
+                            <img class="float_r type_left_arrow" src="img/icon03.png">
+                        </li>
+                        <li class="cate_menu_item">
+                            <img class="float_l type_left_icon" src="img/classification_5.png">
+                            <div class="float_l type_left_name">孕育剂</div>
+                            <img class="float_r type_left_arrow" src="img/icon03.png">
+                        </li>
+                        <li class="cate_menu_item">
+                            <img class="float_l type_left_icon" src="img/classification_6.png">
+                            <div class="float_l type_left_name">其它辅料</div>
+                            <img class="float_r type_left_arrow" src="img/icon03.png">
+                        </li>
+                    </ul>  
+                    <div class="navfloat">
+                        <ul>
+                            <li class="type_open first">
+                                <div class="type_open_left">
+                                    <div class="tol_info">
+                                        <div class="float_l tol_title">球铁</div>
+                                        <div class="float_l tol_content_box">
+                                            <div class="tol_content"><a href="">Q8</a></div>
+                                            <div class="tol_content"><a href="">Q10</a></div>
+                                            <div class="tol_content"><a href="">Q12</a></div>
+                                            <div class="tol_content"><a href="">Q16</a></div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+
+                                    <div class="tol_info">
+                                        <div class="float_l tol_title">铸铁</div>
+                                        <div class="float_l tol_content_box">
+                                            <div class="tol_content"><a href="">低锰八角</a></div>
+                                            <div class="tol_content"><a href="">中锰八角</a></div>
+                                            <div class="tol_content"><a href="">低锰方块</a></div>
+                                            <div class="tol_content"><a href="">中锰方块</a></div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+
+                                    <div class="tol_info">
+                                        <div class="float_l tol_title">炼钢铁</div>
+                                        <div class="float_l tol_content_box">
+                                            <div class="tol_content"><a href="">L7</a></div>
+                                            <div class="tol_content"><a href="">L8</a></div>
+                                            <div class="tol_content"><a href="">L10</a></div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <div class="type_open_right">
+                                    <img src="img/company1.jpg">
+                                    <img src="img/company2.jpg">
+                                    <img src="img/company3.jpg">
+                                    <img src="img/company4.jpg">
+                                    <img src="img/company5.jpg">
+                                    <img src="img/company6.jpg">
+                                    <img src="img/company7.jpg">
+                                    <img src="img/company8.jpg">
+                                </div>
+                                <div class="clearfix"></div>
+                            </li>
+                            <li class="type_open">
+                                <div class="type_open_left">
+                                    <div class="tol_info">
+                                        <div class="float_l tol_title">二二二</div>
+                                        <div class="float_l tol_content_box">
+                                            <div class="tol_content"><a href="">Q8</a></div>
+                                            <div class="tol_content"><a href="">Q10</a></div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+
+                                <div class="type_open_right">
+                                    <img src="img/company1.jpg">
+                                    <img src="img/company2.jpg">
+                                    <img src="img/company3.jpg">
+                                    <img src="img/company4.jpg">
+                                    <img src="img/company5.jpg">
+                                    <img src="img/company6.jpg">
+                                    <img src="img/company7.jpg">
+                                    <img src="img/company8.jpg">
+                                </div>
+                                <div class="clearfix"></div>
+                            </li>
+
+                            <li class="type_open">
+                                <div class="type_open_left">
+                                    <div class="tol_info">
+                                        <div class="float_l tol_title">三三三三</div>
+                                        <div class="float_l tol_content_box">
+                                            <div class="tol_content"><a href="">Q8</a></div>
+                                            <div class="tol_content"><a href="">Q10</a></div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="type_open_right">
+                                    <img src="img/company1.jpg">
+                                    <img src="img/company2.jpg">
+                                    <img src="img/company3.jpg">
+                                    <img src="img/company4.jpg">
+                                    <img src="img/company5.jpg">
+                                    <img src="img/company6.jpg">
+                                    <img src="img/company7.jpg">
+                                    <img src="img/company8.jpg">
+                                </div>
+                                <div class="clearfix"></div>
+                            </li>
+
+                            <li class="type_open">
+                                <div class="type_open_left">
+                                    <div class="tol_info">
+                                        <div class="float_l tol_title">第四个</div>
+                                        <div class="float_l tol_content_box">
+                                            <div class="tol_content"><a href="">Q8</a></div>
+                                            <div class="tol_content"><a href="">Q10</a></div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="type_open_right">
+                                    <img src="img/company1.jpg">
+                                    <img src="img/company2.jpg">
+                                    <img src="img/company3.jpg">
+                                    <img src="img/company4.jpg">
+                                    <img src="img/company5.jpg">
+                                    <img src="img/company6.jpg">
+                                    <img src="img/company7.jpg">
+                                    <img src="img/company8.jpg">
+                                </div>
+                                <div class="clearfix"></div>
+                            </li>
+
+                            <li class="type_open">
+                                <div class="type_open_left">
+                                    <div class="tol_info">
+                                        <div class="float_l tol_title">五五</div>
+                                        <div class="float_l tol_content_box">
+                                            <div class="tol_content"><a href="">Q8</a></div>
+                                            <div class="tol_content"><a href="">Q10</a></div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="type_open_right">
+                                    <img src="img/company1.jpg">
+                                    <img src="img/company2.jpg">
+                                    <img src="img/company3.jpg">
+                                    <img src="img/company4.jpg">
+                                    <img src="img/company5.jpg">
+                                    <img src="img/company6.jpg">
+                                    <img src="img/company7.jpg">
+                                    <img src="img/company8.jpg">
+                                </div>
+                                <div class="clearfix"></div>
+                            </li>
+
+                            <li class="type_open">
+                                <div class="type_open_left">
+                                    <div class="tol_info">
+                                        <div class="float_l tol_title">六六</div>
+                                        <div class="float_l tol_content_box">
+                                            <div class="tol_content"><a href="">Q8</a></div>
+                                            <div class="tol_content"><a href="">Q10</a></div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="type_open_right">
+                                    <img src="img/company1.jpg">
+                                    <img src="img/company2.jpg">
+                                    <img src="img/company3.jpg">
+                                    <img src="img/company4.jpg">
+                                    <img src="img/company5.jpg">
+                                    <img src="img/company6.jpg">
+                                    <img src="img/company7.jpg">
+                                    <img src="img/company8.jpg">
+                                </div>
+                                <div class="clearfix"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             </div>
             <ul class="float_l top_nav">
                 <li><a href="index.html">首页</a></li>
@@ -511,6 +748,60 @@ $("#click_all").click(function(){
 });
 </script>
 
+<!-- 悬浮 -->
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".side ul li").hover(function(){
+            $(this).find(".sidebox").stop().animate({"width":"124px"},100).css({"opacity":"1","filter":"Alpha(opacity=100)","background":"#d0111b"})
+        },function(){
+            $(this).find(".sidebox").stop().animate({"width":"54px"},100).css({"opacity":"1","filter":"Alpha(opacity=100)","background":"#6e6568"})
+        });
+    });
+    //回到顶部
+    function goTop(){
+        $('html,body').animate({'scrollTop':0},600)
+    }
+
+
+    $("#quick_scan_open") .mouseenter(function(){
+        $(".quick_scan").css('display','block')
+    })
+    $("#quick_scan_open") .mouseleave(function(){
+        $(".quick_scan").css('display','none')
+    })
+</script>
+
+<!-- 分类导航 -->
+<!-- <script src="js/type/jquery-3.1.1.js"></script> -->
+<script src="js/type/banner.js"></script>
+<script type="text/javascript">
+    //*****************左侧导航***************//
+    var cate = $(".cate");
+    var num = $(".cate .cate_menu li").length;
+    var oleftli = $(".cate .cate_menu li");//显示区块
+    var ofloatli = $(".navfloat ul li");//隐藏区块
+    bannerplay(cate,ofloatli,oleftli,15,false,1);
+    //***************中间轮播图************//
+    var slider_main = $(".slider_main");
+    var picli = $(".slider_main .picban li");
+    var lilen = picli.length;
+    var leftbtn = $(".slider_main .left");
+    var rightbtn = $(".slider_main .right");
+    for(var i=1;i<=lilen;i++){  //创建图片个数相对应的底部数字个数
+        // var li="<li>"+i+"</li>"; //创建li标签，并插入到页面中
+        var li="<li></li>"; //去掉底部的数字
+        $(".slider_main .num_btn").append(li);
+    }   
+    var numli = $(".slider_main .num_btn li")
+    bannerplay(slider_main,picli,numli,lilen,true,0,leftbtn,rightbtn);
+
+    $(".top_type_all") .mouseenter(function(){
+        $(".nav_menu").css('display','block')
+    })
+    $(".top_type_all") .mouseleave(function(){
+        $(".nav_menu").css('display','none')
+    })
+</script>
 
 
 

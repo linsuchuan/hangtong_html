@@ -17,6 +17,7 @@
       <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <!-- 自定义 -->
     <link href="css/carousel.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
@@ -26,9 +27,71 @@
     <link rel="stylesheet" type="text/css" href="css/type/navjd.css">
     <!-- 活动图片轮播样式 -->
     <link rel="stylesheet" href="css/slide.css">
-    
+
+    <link rel="stylesheet" href="fixed/quick.css" type="text/css"/>
+
+    <link rel="stylesheet" href="lb/lb.css" type="text/css"/>
+
 </head>
 <body style="background: #f7f7f7;">
+
+<!-- 悬浮咨询电话 -->
+<!-- <div class="suspension_box">
+    <li class="suspension_bg1">
+        <a href="javascript:void(0)">
+            <img class="suspension_icon" src="img/icon12.png">
+            <div class="suspension_text">资讯</div>
+        </a>
+    </li>
+    <li class="suspension_bg2">
+        <a href="javascript:void(0)">
+            <img class="suspension_icon" src="img/icon13.png">
+            <div class="suspension_text">电话</div>
+        </a>
+    </li>
+</div> -->
+
+<div class="side">
+    <ul>
+        <li>
+            <a href="#">
+                <div class="quick_icon">
+                    <img src="fixed/icon1.png">
+                </div>
+                <div class="sidebox">资讯</div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="quick_icon">
+                    <img src="fixed/icon2.png">
+                </div>
+                <div class="sidebox">电话</div>
+            </a>
+        </li>
+        <li id="quick_scan_open">
+            <a href="javascript:void(0);" >
+                <div class="quick_icon">
+                    <img src="fixed/icon3.png">
+                </div>
+            </a>
+            <img class="quick_scan" style="display: none;" src="fixed/scan.jpg">
+        </li>
+        <li>
+            <a href="#">
+                <div class="quick_icon">
+                    <img src="fixed/icon4.png">
+                </div>
+                <div class="sidebox">购物车</div>
+            </a>
+        </li>
+        <li style="border:none;">
+            <a href="javascript:goTop();" class="sidetop">
+            <img src="fixed/top.png"></a>
+        </li>
+    </ul>
+</div>
+
 
 <!-- 页面最顶部 -->
 <div class="page_top">
@@ -461,7 +524,7 @@
             </div>
             <div class="clearfix"></div>
         </div>
-        
+
         <div class="cooperation_content_box">
             <img class="prev" src="img/arrow_left.png">
             <div>
@@ -513,397 +576,551 @@
                             </div>
                             <div class="clearfix"></div>
                         </div>
-                        <!-- <div class="tab-con"> -->
-                            <div class="j-tab-con">
-                                <ul class="tab-con-item" style="display:block;">
-                                    <!-- 1 -->
-                                    <li class="float_l price_tab_content noborder_left">
-                                        <div>
-                                            <div class="float_l font_size_a">博丰生铁</div>
-                                            <div class="float_r font_size_b">11-27 10:00</div>
-                                            <div class="clearfix"></div>
+                        <div class="j-tab-con">
+                            <div class="tab-con-item" style="display:block;">
+                                <div class="lb_box">
+                                    <div id="four_flash">
+                                        <div class="flashBg">
+                                            <ul class="mobile lb_content1" id="">
+                                                <li>
+                                                    <div class="float_l price_tab_content noborder_left">
+                                                        <div>
+                                                            <div class="float_l font_size_a">博丰生铁</div>
+                                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">球铁</div>
+                                                            <div class="float_r">
+                                                                <div class="float_l font_size_c font_color_a">3300</div>
+                                                                <img class="state_icon" src="img/state_up.png">
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">Z18</div>
+                                                            <div class="float_r font_size_d font_color_a">+0   +0.00%</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="float_l price_tab_content">
+                                                        <div>
+                                                            <div class="float_l font_size_a">博丰生铁</div>
+                                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">球铁</div>
+                                                            <div class="float_r">
+                                                                <div class="float_l font_size_c">3300</div>
+                                                                <img class="state_icon" src="img/state_no.png">
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">Z18</div>
+                                                            <div class="float_r font_size_d">+0   +0.00%</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="float_l price_tab_content noborder_left">
+                                                        <div>
+                                                            <div class="float_l font_size_a">博丰生铁</div>
+                                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">球铁</div>
+                                                            <div class="float_r">
+                                                                <div class="float_l font_size_c font_color_a">3300</div>
+                                                                <img class="state_icon" src="img/state_up.png">
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">Z18</div>
+                                                            <div class="float_r font_size_d font_color_a">+0   +0.00%</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="float_l price_tab_content">
+                                                        <div>
+                                                            <div class="float_l font_size_a">博丰生铁</div>
+                                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">球铁</div>
+                                                            <div class="float_r">
+                                                                <div class="float_l font_size_c">3300</div>
+                                                                <img class="state_icon" src="img/state_no.png">
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">Z18</div>
+                                                            <div class="float_r font_size_d">+0   +0.00%</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="float_l price_tab_content noborder_left">
+                                                        <div>
+                                                            <div class="float_l font_size_a">博丰生铁</div>
+                                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">球铁</div>
+                                                            <div class="float_r">
+                                                                <div class="float_l font_size_c font_color_a">3300</div>
+                                                                <img class="state_icon" src="img/state_up.png">
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">Z18</div>
+                                                            <div class="float_r font_size_d font_color_a">+0   +0.00%</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="float_l price_tab_content">
+                                                        <div>
+                                                            <div class="float_l font_size_a">博丰生铁</div>
+                                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">球铁</div>
+                                                            <div class="float_r">
+                                                                <div class="float_l font_size_c">3300</div>
+                                                                <img class="state_icon" src="img/state_no.png">
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">Z18</div>
+                                                            <div class="float_r font_size_d">+0   +0.00%</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="float_l price_tab_content noborder_left">
+                                                        <div>
+                                                            <div class="float_l font_size_a">博丰生铁</div>
+                                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">球铁</div>
+                                                            <div class="float_r">
+                                                                <div class="float_l font_size_c font_color_a">3300</div>
+                                                                <img class="state_icon" src="img/state_up.png">
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">Z18</div>
+                                                            <div class="float_r font_size_d font_color_a">+0   +0.00%</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="float_l price_tab_content">
+                                                        <div>
+                                                            <div class="float_l font_size_a">博丰生铁</div>
+                                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">球铁</div>
+                                                            <div class="float_r">
+                                                                <div class="float_l font_size_c">3300</div>
+                                                                <img class="state_icon" src="img/state_no.png">
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">Z18</div>
+                                                            <div class="float_r font_size_d">+0   +0.00%</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <div>
-                                            <div class="float_l font_size_a">球铁</div>
-                                            <div class="float_r">
-                                                <div class="float_l font_size_c font_color_a">3300</div>
-                                                <img class="state_icon" src="img/state_up.png">
-                                            </div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div>
-                                            <div class="float_l font_size_a">Z18</div>
-                                            <div class="float_r font_size_d font_color_a">+0   +0.00%</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                    </li>
-                                    <!-- 2 -->
-                                    <li class="float_l price_tab_content">
-                                        <div>
-                                            <div class="float_l font_size_a">博丰生铁</div>
-                                            <div class="float_r font_size_b">11-27 10:00</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div>
-                                            <div class="float_l font_size_a">球铁</div>
-                                            <div class="float_r">
-                                                <div class="float_l font_size_c">3300</div>
-                                                <img class="state_icon" src="img/state_no.png">
-                                            </div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div>
-                                            <div class="float_l font_size_a">Z18</div>
-                                            <div class="float_r font_size_d">+0   +0.00%</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                    </li>
-                                    <!-- 3 -->
-                                    <li class="float_l price_tab_content">
-                                        <div>
-                                            <div class="float_l font_size_a">博丰生铁</div>
-                                            <div class="float_r font_size_b">11-27 10:00</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div>
-                                            <div class="float_l font_size_a">球铁</div>
-                                            <div class="float_r">
-                                                <div class="float_l font_size_c font_color_b">3300</div>
-                                                <img class="state_icon" src="img/state_down.png">
-                                            </div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div>
-                                            <div class="float_l font_size_a">Z18</div>
-                                            <div class="float_r font_size_d font_color_b">+0   +0.00%</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                    </li>
-                                    <!-- 4 -->
-                                    <li class="float_l price_tab_content">
-                                        <div>
-                                            <div class="float_l font_size_a">博丰生铁</div>
-                                            <div class="float_r font_size_b">11-27 10:00</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div>
-                                            <div class="float_l font_size_a">球铁</div>
-                                            <div class="float_r">
-                                                <div class="float_l font_size_c">3300</div>
-                                                <img class="state_icon" src="img/state_no.png">
-                                            </div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div>
-                                            <div class="float_l font_size_a">Z18</div>
-                                            <div class="float_r font_size_d">+0   +0.00%</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                    </li>
-                                    <!-- 5 -->
-                                    <li class="float_l price_tab_content">
-                                        <div>
-                                            <div class="float_l font_size_a">博丰生铁</div>
-                                            <div class="float_r font_size_b">11-27 10:00</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div>
-                                            <div class="float_l font_size_a">球铁</div>
-                                            <div class="float_r">
-                                                <div class="float_l font_size_c">3300</div>
-                                                <img class="state_icon" src="img/state_no.png">
-                                            </div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div>
-                                            <div class="float_l font_size_a">Z18</div>
-                                            <div class="float_r font_size_d">+0   +0.00%</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                    </li>
-                                    <!-- 6 -->
-                                    <li class="float_l price_tab_content">
-                                        <div>
-                                            <div class="float_l font_size_a">博丰生铁</div>
-                                            <div class="float_r font_size_b">11-27 10:00</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div>
-                                            <div class="float_l font_size_a">球铁</div>
-                                            <div class="float_r">
-                                                <div class="float_l font_size_c">3300</div>
-                                                <img class="state_icon" src="img/state_no.png">
-                                            </div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div>
-                                            <div class="float_l font_size_a">Z18</div>
-                                            <div class="float_r font_size_d">+0   +0.00%</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                    </li>
-                                    <div class="clearfix"></div>
-                                </ul>
-                                <ul class="tab-con-item">
-                                    <!-- 1 -->
-                                    <li class="float_l price_tab_content noborder_left">
-                                        <div>
-                                            <div class="float_l font_size_a">二二二</div>
-                                            <div class="float_r font_size_b">11-27 10:00</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div>
-                                            <div class="float_l font_size_a">二二二</div>
-                                            <div class="float_r">
-                                                <div class="float_l font_size_c font_color_a">3300</div>
-                                                <img class="state_icon" src="img/state_up.png">
-                                            </div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div>
-                                            <div class="float_l font_size_a">Z18</div>
-                                            <div class="float_r font_size_d font_color_a">+0   +0.00%</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                    </li>
-                                    <!-- 2 -->
-                                    <li class="float_l price_tab_content">
-                                        <div>
-                                            <div class="float_l font_size_a">博丰生铁</div>
-                                            <div class="float_r font_size_b">11-27 10:00</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div>
-                                            <div class="float_l font_size_a">球铁</div>
-                                            <div class="float_r">
-                                                <div class="float_l font_size_c">3300</div>
-                                                <img class="state_icon" src="img/state_no.png">
-                                            </div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div>
-                                            <div class="float_l font_size_a">Z18</div>
-                                            <div class="float_r font_size_d">+0   +0.00%</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                    </li>
-                                    <!-- 3 -->
-                                    <li class="float_l price_tab_content">
-                                        <div>
-                                            <div class="float_l font_size_a">博丰生铁</div>
-                                            <div class="float_r font_size_b">11-27 10:00</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div>
-                                            <div class="float_l font_size_a">球铁</div>
-                                            <div class="float_r">
-                                                <div class="float_l font_size_c font_color_b">3300</div>
-                                                <img class="state_icon" src="img/state_down.png">
-                                            </div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div>
-                                            <div class="float_l font_size_a">Z18</div>
-                                            <div class="float_r font_size_d font_color_b">+0   +0.00%</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                    </li>
-                                    <!-- 4 -->
-                                    <li class="float_l price_tab_content">
-                                        <div>
-                                            <div class="float_l font_size_a">博丰生铁</div>
-                                            <div class="float_r font_size_b">11-27 10:00</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div>
-                                            <div class="float_l font_size_a">球铁</div>
-                                            <div class="float_r">
-                                                <div class="float_l font_size_c">3300</div>
-                                                <img class="state_icon" src="img/state_no.png">
-                                            </div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div>
-                                            <div class="float_l font_size_a">Z18</div>
-                                            <div class="float_r font_size_d">+0   +0.00%</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                    </li>
-                                    <!-- 5 -->
-                                    <li class="float_l price_tab_content">
-                                        <div>
-                                            <div class="float_l font_size_a">博丰生铁</div>
-                                            <div class="float_r font_size_b">11-27 10:00</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div>
-                                            <div class="float_l font_size_a">球铁</div>
-                                            <div class="float_r">
-                                                <div class="float_l font_size_c">3300</div>
-                                                <img class="state_icon" src="img/state_no.png">
-                                            </div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div>
-                                            <div class="float_l font_size_a">Z18</div>
-                                            <div class="float_r font_size_d">+0   +0.00%</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                    </li>
-                                    <!-- 6 -->
-                                    <li class="float_l price_tab_content">
-                                        <div>
-                                            <div class="float_l font_size_a">博丰生铁</div>
-                                            <div class="float_r font_size_b">11-27 10:00</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div>
-                                            <div class="float_l font_size_a">球铁</div>
-                                            <div class="float_r">
-                                                <div class="float_l font_size_c">3300</div>
-                                                <img class="state_icon" src="img/state_no.png">
-                                            </div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div>
-                                            <div class="float_l font_size_a">Z18</div>
-                                            <div class="float_r font_size_d">+0   +0.00%</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                    </li>
-                                    <div class="clearfix"></div>
-                                </ul>
-                                <ul class="tab-con-item">
-                                    <!-- 1 -->
-                                    <li class="float_l price_tab_content noborder_left">
-                                        <div>
-                                            <div class="float_l font_size_a">三三</div>
-                                            <div class="float_r font_size_b">11-27 10:00</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div>
-                                            <div class="float_l font_size_a">球铁</div>
-                                            <div class="float_r">
-                                                <div class="float_l font_size_c font_color_a">3300</div>
-                                                <img class="state_icon" src="img/state_up.png">
-                                            </div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div>
-                                            <div class="float_l font_size_a">Z18</div>
-                                            <div class="float_r font_size_d font_color_a">+0   +0.00%</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                    </li>
-                                    <!-- 2 -->
-                                    <li class="float_l price_tab_content">
-                                        <div>
-                                            <div class="float_l font_size_a">博丰生铁</div>
-                                            <div class="float_r font_size_b">11-27 10:00</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div>
-                                            <div class="float_l font_size_a">球铁</div>
-                                            <div class="float_r">
-                                                <div class="float_l font_size_c">3300</div>
-                                                <img class="state_icon" src="img/state_no.png">
-                                            </div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div>
-                                            <div class="float_l font_size_a">Z18</div>
-                                            <div class="float_r font_size_d">+0   +0.00%</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                    </li>
-                                    <!-- 3 -->
-                                    <li class="float_l price_tab_content">
-                                        <div>
-                                            <div class="float_l font_size_a">博丰生铁</div>
-                                            <div class="float_r font_size_b">11-27 10:00</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div>
-                                            <div class="float_l font_size_a">球铁</div>
-                                            <div class="float_r">
-                                                <div class="float_l font_size_c font_color_b">3300</div>
-                                                <img class="state_icon" src="img/state_down.png">
-                                            </div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div>
-                                            <div class="float_l font_size_a">Z18</div>
-                                            <div class="float_r font_size_d font_color_b">+0   +0.00%</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                    </li>
-                                    <!-- 4 -->
-                                    <li class="float_l price_tab_content">
-                                        <div>
-                                            <div class="float_l font_size_a">博丰生铁</div>
-                                            <div class="float_r font_size_b">11-27 10:00</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div>
-                                            <div class="float_l font_size_a">球铁</div>
-                                            <div class="float_r">
-                                                <div class="float_l font_size_c">3300</div>
-                                                <img class="state_icon" src="img/state_no.png">
-                                            </div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div>
-                                            <div class="float_l font_size_a">Z18</div>
-                                            <div class="float_r font_size_d">+0   +0.00%</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                    </li>
-                                    <!-- 5 -->
-                                    <li class="float_l price_tab_content">
-                                        <div>
-                                            <div class="float_l font_size_a">博丰生铁</div>
-                                            <div class="float_r font_size_b">11-27 10:00</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div>
-                                            <div class="float_l font_size_a">球铁</div>
-                                            <div class="float_r">
-                                                <div class="float_l font_size_c">3300</div>
-                                                <img class="state_icon" src="img/state_no.png">
-                                            </div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div>
-                                            <div class="float_l font_size_a">Z18</div>
-                                            <div class="float_r font_size_d">+0   +0.00%</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                    </li>
-                                    <!-- 6 -->
-                                    <li class="float_l price_tab_content">
-                                        <div>
-                                            <div class="float_l font_size_a">博丰生铁</div>
-                                            <div class="float_r font_size_b">11-27 10:00</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div>
-                                            <div class="float_l font_size_a">球铁</div>
-                                            <div class="float_r">
-                                                <div class="float_l font_size_c">3300</div>
-                                                <img class="state_icon" src="img/state_no.png">
-                                            </div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                        <div>
-                                            <div class="float_l font_size_a">Z18</div>
-                                            <div class="float_r font_size_d">+0   +0.00%</div>
-                                            <div class="clearfix"></div>
-                                        </div>
-                                    </li>
-                                    <div class="clearfix"></div>
-                                </ul>
+                                        <div class="but_left"><img src="lb/qianxleft.png" /></div>
+                                        <div class="but_right"><img src="lb/qianxr.png" /></div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
                             </div>
-                        <!-- </div> -->
+                            <div class="tab-con-item">
+                                <div class="lb_box">
+                                    <div id="four_flash">
+                                        <div class="flashBg">
+                                            <ul class="mobile lb_content2" id="">
+                                                <li>
+                                                    <div class="float_l price_tab_content noborder_left">
+                                                        <div>
+                                                            <div class="float_l font_size_a">博丰生铁</div>
+                                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">球铁</div>
+                                                            <div class="float_r">
+                                                                <div class="float_l font_size_c font_color_a">3300</div>
+                                                                <img class="state_icon" src="img/state_up.png">
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">Z18</div>
+                                                            <div class="float_r font_size_d font_color_a">+0   +0.00%</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="float_l price_tab_content">
+                                                        <div>
+                                                            <div class="float_l font_size_a">博丰生铁</div>
+                                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">球铁</div>
+                                                            <div class="float_r">
+                                                                <div class="float_l font_size_c">3300</div>
+                                                                <img class="state_icon" src="img/state_no.png">
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">Z18</div>
+                                                            <div class="float_r font_size_d">+0   +0.00%</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="float_l price_tab_content noborder_left">
+                                                        <div>
+                                                            <div class="float_l font_size_a">博丰生铁</div>
+                                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">球铁</div>
+                                                            <div class="float_r">
+                                                                <div class="float_l font_size_c font_color_a">3300</div>
+                                                                <img class="state_icon" src="img/state_up.png">
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">Z18</div>
+                                                            <div class="float_r font_size_d font_color_a">+0   +0.00%</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="float_l price_tab_content">
+                                                        <div>
+                                                            <div class="float_l font_size_a">博丰生铁</div>
+                                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">球铁</div>
+                                                            <div class="float_r">
+                                                                <div class="float_l font_size_c">3300</div>
+                                                                <img class="state_icon" src="img/state_no.png">
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">Z18</div>
+                                                            <div class="float_r font_size_d">+0   +0.00%</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="float_l price_tab_content noborder_left">
+                                                        <div>
+                                                            <div class="float_l font_size_a">博丰生铁</div>
+                                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">球铁</div>
+                                                            <div class="float_r">
+                                                                <div class="float_l font_size_c font_color_a">3300</div>
+                                                                <img class="state_icon" src="img/state_up.png">
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">Z18</div>
+                                                            <div class="float_r font_size_d font_color_a">+0   +0.00%</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="float_l price_tab_content">
+                                                        <div>
+                                                            <div class="float_l font_size_a">博丰生铁</div>
+                                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">球铁</div>
+                                                            <div class="float_r">
+                                                                <div class="float_l font_size_c">3300</div>
+                                                                <img class="state_icon" src="img/state_no.png">
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">Z18</div>
+                                                            <div class="float_r font_size_d">+0   +0.00%</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="float_l price_tab_content noborder_left">
+                                                        <div>
+                                                            <div class="float_l font_size_a">博丰生铁</div>
+                                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">球铁</div>
+                                                            <div class="float_r">
+                                                                <div class="float_l font_size_c font_color_a">3300</div>
+                                                                <img class="state_icon" src="img/state_up.png">
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">Z18</div>
+                                                            <div class="float_r font_size_d font_color_a">+0   +0.00%</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="float_l price_tab_content">
+                                                        <div>
+                                                            <div class="float_l font_size_a">博丰生铁</div>
+                                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">球铁</div>
+                                                            <div class="float_r">
+                                                                <div class="float_l font_size_c">3300</div>
+                                                                <img class="state_icon" src="img/state_no.png">
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">Z18</div>
+                                                            <div class="float_r font_size_d">+0   +0.00%</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="but_left"><img src="lb/qianxleft.png" /></div>
+                                        <div class="but_right"><img src="lb/qianxr.png" /></div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="tab-con-item">
+                                <div class="lb_box">
+                                    <div id="four_flash">
+                                        <div class="flashBg">
+                                            <ul class="mobile lb_content3" id="">
+                                                <li>
+                                                    <div class="float_l price_tab_content noborder_left">
+                                                        <div>
+                                                            <div class="float_l font_size_a">博丰生铁</div>
+                                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">球铁</div>
+                                                            <div class="float_r">
+                                                                <div class="float_l font_size_c font_color_a">3300</div>
+                                                                <img class="state_icon" src="img/state_up.png">
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">Z18</div>
+                                                            <div class="float_r font_size_d font_color_a">+0   +0.00%</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="float_l price_tab_content">
+                                                        <div>
+                                                            <div class="float_l font_size_a">博丰生铁</div>
+                                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">球铁</div>
+                                                            <div class="float_r">
+                                                                <div class="float_l font_size_c">3300</div>
+                                                                <img class="state_icon" src="img/state_no.png">
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">Z18</div>
+                                                            <div class="float_r font_size_d">+0   +0.00%</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="float_l price_tab_content noborder_left">
+                                                        <div>
+                                                            <div class="float_l font_size_a">博丰生铁</div>
+                                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">球铁</div>
+                                                            <div class="float_r">
+                                                                <div class="float_l font_size_c font_color_a">3300</div>
+                                                                <img class="state_icon" src="img/state_up.png">
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">Z18</div>
+                                                            <div class="float_r font_size_d font_color_a">+0   +0.00%</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="float_l price_tab_content">
+                                                        <div>
+                                                            <div class="float_l font_size_a">博丰生铁</div>
+                                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">球铁</div>
+                                                            <div class="float_r">
+                                                                <div class="float_l font_size_c">3300</div>
+                                                                <img class="state_icon" src="img/state_no.png">
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">Z18</div>
+                                                            <div class="float_r font_size_d">+0   +0.00%</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="float_l price_tab_content noborder_left">
+                                                        <div>
+                                                            <div class="float_l font_size_a">博丰生铁</div>
+                                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">球铁</div>
+                                                            <div class="float_r">
+                                                                <div class="float_l font_size_c font_color_a">3300</div>
+                                                                <img class="state_icon" src="img/state_up.png">
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">Z18</div>
+                                                            <div class="float_r font_size_d font_color_a">+0   +0.00%</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="float_l price_tab_content">
+                                                        <div>
+                                                            <div class="float_l font_size_a">博丰生铁</div>
+                                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">球铁</div>
+                                                            <div class="float_r">
+                                                                <div class="float_l font_size_c">3300</div>
+                                                                <img class="state_icon" src="img/state_no.png">
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">Z18</div>
+                                                            <div class="float_r font_size_d">+0   +0.00%</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="float_l price_tab_content noborder_left">
+                                                        <div>
+                                                            <div class="float_l font_size_a">博丰生铁</div>
+                                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">球铁</div>
+                                                            <div class="float_r">
+                                                                <div class="float_l font_size_c font_color_a">3300</div>
+                                                                <img class="state_icon" src="img/state_up.png">
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">Z18</div>
+                                                            <div class="float_r font_size_d font_color_a">+0   +0.00%</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="float_l price_tab_content">
+                                                        <div>
+                                                            <div class="float_l font_size_a">博丰生铁</div>
+                                                            <div class="float_r font_size_b">11-27 10:00</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">球铁</div>
+                                                            <div class="float_r">
+                                                                <div class="float_l font_size_c">3300</div>
+                                                                <img class="state_icon" src="img/state_no.png">
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="float_l font_size_a">Z18</div>
+                                                            <div class="float_r font_size_d">+0   +0.00%</div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="but_left"><img src="lb/qianxleft.png" /></div>
+                                        <div class="but_right"><img src="lb/qianxr.png" /></div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="float_l data_content_right">
@@ -1812,12 +2029,12 @@
 
 <script type="text/javascript" src="js/scroll.js"></script>
 <script type="text/javascript">
-$(function(){
-    $("div.roll_deal").myScroll({
-        speed:40, //数值越大，速度越慢
-        rowHeight:195 //li的高度
+    $(function(){
+        $("div.roll_deal").myScroll({
+            speed:40, //数值越大，速度越慢
+            rowHeight:195 //li的高度
+        });
     });
-});
 </script>
 
 <!-- banner区联系电话点击下边框变色 -->
@@ -1832,39 +2049,6 @@ $(".bi2_input").focus(
 });
 </script>
 
-<!-- 底部四张图片经过切换为纯色背景 -->
-    <!-- css实现 -->
-<!-- <script>
-    // 1
-    $(".feature_img1") .mouseenter(function(){
-        $(".feature_img1").css('background-image','url(img/feature_img1a.png)')
-    })
-    $(".feature_img1") .mouseleave(function(){
-        $(".feature_img1").css('background-image','url(img/feature_img1.png)')
-    })
-    // 2
-    $(".feature_img2") .mouseenter(function(){
-        $(".feature_img2").css('background-image','url(img/feature_img2a.png)')
-    })
-    $(".feature_img2") .mouseleave(function(){
-        $(".feature_img2").css('background-image','url(img/feature_img2.png)')
-    })
-    // 3
-    $(".feature_img3") .mouseenter(function(){
-        $(".feature_img3").css('background-image','url(img/feature_img3a.png)')
-    })
-    $(".feature_img3") .mouseleave(function(){
-        $(".feature_img3").css('background-image','url(img/feature_img3.png)')
-    })
-    // 4
-    $(".feature_img4") .mouseenter(function(){
-        $(".feature_img4").css('background-image','url(img/feature_img4a.png)')
-    })
-    $(".feature_img4") .mouseleave(function(){
-        $(".feature_img4").css('background-image','url(img/feature_img4.png)')
-    })
-</script> -->
-
 <!-- 我的淘炉料下拉菜单 -->
 <script >
     $(".page_top_first").mouseenter(function(){
@@ -1875,7 +2059,101 @@ $(".bi2_input").focus(
     })
 </script>
 
+<!-- 悬浮 -->
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".side ul li").hover(function(){
+            $(this).find(".sidebox").stop().animate({"width":"124px"},100).css({"opacity":"1","filter":"Alpha(opacity=100)","background":"#d0111b"})
+        },function(){
+            $(this).find(".sidebox").stop().animate({"width":"54px"},100).css({"opacity":"1","filter":"Alpha(opacity=100)","background":"#6e6568"})
+        });
+    });
+    //回到顶部
+    function goTop(){
+        $('html,body').animate({'scrollTop':0},600)
+    }
+
+
+    $("#quick_scan_open") .mouseenter(function(){
+        $(".quick_scan").css('display','block')
+    })
+    $("#quick_scan_open") .mouseleave(function(){
+        $(".quick_scan").css('display','none')
+    })
+</script>
+
+<script type="text/javascript">
+// 1
+var _index5=0;
+$("#four_flash .but_right img").click(function(){
+    _index5++;
+    var len=$(".flashBg ul.lb_content1 li").length;
+    if(_index5+5>len){
+        $("#four_flash .flashBg ul.lb_content1").stop().append($("ul.lb_content1").html());
+    }
+    $("#four_flash .flashBg ul.lb_content1").stop().animate({left:-_index5*218},500);
+});
+
+$("#four_flash .but_left img").click(function(){
+    if(_index5==0){
+        $("ul.lb_content1").prepend($("ul.lb_content1").html());
+        _index5=4
+    }
+    _index5--;
+    $("#four_flash .flashBg ul.lb_content1").stop().animate({left:-_index5*218},500);
+});
+
+// 2
+var _index5=0;
+$("#four_flash .but_right img").click(function(){
+    _index5++;
+    var len=$(".flashBg ul.lb_content2 li").length;
+    if(_index5+5>len){
+        $("#four_flash .flashBg ul.lb_content2").stop().append($("ul.lb_content2").html());
+    }
+    $("#four_flash .flashBg ul.lb_content2").stop().animate({left:-_index5*218},500);
+});
+
+$("#four_flash .but_left img").click(function(){
+    if(_index5==0){
+        $("ul.lb_content2").prepend($("ul.lb_content2").html());
+        _index5=4
+    }
+    _index5--;
+    $("#four_flash .flashBg ul.lb_content2").stop().animate({left:-_index5*218},500);
+});
+
+// 3
+var _index5=0;
+$("#four_flash .but_right img").click(function(){
+    _index5++;
+    var len=$(".flashBg ul.lb_content3 li").length;
+    if(_index5+5>len){
+        $("#four_flash .flashBg ul.lb_content3").stop().append($("ul.lb_content3").html());
+    }
+    $("#four_flash .flashBg ul.lb_content3").stop().animate({left:-_index5*218},500);
+});
+
+$("#four_flash .but_left img").click(function(){
+    if(_index5==0){
+        $("ul.lb_content3").prepend($("ul.lb_content3").html());
+        _index5=4
+    }
+    _index5--;
+    $("#four_flash .flashBg ul.lb_content3").stop().animate({left:-_index5*218},500);
+});
+
+
+    // 箭头
+    $(".lb_box").mouseenter(function(){
+        $(".but_right").css('display','block')
+        $(".but_left").css('display','block')
+    })
+    $(".lb_box").mouseleave(function(){
+        $(".but_right").css('display','none')
+        $(".but_left").css('display','none')
+    })
+</script>
 
 </body>
-
 </html>
