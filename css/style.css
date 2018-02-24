@@ -1106,6 +1106,9 @@ input[type=checkbox], input[type=radio] {
     line-height: 24px;
     color: #333333;
 }
+.bc_help_content a:hover {
+    text-decoration: underline;
+}
 
 .bc_phone {
     width: 300px;
@@ -1201,6 +1204,9 @@ input[type=checkbox], input[type=radio] {
     line-height: 100%;
     color: #666666;
     padding: 0 12px;
+}
+.bottom_nav li a:hover {
+    text-decoration: underline;
 }
 .bottom_text {
     font-size: 12px;

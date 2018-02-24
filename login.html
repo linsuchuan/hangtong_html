@@ -24,6 +24,8 @@
     <!-- 引入base.css -->
     <link rel="stylesheet" type="text/css" href="css/type/base.css">
     <link rel="stylesheet" type="text/css" href="css/type/navjd.css">
+    <!-- 验证码 -->
+    <link rel="stylesheet" type="text/css" href="idcode/jquery.idcode.css">
     
 </head>
 <body class="bg_gray2">
@@ -54,6 +56,14 @@
                     <img class="float_r" src="img/icon_login2.png">
                     <div class="clearfix"></div>
                 </li>
+                <div style="margin-bottom: 10px;">
+                    <input type="text" id="Txtidcode" class="txtVerification" placeholder="请输入验证码" />
+                    <span id="idcode"></span>
+                    <!-- <div>
+                        <button type="button" id="btns">验证</button>
+                    </div> -->
+                    <div class="clearfix"></div>
+                </div>
             </div>
             <div>
                 <input class="float_l login_checkbox" type="checkbox" name="checkbox">
@@ -61,7 +71,7 @@
                 <a class="float_r login_password" href="#">忘记密码？</a>
                 <div class="clearfix"></div>
             </div>
-            <button class="login_btn">登陆</button>
+            <button class="login_btn" id="btns">登陆</button>
             <a class="login_cue" href="#">其它方式登陆</a>
         </div>
     </div>
@@ -128,9 +138,17 @@ $(".share_sequence_button .share_sequence_title").click(
 )
 </script>
 
-
-
-
+<!-- 验证码 -->
+<script src="idcode/jquery.idcode.js"></script>
+<script>
+    $.idcode.setCode();
+    
+    $("#btns").click(function (){
+        var IsBy = $.idcode.validateCode();
+        alert(IsBy);
+        console.log(IsBy);
+    });
+</script>
 
 
 

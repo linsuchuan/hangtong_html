@@ -7,7 +7,7 @@
 	right:0;
 	top:50%;
 	margin-top: -138px;
-	z-index:100;
+	z-index:9999;
 }
 .side ul li{
 	width:54px;
@@ -27,9 +27,9 @@
 	background:#6e6568;
 	opacity:1;
 	color:#fff;
-	font:20px/54px "微软雅黑";
+	font:16px/54px "微软雅黑";
 	overflow: hidden;
-	padding-left: 10px;
+	padding-left: 15px;
 }
 .side ul li .sidetop{
 	width:54px;
@@ -59,6 +59,19 @@
 	background: #6e6568;
 	padding-top: 15px;
 	padding-left: 15px;
+}
+.fixed_number {
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	background: red;
+	position: absolute;
+	top: 3px;
+	right: 3px;
+	font-size: 12px;
+	line-height: 24px;
+	color: #fff;
+	text-align: center;
 }
 .quick_icon:hover {
 	background: #d0111b;
